@@ -362,7 +362,7 @@ On first run, `protein_mpnn_supercharge.py` saves surface-residue and net-charge
 ## Design Notes
 
 - **Temperature**: Lower temperatures (0.1–0.3) produce sequences closer to the WT; higher temperatures (0.5–0.9) explore more sequence space. Use `--unrestrict` to let the script raise the temperature automatically if the target charge cannot be achieved.
-- **H-bond protection**: By default, surface residues that form strong sidechain hydrogen bonds (energy < −0.5 REU) are excluded from redesign. Use `-mhbond` to disable this filter. A short FastRelax is performed before H-bond evaluation; add `-nofast` to skip it.
+- **H-bond protection**: By default, surface residues that form strong sidechain hydrogen bonds (energy < −0.5 REU) are not-excluded from redesign. Use `-mhbond` to enable this filter. A short FastRelax is performed before H-bond evaluation; add `-nofast` to skip it if you have already relaxed the structure with PyRosetta.
 - **Catalytic site protection**: Use `-cat` with a comma-separated list of PDB residue numbers to lock a catalytic site. The `--distance` argument extends the exclusion zone to all residues within the given radius.
 - **Gly/Pro/Cys**: These residues are excluded by default because mutations can disrupt backbone conformation or disulfide bonds. Enable with `-gpc`.
 - **Parallelism**: Threading is parallelised using Python `multiprocessing` with the `spawn` start method (required because PyRosetta cannot be shared across forked processes). Set `--thread_workers` to match your available CPU cores.
