@@ -552,8 +552,8 @@ def _thread_worker(task):
     '''
     pdb_path, design_seq, og_seq, output_path, num_relax, verbose = task
     # Each spawned process must initialise PyRosetta independently
-    from pyrosetta import init as pyrosetta_init, pose_from_pdb
-    pyrosetta_init(silent=True)
+    _init_pyrosetta('sequence threading')
+    from pyrosetta import pose_from_pdb
     pose = pose_from_pdb(pdb_path)
     thread_sequence(pose, design_seq, og_seq, output_path, num_relax, verbose)
     print(f'  Wrote {output_path}', flush=True)
