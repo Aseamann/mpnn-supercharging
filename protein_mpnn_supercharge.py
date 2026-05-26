@@ -1,6 +1,6 @@
 # Author: Austin Seamann
 # Last Update: 5-23-2025
-# Version: 1.0 – Initial release, supports supercharging with PyRosetta threading
+# Version: 1.0 - Initial release, supports supercharging with PyRosetta threading
 
 import json, time, os, sys, glob
 import multiprocessing
@@ -36,9 +36,9 @@ def _init_pyrosetta(step='this step'):
         _pyrosetta_initialised = True
     except ImportError:
         sys.exit(
-            f"\nPyRosetta is required for {step} but is not installed.\n"
-            "Install it from https://www.pyrosetta.org/downloads, then re-run.\n"
-            "See the README for full setup instructions.\n"
+            f"""PyRosetta is required for {step} but is not installed.
+            Install it from https://www.pyrosetta.org/downloads, then re-run.
+            See the README for full setup instructions.\n"""
         )
 
 VERBOSE = False
