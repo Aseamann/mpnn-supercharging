@@ -1,0 +1,454 @@
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: Rosetta version: PyRosetta4.conda.m1.cxx11thread.serialization.python39.Release r414 2025.43+release.9fd5078c70 9fd5078c70dbd3d139526618074f384bba8cde37 http://www.pyrosetta.org 2025-10-23T17:08:57
+core.init: Rosetta extras: [cxx11thread, serialization]
+core.init: command: PyRosetta -ex1 -ex2aro -database /Users/austinseamann/mambaforge/envs/personal/lib/python3.9/site-packages/pyrosetta/database
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=277279805 seed_offset=0 real_seed=277279805 thread_index=0
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=277279805 RG_type=mt19937
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 985 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 0.53165 seconds.
+core.import_pose.import_pose: File 'eGFP.pdb' automatically determined to be of type PDB from contents.
+core.io.pose_from_sfr.PoseFromSFRBuilder: [ WARNING ] discarding 2 atoms at position 1 in file eGFP.pdb. Best match rsd_type:  MET:NtermProteinFull
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OXT on residue THR:CtermProteinFull 231
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/all.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/prepro.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.gly.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.pro.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.valile.txt
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+core.scoring.P_AA: shapovalov_lib::shap_p_aa_pp_smooth_level of 1( aka low_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/shapovalov/10deg/kappa131/a20.prop
+protocols.design_opt.Supercharge: Packrotamers
+core.pack.task: Packer task: initialize from command line() 
+basic.io.database: Database file opened: scoring/score_functions/elec_cp_reps.dat
+core.scoring.elec.util: Read 40 countpair representative atoms
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /Users/austinseamann/mambaforge/envs/personal/lib/python3.9/site-packages/pyrosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/Users/austinseamann/mambaforge/envs/personal/lib/python3.9/site-packages/pyrosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.106576 seconds to load from binary
+core.pack.pack_rotamers: built 6110 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+basic.thread_manager.RosettaThreadManager: Creating a thread pool of 1 threads.
+basic.thread_manager.RosettaThreadPool: Launched 0 new threads.
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5968 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6036 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Minimizing sidechains...
+protocols.design_opt.Supercharge: Packrotamers
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6036 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6036 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Minimizing sidechains and backbone...
+protocols.design_opt.Supercharge: Packrotamers
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5801 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5801 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Minimizing sidechains and backbone...
+protocols.design_opt.Supercharge: Packrotamers
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5800 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5800 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+protocols.design_opt.Supercharge: eGFP.pdb
+protocols.design_opt.Supercharge: adding 1 to surface set
+protocols.design_opt.Supercharge: adding 2 to surface set
+protocols.design_opt.Supercharge: adding 4 to surface set
+protocols.design_opt.Supercharge: adding 7 to surface set
+protocols.design_opt.Supercharge: adding 10 to surface set
+protocols.design_opt.Supercharge: adding 11 to surface set
+protocols.design_opt.Supercharge: adding 12 to surface set
+protocols.design_opt.Supercharge: adding 14 to surface set
+protocols.design_opt.Supercharge: adding 20 to surface set
+protocols.design_opt.Supercharge: adding 22 to surface set
+protocols.design_opt.Supercharge: adding 25 to surface set
+protocols.design_opt.Supercharge: adding 26 to surface set
+protocols.design_opt.Supercharge: adding 27 to surface set
+protocols.design_opt.Supercharge: adding 31 to surface set
+protocols.design_opt.Supercharge: adding 33 to surface set
+protocols.design_opt.Supercharge: adding 39 to surface set
+protocols.design_opt.Supercharge: adding 40 to surface set
+protocols.design_opt.Supercharge: adding 44 to surface set
+protocols.design_opt.Supercharge: adding 50 to surface set
+protocols.design_opt.Supercharge: adding 51 to surface set
+protocols.design_opt.Supercharge: adding 52 to surface set
+protocols.design_opt.Supercharge: adding 53 to surface set
+protocols.design_opt.Supercharge: adding 76 to surface set
+protocols.design_opt.Supercharge: adding 77 to surface set
+protocols.design_opt.Supercharge: adding 78 to surface set
+protocols.design_opt.Supercharge: adding 90 to surface set
+protocols.design_opt.Supercharge: adding 91 to surface set
+protocols.design_opt.Supercharge: adding 96 to surface set
+protocols.design_opt.Supercharge: adding 98 to surface set
+protocols.design_opt.Supercharge: adding 100 to surface set
+protocols.design_opt.Supercharge: adding 102 to surface set
+protocols.design_opt.Supercharge: adding 103 to surface set
+protocols.design_opt.Supercharge: adding 108 to surface set
+protocols.design_opt.Supercharge: adding 110 to surface set
+protocols.design_opt.Supercharge: adding 112 to surface set
+protocols.design_opt.Supercharge: adding 116 to surface set
+protocols.design_opt.Supercharge: adding 117 to surface set
+protocols.design_opt.Supercharge: adding 118 to surface set
+protocols.design_opt.Supercharge: adding 119 to surface set
+protocols.design_opt.Supercharge: adding 123 to surface set
+protocols.design_opt.Supercharge: adding 129 to surface set
+protocols.design_opt.Supercharge: adding 130 to surface set
+protocols.design_opt.Supercharge: adding 132 to surface set
+protocols.design_opt.Supercharge: adding 133 to surface set
+protocols.design_opt.Supercharge: adding 134 to surface set
+protocols.design_opt.Supercharge: adding 135 to surface set
+protocols.design_opt.Supercharge: adding 139 to surface set
+protocols.design_opt.Supercharge: adding 140 to surface set
+protocols.design_opt.Supercharge: adding 143 to surface set
+protocols.design_opt.Supercharge: adding 144 to surface set
+protocols.design_opt.Supercharge: adding 145 to surface set
+protocols.design_opt.Supercharge: adding 147 to surface set
+protocols.design_opt.Supercharge: adding 148 to surface set
+protocols.design_opt.Supercharge: adding 150 to surface set
+protocols.design_opt.Supercharge: adding 157 to surface set
+protocols.design_opt.Supercharge: adding 158 to surface set
+protocols.design_opt.Supercharge: adding 159 to surface set
+protocols.design_opt.Supercharge: adding 163 to surface set
+protocols.design_opt.Supercharge: adding 165 to surface set
+protocols.design_opt.Supercharge: adding 167 to surface set
+protocols.design_opt.Supercharge: adding 169 to surface set
+protocols.design_opt.Supercharge: adding 172 to surface set
+protocols.design_opt.Supercharge: adding 173 to surface set
+protocols.design_opt.Supercharge: adding 174 to surface set
+protocols.design_opt.Supercharge: adding 175 to surface set
+protocols.design_opt.Supercharge: adding 176 to surface set
+protocols.design_opt.Supercharge: adding 177 to surface set
+protocols.design_opt.Supercharge: adding 179 to surface set
+protocols.design_opt.Supercharge: adding 181 to surface set
+protocols.design_opt.Supercharge: adding 183 to surface set
+protocols.design_opt.Supercharge: adding 189 to surface set
+protocols.design_opt.Supercharge: adding 190 to surface set
+protocols.design_opt.Supercharge: adding 191 to surface set
+protocols.design_opt.Supercharge: adding 192 to surface set
+protocols.design_opt.Supercharge: adding 193 to surface set
+protocols.design_opt.Supercharge: adding 198 to surface set
+protocols.design_opt.Supercharge: adding 199 to surface set
+protocols.design_opt.Supercharge: adding 205 to surface set
+protocols.design_opt.Supercharge: adding 207 to surface set
+protocols.design_opt.Supercharge: adding 209 to surface set
+protocols.design_opt.Supercharge: adding 210 to surface set
+protocols.design_opt.Supercharge: adding 211 to surface set
+protocols.design_opt.Supercharge: adding 212 to surface set
+protocols.design_opt.Supercharge: adding 213 to surface set
+protocols.design_opt.Supercharge: adding 214 to surface set
+protocols.design_opt.Supercharge: adding 215 to surface set
+protocols.design_opt.Supercharge: adding 216 to surface set
+protocols.design_opt.Supercharge: adding 222 to surface set
+protocols.design_opt.Supercharge: adding 228 to surface set
+protocols.design_opt.Supercharge: adding 229 to surface set
+protocols.design_opt.Supercharge: adding 230 to surface set
+protocols.design_opt.Supercharge: adding 231 to surface set
+protocols.design_opt.Supercharge: Creating a resfile, it will be saved as ./resfile_output_Rsc
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+protocols.design_opt.Supercharge: Using SCORE12 with custom reference weights
+ScoreFunction::show():
+weights: (fa_atr 1) (fa_rep 0.55) (fa_sol 1) (fa_intra_rep 0.005) (fa_intra_sol_xover4 1) (lk_ball_wtd 1) (fa_elec 1) (pro_close 1.25) (hbond_sr_bb 1) (hbond_lr_bb 1) (hbond_bb_sc 1) (hbond_sc 1) (dslf_fa13 1.25) (omega 0.4) (fa_dun 0.7) (p_aa_pp 0.6) (yhh_planarity 0.625) (ref 1) (rama_prepro 0.45)
+energy_method_options: EnergyMethodOptions::show: aa_composition_setup_files: 
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: mhc_epitope_setup_files: 
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: netcharge_setup_files: 
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: aspartimide_penalty_value: 25
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: etable_type: FA_STANDARD_DEFAULT
+analytic_etable_evaluation: 1
+EnergyMethodOptions::show: method_weights: ref 0.16 1.7 -1.28682 -1.55374 0.63 -0.17 0.56 0.24 -1.65 -0.1 -0.34 -0.89 0.02 -0.97 -1.98 -0.37 -0.27 0.29 0.91 0.51
+EnergyMethodOptions::show: method_weights: free_res
+EnergyMethodOptions::show: unfolded_energies_type: UNFOLDED_SCORE12
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: split_unfolded_label_type: SPLIT_UNFOLDED_MM
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: split_unfolded_value_type: SPLIT_UNFOLDED_BOLTZ
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: atom_vdw_atom_type_set_name: centroid
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: covalent_labeling_input: 
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: covalent_labeling_fa_input: 
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: hrf_dynamics_input: 
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: depc_ms_input: 
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: exclude_protein_protein_fa_elec: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: exclude_RNA_RNA_fa_elec: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: exclude_RNA_protein_fa_elec: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: exclude_monomer_fa_elec: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: elec_max_dis: 5.5
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: elec_min_dis: 1.6
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: elec_die: 10
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: elec_no_dis_dep_die: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: elec_sigmoidal_die: true
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: elec_sigmoidal_D: 80
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: elec_sigmoidal_D0: 6
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: elec_sigmoidal_S: 0.4
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: smooth_fa_elec: true
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: grpelec_fade_type: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: grpelec_fade_param1: 1
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: grpelec_fade_param2: 1
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: grpelec_fade_hbond: 0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: grp_cpfxn: 1
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: elec_group_file: /scoring/score_functions/elec_group_def.dat
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: grpelec_context_dependent: 0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: use_polarization: true
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: use_gen_kirkwood: true
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: protein_dielectric: 1
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: water_dielectric: 78.3
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: exclude_DNA_DNA: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: exclude_intra_res_protein: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: count_pair_hybrid: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: count_pair_full: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: put_intra_into_total: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: geom_sol_interres_path_distance_cutoff: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: geom_sol_intrares_path_distance_cutoff: true
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: eval_intrares_elec_ST_only: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: envsmooth_zero_negatives: false
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: cst_max_seq_sep: 18446744073709551615
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: pb_bound_tag: bound
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: pb_unbound_tag: unbound
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: arg_cation_pi_his_can_be_pi: 1
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: ordered_wat_penalty: 1.221
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: ordered_pt_wat_penalty: 2.709
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_ref_seq_length_: 9
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_term_length_: 3
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_pssm_feat_: 1
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_scorecut_defined_: 0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_scorecut_: 0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_avg_rank_as_energy_: 0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_aa_matrix_defined_: 0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_aa_matrix_: 
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_list_defined_: 0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_list_: 
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_defined_: 0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_: 
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_rank_list_defined_: 0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_rank_list_: 
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_rank_defined_: 0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: nmer_svm_rank_: 
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: voids_penalty_energy_containing_cones_cutoff_:6
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: voids_penalty_energy_cone_distance_cutoff_: 8
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: voids_penalty_energy_cone_dotproduct_cutoff_: 0.1
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: voids_penalty_energy_voxel_grid_padding_: 1
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: voids_penalty_energy_voxel_size_: 0.5
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: voids_penalty_energy_disabled_except_during_packing_: TRUE
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: hbnet_bonus_ramping_function_: "quadratic"
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: hbnet_max_network_size_: 0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: approximate_buried_unsat_penalty_hbond_energy_threshold_: -0.25
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: approximate_buried_unsat_penalty_burial_atomic_depth_: 4.5
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: approximate_buried_unsat_penalty_burial_probe_radius_: 2.3
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: approximate_buried_unsat_penalty_burial_resolution_: 0.5
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: approximate_buried_unsat_penalty_oversat_penalty_: 1
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: approximate_buried_unsat_penalty_assume_const_backbone_:1
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: approximate_buried_unsat_penalty_natural_corrections1_:0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: approximate_buried_unsat_penalty_hbond_bonus_cross_chain_:0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: approximate_buried_unsat_penalty_hbond_bonus_ser_to_helix_bb_:0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: approximate_buried_unsat_penalty_lys_ok_with_1_:0
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: target_clash_pdb_:
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: dump_trajectory_prefix_: traj
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: dump_trajectory_gz_: FALSE
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: dump_trajectory_stride_: 1
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: bond_angle_central_atoms_to_score:
+protocols.design_opt.Supercharge: EnergyMethodOptions::show: bond_angle_residue_type_param_set: none
+protocols.design_opt.Supercharge: HBondOptions::show: hb_max_energy: 0
+protocols.design_opt.Supercharge: HBondOptions::show: exclude_DNA_DNA: false
+protocols.design_opt.Supercharge: HBondOptions::show: exclude_intra_res_protein_: false
+protocols.design_opt.Supercharge: HBondOptions::show: exclude_intra_res_RNA_: false
+protocols.design_opt.Supercharge: HBondOptions::show: put_intra_into_total_: false
+protocols.design_opt.Supercharge: HBondOptions::show: exclude_self_hbonds: true
+protocols.design_opt.Supercharge: HBondOptions::show: use_hb_env_dep: false
+protocols.design_opt.Supercharge: HBondOptions::show: use_hb_env_dep_DNA: true
+protocols.design_opt.Supercharge: HBondOptions::show: smooth_hb_env_dep: true
+protocols.design_opt.Supercharge: HBondOptions::show: bb_donor_acceptor_check: true
+protocols.design_opt.Supercharge: HBondOptions::show: decompose_bb_hb_into_pair_energies: true
+protocols.design_opt.Supercharge: HBondOptions::show: params_database_tag_: ref2015_params
+protocols.design_opt.Supercharge: HBondOptions::show: use_sp2_chi_penalty_: true
+protocols.design_opt.Supercharge: HBondOptions::show: sp2_BAH180_rise_: 0.75
+protocols.design_opt.Supercharge: HBondOptions::show: sp2_outer_width_: 0.357
+protocols.design_opt.Supercharge: HBondOptions::show: measure_sp3acc_BAH_from_hvy_: true
+protocols.design_opt.Supercharge: HBondOptions::show: fade_energy_: 1
+protocols.design_opt.Supercharge: HBondOptions::show: exclude_ether_oxygens_: 0
+protocols.design_opt.Supercharge: HBondOptions::show: Mbhbond: false 
+protocols.design_opt.Supercharge: HbondOptions::show: mphbond: false
+protocols.design_opt.Supercharge: HBondOptions::show: hbond_energy_shift: 0
+protocols.design_opt.Supercharge: HBondOptions::show: water_hybrid_sf: false
+protocols.design_opt.Supercharge: RNA_EnergyMethodOptions::show: syn_G_potential_bonus: 0
+protocols.design_opt.Supercharge: RNA_EnergyMethodOptions::show: torsion_potential: ps_04282011
+protocols.design_opt.Supercharge: RNA_EnergyMethodOptions::show: suiteness_bonus: Richardson
+protocols.design_opt.Supercharge: RNA_EnergyMethodOptions::show: rna_base_pair_xy_filename: scoring/rna/rna_base_pair_xy.dat
+protocols.design_opt.Supercharge: FreeDOF_Options::show: free_suite_bonus: -1
+protocols.design_opt.Supercharge: FreeDOF_Options::show: free_2HOprime_bonus: -0.5
+protocols.design_opt.Supercharge: FreeDOF_Options::show: free_sugar_bonus: -1
+protocols.design_opt.Supercharge: FreeDOF_Options::show: pack_phosphate_penalty: 0.25
+protocols.design_opt.Supercharge: FreeDOF_Options::show: free_side_chain_bonus: -0.5
+protocols.design_opt.Supercharge: 
+protocols.design_opt.Supercharge: Supercharging the protein surface... current charge: -7  target charge: 2
+protocols.design_opt.Supercharge: Refweights D E K R -1.28682 -1.55374 -1.75 -2.08
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 7181 rotamers at 213 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Supercharging the protein surface... current charge: 29  target charge: 2
+protocols.design_opt.Supercharge: Refweights D E K R -1.28682 -1.55374 -1.25 -1.58
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 7182 rotamers at 213 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Supercharging the protein surface... current charge: 23  target charge: 2
+protocols.design_opt.Supercharge: Refweights D E K R -1.28682 -1.55374 -0.75 -1.08
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 7182 rotamers at 213 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Supercharging the protein surface... current charge: 20  target charge: 2
+protocols.design_opt.Supercharge: Refweights D E K R -1.28682 -1.55374 -0.25 -0.58
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 7182 rotamers at 213 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Supercharging the protein surface... current charge: 9  target charge: 2
+protocols.design_opt.Supercharge: Refweights D E K R -1.28682 -1.55374 -0.15 -0.48
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 7181 rotamers at 213 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Supercharging the protein surface... current charge: 6  target charge: 2
+protocols.design_opt.Supercharge: Refweights D E K R -1.28682 -1.55374 -0.05 -0.38
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 7181 rotamers at 213 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Supercharging the protein surface... current charge: 6  target charge: 2
+protocols.design_opt.Supercharge: Refweights D E K R -1.28682 -1.55374 0.05 -0.28
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 7181 rotamers at 213 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Supercharging the protein surface... current charge: 6  target charge: 2
+protocols.design_opt.Supercharge: Refweights D E K R -1.28682 -1.55374 0.15 -0.18
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 7181 rotamers at 213 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Supercharging the protein surface... current charge: 5  target charge: 2
+protocols.design_opt.Supercharge: Refweights D E K R -1.28682 -1.55374 0.25 -0.08
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 7181 rotamers at 213 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Supercharging the protein surface... current charge: 5  target charge: 2
+protocols.design_opt.Supercharge: Refweights D E K R -1.28682 -1.55374 0.35 0.02
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 7181 rotamers at 213 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: NEW NAME FOR SUPERCHARGED OUTPUT: eGFP_RK_+0.02_+0.35_2.pdb
+protocols.design_opt.Supercharge: eGFP_RK_+0.02_+0.35_2.pdb  Net Charge of input structure = -7
+protocols.design_opt.Supercharge: eGFP_RK_+0.02_+0.35_2.pdb  R=11, K=21, D=17, E=13
+protocols.design_opt.Supercharge: eGFP_RK_+0.02_+0.35_2.pdb  Net Charge = 2
+protocols.design_opt.Supercharge: eGFP_RK_+0.02_+0.35_2.pdb  Mutations: H26R, S31R, E96R, Q158R, N165R, E173K, N199K, 
+protocols.design_opt.Supercharge: eGFP_RK_+0.02_+0.35_2.pdb  # of mutations: 7
+protocols.design_opt.Supercharge: eGFP_RK_+0.02_+0.35_2.pdb  select 26+31+96+158+165+173+199+
+protocols.design_opt.Supercharge: Comparing energies of native and designed
+protocols.design_opt.Supercharge: Packing designed
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5822 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5822 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5822 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Packing native
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5800 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5800 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5800 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Scoring native and design
+protocols.design_opt.Supercharge: Initialized vectors
+protocols.design_opt.Supercharge: Adding native energies
+protocols.design_opt.Supercharge: Adding designed energies
+protocols.design_opt.Supercharge: Subtracting design from native energies
+protocols.design_opt.Supercharge: eGFP.pdb 26 -0.2627 -0.9570 0.4094 0.9405 -0.1661 0.0093 1.4100 -0.4700 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0113 0.0000 -0.6166 0.6149 0.0000 0.2059 
+protocols.design_opt.Supercharge: eGFP.pdb 31 0.6284 -1.4838 -0.0211 1.1313 0.3128 0.0427 2.7009 -1.1364 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 -0.2129 0.0000 2.7188 -0.4040 0.0000 0.1950 
+protocols.design_opt.Supercharge: eGFP.pdb 96 1.8173 -0.9677 0.0882 0.9518 0.3609 0.0666 2.2042 -0.4468 0.0000 0.0000 0.0000 0.0000 -0.4047 0.0000 -0.2535 0.0000 -0.1973 -0.2998 0.0000 2.6298 
+protocols.design_opt.Supercharge: eGFP.pdb 158 0.3223 0.0025 0.0009 -0.0427 0.0188 0.0098 0.8143 -0.0819 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 -0.0326 0.0000 -1.4319 0.1200 0.0000 1.3562 
+protocols.design_opt.Supercharge: eGFP.pdb 165 0.3799 0.1533 -0.0306 -0.7979 0.1167 0.2088 2.1071 -0.0733 0.0000 0.0000 0.0000 0.0┌───────────────────────────────────────────────────────────────────────────────┐
+│                                  PyRosetta-4                                  │
+│               Created in JHU by Sergey Lyskov and PyRosetta Team              │
+│               (C) Copyright Rosetta Commons Member Institutions               │
+│                                                                               │
+│ NOTE: USE OF PyRosetta FOR COMMERCIAL PURPOSES REQUIRES PURCHASE OF A LICENSE │
+│          See LICENSE.PyRosetta.md or email license@uw.edu for details         │
+└───────────────────────────────────────────────────────────────────────────────┘
+PyRosetta-4 2025 [Rosetta PyRosetta4.conda.m1.cxx11thread.serialization.python39.Release 2025.43+release.9fd5078c70dbd3d139526618074f384bba8cde37 2025-10-23T17:08:57] retrieved from: http://www.pyrosetta.org
+Net charge:  2
+000 0.0000 0.0000 -0.6578 0.0000 0.6277 -1.0174 0.0000 1.2455 
+protocols.design_opt.Supercharge: eGFP.pdb 173 -1.4817 -0.8857 0.0341 0.7865 -0.2640 0.0329 -0.5134 -1.1368 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0249 0.0000 -3.2462 0.3674 0.0000 2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 199 -0.7825 0.5072 -0.0964 -0.6922 -0.0907 -0.0129 0.4965 0.1910 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 -0.3288 0.0000 -1.6693 0.0938 0.0000 0.6257 
+protocols.design_opt.Supercharge: eGFP.pdb SUM-DIFFS 0.6208 -3.6312 0.3845 2.2774 0.2885 0.3572 9.2198 -3.1542 0.0000 0.0000 0.0000 0.0000 -0.4047 0.0000 -1.4496 0.0000 -3.8148 -0.5251 0.0000 8.2680 
+protocols.design_opt.Supercharge: eGFP.pdb score_terms: total fa_atr fa_rep fa_sol fa_intra_sol_xover4 lk_ball_wt fa_intra_rep fa_elec pro_close hbond_sr_bb hbond_lr_bb hbond_bb_sc hbond_sc dslf_fa13 rama_prepro omega fa_dun p_aa_pp yhh_planarity ref

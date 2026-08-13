@@ -1,0 +1,304 @@
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: Rosetta version: PyRosetta4.conda.m1.cxx11thread.serialization.python39.Release r414 2025.43+release.9fd5078c70 9fd5078c70dbd3d139526618074f384bba8cde37 http://www.pyrosetta.org 2025-10-23T17:08:57
+core.init: Rosetta extras: [cxx11thread, serialization]
+core.init: command: PyRosetta -ex1 -ex2aro -database /Users/austinseamann/mambaforge/envs/personal/lib/python3.9/site-packages/pyrosetta/database
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=756803567 seed_offset=0 real_seed=756803567 thread_index=0
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=756803567 RG_type=mt19937
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 985 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 0.506533 seconds.
+core.import_pose.import_pose: File 'eGFP.pdb' automatically determined to be of type PDB from contents.
+core.io.pose_from_sfr.PoseFromSFRBuilder: [ WARNING ] discarding 2 atoms at position 1 in file eGFP.pdb. Best match rsd_type:  MET:NtermProteinFull
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OXT on residue THR:CtermProteinFull 231
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/all.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/prepro.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.gly.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.pro.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.valile.txt
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+core.scoring.P_AA: shapovalov_lib::shap_p_aa_pp_smooth_level of 1( aka low_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/shapovalov/10deg/kappa131/a20.prop
+protocols.design_opt.Supercharge: Packrotamers
+core.pack.task: Packer task: initialize from command line() 
+basic.io.database: Database file opened: scoring/score_functions/elec_cp_reps.dat
+core.scoring.elec.util: Read 40 countpair representative atoms
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /Users/austinseamann/mambaforge/envs/personal/lib/python3.9/site-packages/pyrosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/Users/austinseamann/mambaforge/envs/personal/lib/python3.9/site-packages/pyrosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.110415 seconds to load from binary
+core.pack.pack_rotamers: built 6110 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+basic.thread_manager.RosettaThreadManager: Creating a thread pool of 1 threads.
+basic.thread_manager.RosettaThreadPool: Launched 0 new threads.
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6036 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6036 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: residue: 4  heavy: 9  sidechain: 5  AvNAPSA_value: 68.2
+protocols.design_opt.Supercharge: residue 6 is already negative
+protocols.design_opt.Supercharge: residue 7 is already negative
+protocols.design_opt.Supercharge: residue 18 is already negative
+protocols.design_opt.Supercharge: residue 20 is already negative
+protocols.design_opt.Supercharge: residue 22 is already negative
+protocols.design_opt.Supercharge: residue: 24  heavy: 8  sidechain: 5  AvNAPSA_value: 136.25
+protocols.design_opt.Supercharge: residue: 27  heavy: 9  sidechain: 5  AvNAPSA_value: 71.8
+protocols.design_opt.Supercharge: residue 33 is already negative
+protocols.design_opt.Supercharge: residue 35 is already negative
+protocols.design_opt.Supercharge: residue 37 is already negative
+protocols.design_opt.Supercharge: residue: 42  heavy: 9  sidechain: 5  AvNAPSA_value: 115.4
+protocols.design_opt.Supercharge: residue: 46  heavy: 9  sidechain: 5  AvNAPSA_value: 145
+protocols.design_opt.Supercharge: residue: 53  heavy: 9  sidechain: 5  AvNAPSA_value: 76
+protocols.design_opt.Supercharge: residue: 70  heavy: 9  sidechain: 5  AvNAPSA_value: 223.8
+protocols.design_opt.Supercharge: residue: 74  heavy: 11  sidechain: 5  AvNAPSA_value: 112.286
+protocols.design_opt.Supercharge: residue 77 is already negative
+protocols.design_opt.Supercharge: residue: 80  heavy: 9  sidechain: 5  AvNAPSA_value: 130.4
+protocols.design_opt.Supercharge: residue: 81  heavy: 9  sidechain: 5  AvNAPSA_value: 126.4
+protocols.design_opt.Supercharge: residue 83 is already negative
+protocols.design_opt.Supercharge: residue: 86  heavy: 9  sidechain: 5  AvNAPSA_value: 213.6
+protocols.design_opt.Supercharge: residue 91 is already negative
+protocols.design_opt.Supercharge: residue: 95  heavy: 9  sidechain: 5  AvNAPSA_value: 218.2
+protocols.design_opt.Supercharge: residue 96 is already negative
+protocols.design_opt.Supercharge: residue: 97  heavy: 11  sidechain: 5  AvNAPSA_value: 211.857
+protocols.design_opt.Supercharge: residue: 102  heavy: 9  sidechain: 5  AvNAPSA_value: 82
+protocols.design_opt.Supercharge: residue 103 is already negative
+protocols.design_opt.Supercharge: residue 104 is already negative
+protocols.design_opt.Supercharge: residue: 106  heavy: 8  sidechain: 5  AvNAPSA_value: 137.5
+protocols.design_opt.Supercharge: residue: 108  heavy: 9  sidechain: 5  AvNAPSA_value: 105.6
+protocols.design_opt.Supercharge: residue: 110  heavy: 11  sidechain: 5  AvNAPSA_value: 98.1429
+protocols.design_opt.Supercharge: residue 112 is already negative
+protocols.design_opt.Supercharge: residue: 114  heavy: 9  sidechain: 5  AvNAPSA_value: 133
+protocols.design_opt.Supercharge: residue 116 is already negative
+protocols.design_opt.Supercharge: residue 118 is already negative
+protocols.design_opt.Supercharge: residue: 122  heavy: 8  sidechain: 5  AvNAPSA_value: 213
+protocols.design_opt.Supercharge: residue: 123  heavy: 11  sidechain: 5  AvNAPSA_value: 110.571
+protocols.design_opt.Supercharge: residue 125 is already negative
+protocols.design_opt.Supercharge: residue: 127  heavy: 9  sidechain: 5  AvNAPSA_value: 114.8
+protocols.design_opt.Supercharge: residue 130 is already negative
+protocols.design_opt.Supercharge: residue: 132  heavy: 9  sidechain: 5  AvNAPSA_value: 97.8
+protocols.design_opt.Supercharge: residue 133 is already negative
+protocols.design_opt.Supercharge: residue 134 is already negative
+protocols.design_opt.Supercharge: residue: 136  heavy: 8  sidechain: 5  AvNAPSA_value: 167.25
+protocols.design_opt.Supercharge: residue: 141  heavy: 9  sidechain: 5  AvNAPSA_value: 108.4
+protocols.design_opt.Supercharge: residue 143 is already negative
+protocols.design_opt.Supercharge: residue: 145  heavy: 8  sidechain: 5  AvNAPSA_value: 117.25
+protocols.design_opt.Supercharge: residue: 147  heavy: 8  sidechain: 5  AvNAPSA_value: 120.5
+protocols.design_opt.Supercharge: residue: 150  heavy: 8  sidechain: 5  AvNAPSA_value: 113.75
+protocols.design_opt.Supercharge: residue 156 is already negative
+protocols.design_opt.Supercharge: residue: 157  heavy: 9  sidechain: 5  AvNAPSA_value: 73
+protocols.design_opt.Supercharge: residue: 158  heavy: 9  sidechain: 5  AvNAPSA_value: 50
+protocols.design_opt.Supercharge: residue: 159  heavy: 9  sidechain: 5  AvNAPSA_value: 79
+protocols.design_opt.Supercharge: residue: 160  heavy: 8  sidechain: 5  AvNAPSA_value: 126.75
+protocols.design_opt.Supercharge: residue: 163  heavy: 9  sidechain: 5  AvNAPSA_value: 115.6
+protocols.design_opt.Supercharge: residue: 165  heavy: 8  sidechain: 5  AvNAPSA_value: 129
+protocols.design_opt.Supercharge: residue: 167  heavy: 9  sidechain: 5  AvNAPSA_value: 110.6
+protocols.design_opt.Supercharge: residue: 169  heavy: 11  sidechain: 5  AvNAPSA_value: 93.4286
+protocols.design_opt.Supercharge: residue: 171  heavy: 8  sidechain: 5  AvNAPSA_value: 130.5
+protocols.design_opt.Supercharge: residue 173 is already negative
+protocols.design_opt.Supercharge: residue 174 is already negative
+protocols.design_opt.Supercharge: residue: 178  heavy: 9  sidechain: 5  AvNAPSA_value: 178.4
+protocols.design_opt.Supercharge: residue 181 is already negative
+protocols.design_opt.Supercharge: residue: 184  heavy: 9  sidechain: 5  AvNAPSA_value: 211.6
+protocols.design_opt.Supercharge: residue: 185  heavy: 9  sidechain: 5  AvNAPSA_value: 137
+protocols.design_opt.Supercharge: residue: 186  heavy: 8  sidechain: 5  AvNAPSA_value: 210.5
+protocols.design_opt.Supercharge: residue 191 is already negative
+protocols.design_opt.Supercharge: residue 198 is already negative
+protocols.design_opt.Supercharge: residue: 199  heavy: 8  sidechain: 5  AvNAPSA_value: 96
+protocols.design_opt.Supercharge: residue: 205  heavy: 9  sidechain: 5  AvNAPSA_value: 94
+protocols.design_opt.Supercharge: residue: 210  heavy: 9  sidechain: 5  AvNAPSA_value: 101.6
+protocols.design_opt.Supercharge: residue 211 is already negative
+protocols.design_opt.Supercharge: residue: 213  heavy: 8  sidechain: 5  AvNAPSA_value: 49.75
+protocols.design_opt.Supercharge: residue 214 is already negative
+protocols.design_opt.Supercharge: residue: 215  heavy: 9  sidechain: 5  AvNAPSA_value: 56.2
+protocols.design_opt.Supercharge: residue: 216  heavy: 11  sidechain: 5  AvNAPSA_value: 95.7143
+protocols.design_opt.Supercharge: residue 217 is already negative
+protocols.design_opt.Supercharge: residue 223 is already negative
+protocols.design_opt.Supercharge: there are 231 residues and 231 AvNAPSA values
+protocols.design_opt.Supercharge: Creating a resfile, it will be saved as ./resfile_output_Asc
+protocols.design_opt.Supercharge: Starting net charge is -7 and target_net_charge is -100
+protocols.design_opt.Supercharge: Mutate 213
+protocols.design_opt.Supercharge: Mutate 158
+protocols.design_opt.Supercharge: Mutate 215
+protocols.design_opt.Supercharge: Mutate 4
+protocols.design_opt.Supercharge: Mutate 27
+protocols.design_opt.Supercharge: Mutate 157
+protocols.design_opt.Supercharge: Mutate 53
+protocols.design_opt.Supercharge: Mutate 159
+protocols.design_opt.Supercharge: Mutate 102
+protocols.design_opt.Supercharge: Mutate 169
+protocols.design_opt.Supercharge: Mutate 205
+protocols.design_opt.Supercharge: Mutate 216
+protocols.design_opt.Supercharge: Mutate 199
+protocols.design_opt.Supercharge: Mutate 132
+protocols.design_opt.Supercharge: Mutate 110
+protocols.design_opt.Supercharge: Mutate 210
+protocols.design_opt.Supercharge: Mutate 108
+protocols.design_opt.Supercharge: Mutate 141
+protocols.design_opt.Supercharge: Mutate 123
+protocols.design_opt.Supercharge: Mutate 167
+protocols.design_opt.Supercharge: Mutate 74
+protocols.design_opt.Supercharge: Mutate 150
+protocols.design_opt.Supercharge: Mutate 127
+protocols.design_opt.Supercharge: Mutate 42
+protocols.design_opt.Supercharge: Mutate 163
+protocols.design_opt.Supercharge: Mutate 145
+protocols.design_opt.Supercharge: Mutate 147
+protocols.design_opt.Supercharge: Mutate 81
+protocols.design_opt.Supercharge: Mutate 160
+protocols.design_opt.Supercharge: Mutate 165
+protocols.design_opt.Supercharge: Mutate 80
+protocols.design_opt.Supercharge: Mutate 171
+protocols.design_opt.Supercharge: Mutate 114
+protocols.design_opt.Supercharge: Mutate 24
+protocols.design_opt.Supercharge: Mutate 185
+protocols.design_opt.Supercharge: Mutate 106
+protocols.design_opt.Supercharge: Mutate 46
+protocols.design_opt.Supercharge: Mutate 136
+protocols.design_opt.Supercharge: Mutate 178
+protocols.design_opt.Supercharge: Mutate 186
+protocols.design_opt.Supercharge: Mutate 184
+protocols.design_opt.Supercharge: Mutate 97
+protocols.design_opt.Supercharge: Mutate 122
+protocols.design_opt.Supercharge: Mutate 86
+protocols.design_opt.Supercharge: Mutate 95
+protocols.design_opt.Supercharge: Mutate 70
+protocols.design_opt.Supercharge: PYMOL_SELECT AVNAPSA residues: 213+158+215+4+27+157+53+159+102+169+205+216+199+132+110+210+108+141+123+167+74+150+127+42+163+145+147+81+160+165+80+171+114+24+185+106+46+136+178+186+184+97+122+86+95+70+
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5548 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5594 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5594 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: NEW NAME FOR SUPERCHARGED OUTPUT: eGFP_AvNAPSA_neg_223_-78.pdb
+protocols.design_opt.Supercharge: eGFP_AvNAPSA_neg_223_-78.pdb  Net Charge of input structure = -7
+protocols.design_opt.Supercharge: eGFP_AvNAPSA_neg_223_-78.pdb  R=0, K=0, D=30, E=48
+protocols.design_opt.Supercharge: eGFP_AvNAPSA_neg_223_-78.pdb  Net Charge = -78
+protocols.design_opt.Supercharge: eGFP_AvNAPSA_neg_223_-78.pdb  Mutations: K4E, N24D, K27E, K42E, K46E, K53E, Q70E, R74E, K80E, Q81E, K86E, Q95E, R97E, K102E, N106D, K108E, R110E, K114E, N122D, R123E, K127E, K132E, N136D, K141E, N145D, N147D, N150D, K157E, Q158E, K159E, N160D, K163E, N165D, K167E, R169E, N171D, Q178E, Q184E, Q185E, N186D, N199D, Q205E, K210E, N213D, K215E, R216E, 
+protocols.design_opt.Supercharge: eGFP_AvNAPSA_neg_223_-78.pdb  # of mutations: 46
+protocols.design_opt.Supercharge: eGFP_AvNAPSA_neg_223_-78.pdb  select 4+24+27+42+46+53+70+74+80+81+86+95+97+102+106+108+110+114+122+123+127+132+136+141+145+147+150+157+158+159+160+163+165+167+169+171+178+184+185+186+199+205+210+213+215+216+
+protocols.design_opt.Supercharge: Comparing energies of native and designed
+protocols.design_opt.Supercharge: Packing designed
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5594 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5594 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5594 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Packing native
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6036 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6036 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6036 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Scoring native and design
+protocols.design_opt.Supercharge: Initialized vectors
+protocols.design_opt.Supercharge: Adding native energies
+protocols.design_opt.Supercharge: Adding designed energies
+protocols.design_opt.Supercharge: Subtracting design from native energies
+protocols.design_opt.Supercharge: eGFP.pdb 4 -0.7938 0.8612 -0.1400 -2.0251 -0.2771 -0.2457 -2.0268 2.4123 0.0000 0.0000 0.0000 0.0000 0.6108 0.0000 -0.1060 0.0000 0.3919 -0.4328 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 24 1.2386 2.2134 -0.2668 -1.7172 0.5790 -0.2633 0.3881 0.9594 0.0000 0.0000 0.0000 1.3372 0.0000 0.0000 0.2874 0.0000 -2.1745 0.7888 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 27 0.1171 0.1602 0.0852 -0.1791 0.1732 0.0447 0.0323 0.3009 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0074 0.0000 2.2480 0.0054 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 42 -0.2160 0.2729 -0.2987 0.3225 0.1651 0.0615 -0.4578 -0.0128 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.1592 0.0000 1.5330 0.0109 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 46 3.4591 1.5004 -0.5817 -2.4904 0.1772 -0.6981 -0.2397 4.5819 0.0000 0.0000 0.0000 0.0000 1.3268 0.0000 0.1635 0.0000 1.8652 0.0219 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 53 -0.0719 0.6319 -0.0577 -0.6414 0.1499 0.0558 -0.4329 0.1282 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0113 0.0000 2.3430 0.0039 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 70 2.9074 1.1580 0.2464 -0.2714 0.7074 -0.1338 1.4385 0.5793 0.0000 0.0000 0.0000 0.0000 0.7742 0.0000 0.0101 0.0000 2.0376 -0.3440 0.0000 -1.2736 
+protocols.design_opt.Supercharge: eGFP.pdb 74 0.4498 0.0531 0.0260 0.9118 0.1118 -0.0950 -0.9671 0.9838 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 -0.0564 0.0000 1.5441 0.0820 0.0000 -2.6298 
+protocols.design_opt.Supercharge: eGFP.pdb 80 2.1790 1.6869 -0.7699 -2.4798 0.1338 -0.6600 -0.7419 4.4547 0.0000 0.0000 0.0000 0.0000 0.3570 0.0000 -0.0734 0.0000 1.9620 -0.3616 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 81 -0.5714 1.6435 -0.2140 -1.3373 -0.6331 -0.0076 -2.1030 0.2676 0.0000 0.0000 0.0000 0.0806 0.0000 0.0000 -0.0225 0.0000 1.3235 -0.1663 0.0000 -1.2736 
+protocols.design_opt.Supercharge: eGFP.pdb 86 4.3892 1.8253 -0.3627 -2.4937 -0.0385 -0.8336 -0.7566 7.8631 0.0000 0.0000 0.0000 0.3716 0.4985 0.0000 -0.0520 0.0000 -0.4323 -0.4405 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 95 3.2064 1.7397 -2.3434 0.2182 0.0613 0.5416 -0.2520 2.5079 0.0000 0.0000 0.0000 0.0000 0.6854 0.0000 0.0856 0.0000 -0.1056 0.0856 0.0000 -1.2736 
+protocols.design_opt.Supercharge: eGFP.pdb 97 1.5455 3.8801 -0.6636 -3.2954 0.0020 0.1368 -1.1921 3.0739 0.0000 0.0000 0.0000 0.5468 0.9361 0.0000 0.2350 0.0000 -1.4756 0.3219 0.0000 -2.6298 
+protocols.design_opt.Supercharge: eGFP.pdb 102 2.4125 0.9178 -0.6118 -1.5903 0.0685 -0.6126 -0.7223 3.1429 0.0000 0.0000 0.0000 0.9134 0.4318 0.0000 -0.0191 0.0000 2.2108 -0.0799 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 106 1.9247 0.5377 -0.0093 0.6387 0.0356 0.0836 -0.8231 0.1751 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.3170 0.0000 1.1601 0.5232 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 108 0.3058 0.3529 0.0421 0.0556 0.1823 -0.0028 0.0610 0.1813 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.1846 0.0000 2.0502 0.0080 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 110 -0.1599 1.2420 -0.0887 -1.3340 -0.0588 -0.3173 -0.6456 1.8341 0.0000 0.0000 0.0000 0.0000 0.8715 0.0000 0.2700 0.0000 -0.0535 0.3339 0.0000 -2.6298 
+protocols.design_opt.Supercharge: eGFP.pdb 114 1.6170 0.5109 -0.0206 -0.0849 0.1887 -0.0924 -0.1639 1.4947 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0066 0.0000 2.4083 -0.1112 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 122 0.6812 0.8574 -1.0697 1.1421 0.0468 -0.0805 -0.6023 0.0369 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 -0.1304 0.0000 0.3704 -0.2089 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 123 1.5544 2.1620 -0.6487 -2.8126 0.0581 -0.4883 -0.6828 3.8280 0.0000 0.0000 0.0000 0.0000 1.5075 0.0000 -0.1197 0.0000 0.3277 0.1902 0.0000 -2.6298 
+protocols.design_opt.Supercharge: eGFP.pdb 127 0.1671 1.5972 -0.9160 -3.1796 0.1773 0.1384 -0.6761 3.9780 0.0000 0.0000 0.0000 0.0000 0.0060 0.0000 0.1218 0.0000 -0.1535 0.0327 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 132 -0.0472 0.3423 0.0196 -0.8231 0.1601 -0.3115 -0.4067 1.6986 0.0000 0.0000 0.0000 0.0040 0.0000 0.0000 -0.0125 0.0000 1.2518 0.0215 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 136 1.7610 0.7391 0.7113 0.7869 0.0624 0.1714 -0.0397 0.5391 0.0000 0.0000 0.0000 0.0000 0.7766 0.0000 -0.2870 0.0000 -0.9899 -0.1300 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 141 2.7058 1.1319 0.0179 -0.5534 0.6815 -0.0738 0.1308 2.0473 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0333 0.0000 1.9909 0.1052 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 145 0.9156 1.5047 -0.0263 -1.2179 -0.2717 -0.4445 -0.1262 -0.0900 0.0000 0.0000 0.0000 -0.4166 1.3043 0.0000 0.0594 0.0000 1.8812 0.0406 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 147 2.5891 0.5298 0.5069 0.1945 0.1382 -0.1491 0.2460 0.8940 0.0000 0.0000 0.0000 0.0195 0.7337 0.0000 -0.0545 0.0000 0.9471 0.1924 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 150 0.7195 0.8907 -0.0461 0.4815 0.0349 0.1570 -0.1754 -0.4176 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.1069 0.0000 0.3486 0.1878 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 157 -0.0818 -0.0121 -0.0304 0.2817 0.1571 -0.0775 -0.2262 0.1033 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 -0.0708 0.0000 2.5513 -0.4341 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 158 -0.5284 -0.0199 -0.0004 0.3114 0.0880 -0.0776 -0.1452 0.3478 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 -0.1763 0.0000 0.4138 -0.1898 0.0000 -1.2736 
+protocols.design_opt.Supercharge: eGFP.pdb 159 0.8181 0.2444 -0.0660 0.2187 0.4799 -0.0039 -1.0763 0.3440 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0506 0.0000 2.0499 0.2148 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 160 0.5940 0.8163 0.0017 -0.0668 -0.4256 0.0060 -0.7443 0.1322 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.5475 0.0000 0.3602 0.7360 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 163 1.3069 0.4240 -0.2463 -0.0735 0.1513 0.2417 -0.2205 1.0522 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.2042 0.0000 2.2255 0.0133 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 165 2.0815 -0.1184 -0.0253 1.2515 -0.0041 0.2091 -0.3607 0.6146 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.2089 0.0000 0.8913 0.3868 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 167 -0.6576 0.7945 -1.0454 -2.4419 0.1513 -0.5956 -0.1727 4.2653 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.1884 0.0000 -0.4801 0.0097 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 169 0.2687 0.7045 -0.0099 -0.0898 -0.0194 -0.0791 -1.6910 0.9982 0.0000 0.0000 0.0000 0.4465 0.0000 0.0000 0.0367 0.0000 1.0467 0.3371 0.0000 -2.6298 
+protocols.design_opt.Supercharge: eGFP.pdb 171 1.0738 1.2890 -0.0405 -1.2963 0.0285 -0.4792 0.0236 1.0064 0.0000 0.0000 0.0000 0.0000 1.4551 0.0000 -0.0259 0.0000 -0.1654 0.0421 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 178 5.3712 0.4008 3.2539 0.7248 -0.1927 0.0086 -0.1460 0.6503 0.0000 0.0000 0.0000 0.9134 0.7766 0.0000 -0.0628 0.0000 2.3197 -0.0358 0.0000 -1.2736 
+protocols.design_opt.Supercharge: eGFP.pdb 184 8.3108 1.7332 2.0302 0.4992 0.1236 -0.3378 0.3012 4.9752 0.0000 0.0000 0.0000 0.0000 2.7314 0.0000 0.1554 0.0000 -1.8835 -0.0168 0.0000 -1.2736 
+protocols.design_opt.Supercharge: eGFP.pdb 185 0.1332 1.2806 -0.0364 -0.7064 0.1287 -0.1156 -0.0375 1.0966 0.0000 0.0000 0.0000 0.0000 0.3875 0.0000 0.2692 0.0000 -1.0342 -0.0692 0.0000 -1.2736 
+protocols.design_opt.Supercharge: eGFP.pdb 186 6.0426 1.0999 -0.2300 1.4067 0.0773 -0.1684 -0.0409 2.7762 0.0000 0.0000 0.0000 0.0000 1.7065 0.0000 0.3502 0.0000 -0.5393 0.4941 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 199 -0.4006 -0.6340 0.5814 1.2253 0.0430 -0.1568 -0.3955 -0.3602 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 -0.1875 0.0000 0.4322 -0.4137 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 205 -1.1647 0.0105 0.0018 0.0673 0.1231 -0.0109 -0.1228 -0.0281 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0340 0.0000 -0.0782 -0.0233 0.0000 -1.2736 
+protocols.design_opt.Supercharge: eGFP.pdb 210 0.2191 0.1707 0.1387 0.1825 0.1557 0.0620 -0.2074 0.0614 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.1726 0.0000 2.1028 -0.0470 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 213 0.2359 0.4595 0.0362 0.0028 0.0541 0.1855 -0.1539 0.1948 0.0000 0.0000 0.0000 -0.0641 0.0000 0.0000 -0.0883 0.0000 0.3347 -0.0080 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 215 -0.6373 0.2208 0.0000 -0.1140 -0.0272 0.0323 -1.4515 0.0546 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.1172 0.0000 1.6436 0.0167 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb 216 1.0851 1.5491 -1.2216 -1.5512 0.┌───────────────────────────────────────────────────────────────────────────────┐
+│                                  PyRosetta-4                                  │
+│               Created in JHU by Sergey Lyskov and PyRosetta Team              │
+│               (C) Copyright Rosetta Commons Member Institutions               │
+│                                                                               │
+│ NOTE: USE OF PyRosetta FOR COMMERCIAL PURPOSES REQUIRES PURCHASE OF A LICENSE │
+│          See LICENSE.PyRosetta.md or email license@uw.edu for details         │
+└───────────────────────────────────────────────────────────────────────────────┘
+PyRosetta-4 2025 [Rosetta PyRosetta4.conda.m1.cxx11thread.serialization.python39.Release 2025.43+release.9fd5078c70dbd3d139526618074f384bba8cde37 2025-10-23T17:08:57] retrieved from: http://www.pyrosetta.org
+Net charge:  -78
+1954 -0.2451 -0.6938 2.1906 0.0000 0.0000 0.0000 0.0000 1.2435 0.0000 0.1130 0.0000 1.2765 0.1060 0.0000 -2.6298 
+protocols.design_opt.Supercharge: eGFP.pdb SUM-DIFFS 59.0558 41.3563 -4.3887 -23.9426 4.1038 -5.7216 -19.4985 67.9183 0.0000 0.0000 0.0000 4.1522 19.1210 0.0000 2.9616 0.0000 38.2782 1.7998 0.0000 -74.6277 
+protocols.design_opt.Supercharge: eGFP.pdb score_terms: total fa_atr fa_rep fa_sol fa_intra_sol_xover4 lk_ball_wt fa_intra_rep fa_elec pro_close hbond_sr_bb hbond_lr_bb hbond_bb_sc hbond_sc dslf_fa13 rama_prepro omega fa_dun p_aa_pp yhh_planarity ref

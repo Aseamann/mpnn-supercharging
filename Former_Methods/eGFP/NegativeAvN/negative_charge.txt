@@ -1,0 +1,218 @@
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: Rosetta version: PyRosetta4.conda.m1.cxx11thread.serialization.python39.Release r414 2025.43+release.9fd5078c70 9fd5078c70dbd3d139526618074f384bba8cde37 http://www.pyrosetta.org 2025-10-23T17:08:57
+core.init: Rosetta extras: [cxx11thread, serialization]
+core.init: command: PyRosetta -ex1 -ex2aro -database /Users/austinseamann/mambaforge/envs/personal/lib/python3.9/site-packages/pyrosetta/database
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=43552078 seed_offset=0 real_seed=43552078 thread_index=0
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=43552078 RG_type=mt19937
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 985 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 0.504347 seconds.
+core.import_pose.import_pose: File 'eGFP.pdb' automatically determined to be of type PDB from contents.
+core.io.pose_from_sfr.PoseFromSFRBuilder: [ WARNING ] discarding 2 atoms at position 1 in file eGFP.pdb. Best match rsd_type:  MET:NtermProteinFull
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OXT on residue THR:CtermProteinFull 231
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/all.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/prepro.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.gly.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.pro.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.valile.txt
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+core.scoring.P_AA: shapovalov_lib::shap_p_aa_pp_smooth_level of 1( aka low_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/shapovalov/10deg/kappa131/a20.prop
+protocols.design_opt.Supercharge: Packrotamers
+core.pack.task: Packer task: initialize from command line() 
+basic.io.database: Database file opened: scoring/score_functions/elec_cp_reps.dat
+core.scoring.elec.util: Read 40 countpair representative atoms
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /Users/austinseamann/mambaforge/envs/personal/lib/python3.9/site-packages/pyrosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/Users/austinseamann/mambaforge/envs/personal/lib/python3.9/site-packages/pyrosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.116316 seconds to load from binary
+core.pack.pack_rotamers: built 6110 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+basic.thread_manager.RosettaThreadManager: Creating a thread pool of 1 threads.
+basic.thread_manager.RosettaThreadPool: Launched 0 new threads.
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5968 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6036 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: residue: 4  heavy: 9  sidechain: 5  AvNAPSA_value: 68.2
+protocols.design_opt.Supercharge: residue 6 is already negative
+protocols.design_opt.Supercharge: residue 7 is already negative
+protocols.design_opt.Supercharge: residue 18 is already negative
+protocols.design_opt.Supercharge: residue 20 is already negative
+protocols.design_opt.Supercharge: residue 22 is already negative
+protocols.design_opt.Supercharge: residue: 24  heavy: 8  sidechain: 5  AvNAPSA_value: 136.25
+protocols.design_opt.Supercharge: residue: 27  heavy: 9  sidechain: 5  AvNAPSA_value: 71.8
+protocols.design_opt.Supercharge: residue 33 is already negative
+protocols.design_opt.Supercharge: residue 35 is already negative
+protocols.design_opt.Supercharge: residue 37 is already negative
+protocols.design_opt.Supercharge: residue: 42  heavy: 9  sidechain: 5  AvNAPSA_value: 115.4
+protocols.design_opt.Supercharge: residue: 46  heavy: 9  sidechain: 5  AvNAPSA_value: 145
+protocols.design_opt.Supercharge: residue: 53  heavy: 9  sidechain: 5  AvNAPSA_value: 76
+protocols.design_opt.Supercharge: residue: 70  heavy: 9  sidechain: 5  AvNAPSA_value: 223.8
+protocols.design_opt.Supercharge: residue: 74  heavy: 11  sidechain: 5  AvNAPSA_value: 112.286
+protocols.design_opt.Supercharge: residue 77 is already negative
+protocols.design_opt.Supercharge: residue: 80  heavy: 9  sidechain: 5  AvNAPSA_value: 130.4
+protocols.design_opt.Supercharge: residue: 81  heavy: 9  sidechain: 5  AvNAPSA_value: 126.4
+protocols.design_opt.Supercharge: residue 83 is already negative
+protocols.design_opt.Supercharge: residue: 86  heavy: 9  sidechain: 5  AvNAPSA_value: 213.6
+protocols.design_opt.Supercharge: residue 91 is already negative
+protocols.design_opt.Supercharge: residue: 95  heavy: 9  sidechain: 5  AvNAPSA_value: 218.2
+protocols.design_opt.Supercharge: residue 96 is already negative
+protocols.design_opt.Supercharge: residue: 97  heavy: 11  sidechain: 5  AvNAPSA_value: 211.857
+protocols.design_opt.Supercharge: residue: 102  heavy: 9  sidechain: 5  AvNAPSA_value: 82
+protocols.design_opt.Supercharge: residue 103 is already negative
+protocols.design_opt.Supercharge: residue 104 is already negative
+protocols.design_opt.Supercharge: residue: 106  heavy: 8  sidechain: 5  AvNAPSA_value: 137.5
+protocols.design_opt.Supercharge: residue: 108  heavy: 9  sidechain: 5  AvNAPSA_value: 105.6
+protocols.design_opt.Supercharge: residue: 110  heavy: 11  sidechain: 5  AvNAPSA_value: 98.1429
+protocols.design_opt.Supercharge: residue 112 is already negative
+protocols.design_opt.Supercharge: residue: 114  heavy: 9  sidechain: 5  AvNAPSA_value: 133
+protocols.design_opt.Supercharge: residue 116 is already negative
+protocols.design_opt.Supercharge: residue 118 is already negative
+protocols.design_opt.Supercharge: residue: 122  heavy: 8  sidechain: 5  AvNAPSA_value: 213
+protocols.design_opt.Supercharge: residue: 123  heavy: 11  sidechain: 5  AvNAPSA_value: 110.571
+protocols.design_opt.Supercharge: residue 125 is already negative
+protocols.design_opt.Supercharge: residue: 127  heavy: 9  sidechain: 5  AvNAPSA_value: 114.8
+protocols.design_opt.Supercharge: residue 130 is already negative
+protocols.design_opt.Supercharge: residue: 132  heavy: 9  sidechain: 5  AvNAPSA_value: 97.8
+protocols.design_opt.Supercharge: residue 133 is already negative
+protocols.design_opt.Supercharge: residue 134 is already negative
+protocols.design_opt.Supercharge: residue: 136  heavy: 8  sidechain: 5  AvNAPSA_value: 167.25
+protocols.design_opt.Supercharge: residue: 141  heavy: 9  sidechain: 5  AvNAPSA_value: 108.4
+protocols.design_opt.Supercharge: residue 143 is already negative
+protocols.design_opt.Supercharge: residue: 145  heavy: 8  sidechain: 5  AvNAPSA_value: 117.25
+protocols.design_opt.Supercharge: residue: 147  heavy: 8  sidechain: 5  AvNAPSA_value: 120.5
+protocols.design_opt.Supercharge: residue: 150  heavy: 8  sidechain: 5  AvNAPSA_value: 113.75
+protocols.design_opt.Supercharge: residue 156 is already negative
+protocols.design_opt.Supercharge: residue: 157  heavy: 9  sidechain: 5  AvNAPSA_value: 70.6
+protocols.design_opt.Supercharge: residue: 158  heavy: 9  sidechain: 5  AvNAPSA_value: 49.6
+protocols.design_opt.Supercharge: residue: 159  heavy: 9  sidechain: 5  AvNAPSA_value: 79
+protocols.design_opt.Supercharge: residue: 160  heavy: 8  sidechain: 5  AvNAPSA_value: 126.75
+protocols.design_opt.Supercharge: residue: 163  heavy: 9  sidechain: 5  AvNAPSA_value: 115.6
+protocols.design_opt.Supercharge: residue: 165  heavy: 8  sidechain: 5  AvNAPSA_value: 129
+protocols.design_opt.Supercharge: residue: 167  heavy: 9  sidechain: 5  AvNAPSA_value: 110.6
+protocols.design_opt.Supercharge: residue: 169  heavy: 11  sidechain: 5  AvNAPSA_value: 93.4286
+protocols.design_opt.Supercharge: residue: 171  heavy: 8  sidechain: 5  AvNAPSA_value: 130.5
+protocols.design_opt.Supercharge: residue 173 is already negative
+protocols.design_opt.Supercharge: residue 174 is already negative
+protocols.design_opt.Supercharge: residue: 178  heavy: 9  sidechain: 5  AvNAPSA_value: 178.4
+protocols.design_opt.Supercharge: residue 181 is already negative
+protocols.design_opt.Supercharge: residue: 184  heavy: 9  sidechain: 5  AvNAPSA_value: 211.8
+protocols.design_opt.Supercharge: residue: 185  heavy: 9  sidechain: 5  AvNAPSA_value: 136.4
+protocols.design_opt.Supercharge: residue: 186  heavy: 8  sidechain: 5  AvNAPSA_value: 210.5
+protocols.design_opt.Supercharge: residue 191 is already negative
+protocols.design_opt.Supercharge: residue 198 is already negative
+protocols.design_opt.Supercharge: residue: 199  heavy: 8  sidechain: 5  AvNAPSA_value: 94.25
+protocols.design_opt.Supercharge: residue: 205  heavy: 9  sidechain: 5  AvNAPSA_value: 94
+protocols.design_opt.Supercharge: residue: 210  heavy: 9  sidechain: 5  AvNAPSA_value: 101.6
+protocols.design_opt.Supercharge: residue 211 is already negative
+protocols.design_opt.Supercharge: residue: 213  heavy: 8  sidechain: 5  AvNAPSA_value: 49.75
+protocols.design_opt.Supercharge: residue 214 is already negative
+protocols.design_opt.Supercharge: residue: 215  heavy: 9  sidechain: 5  AvNAPSA_value: 56.2
+protocols.design_opt.Supercharge: residue: 216  heavy: 11  sidechain: 5  AvNAPSA_value: 95.7143
+protocols.design_opt.Supercharge: residue 217 is already negative
+protocols.design_opt.Supercharge: residue 223 is already negative
+protocols.design_opt.Supercharge: there are 231 residues and 231 AvNAPSA values
+protocols.design_opt.Supercharge: Creating a resfile, it will be saved as ./resfile_output_Asc
+protocols.design_opt.Supercharge: Starting net charge is -7 and target_net_charge is -10
+protocols.design_opt.Supercharge: Mutate 158
+protocols.design_opt.Supercharge: Mutate 213
+protocols.design_opt.Supercharge: Mutate 215
+protocols.design_opt.Supercharge: PYMOL_SELECT AVNAPSA residues: 158+213+215+
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6016 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6019 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6019 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: NEW NAME FOR SUPERCHARGED OUTPUT: eGFP_AvNAPSA_neg_56_-11.pdb
+protocols.design_opt.Supercharge: eGFP_AvNAPSA_neg_56_-11.pdb  Net Charge of input structure = -7
+protocols.design_opt.Supercharge: eGFP_AvNAPSA_neg_56_-11.pdb  R=6, K=18, D=18, E=17
+protocols.design_opt.Supercharge: eGFP_AvNAPSA_neg_56_-11.pdb  Net Charge = -11
+protocols.design_opt.Supercharge: eGFP_AvNAPSA_neg_56_-11.pdb  Mutations: Q158E, N213D, K215E, 
+protocols.design_opt.Supercharge: eGFP_AvNAPSA_neg_56_-11.pdb  # of mutations: 3
+protocols.design_opt.Supercharge: eGFP_AvNAPSA_neg_56_-11.pdb  select 158+213+215+
+protocols.design_opt.Supercharge: Comparing energies of native and designed
+protocols.design_opt.Supercharge: Packing designed
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6019 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6019 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6019 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Packing native
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6036 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6036 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for┌───────────────────────────────────────────────────────────────────────────────┐
+│                                  PyRosetta-4                                  │
+│               Created in JHU by Sergey Lyskov and PyRosetta Team              │
+│               (C) Copyright Rosetta Commons Member Institutions               │
+│                                                                               │
+│ NOTE: USE OF PyRosetta FOR COMMERCIAL PURPOSES REQUIRES PURCHASE OF A LICENSE │
+│          See LICENSE.PyRosetta.md or email license@uw.edu for details         │
+└───────────────────────────────────────────────────────────────────────────────┘
+PyRosetta-4 2025 [Rosetta PyRosetta4.conda.m1.cxx11thread.serialization.python39.Release 2025.43+release.9fd5078c70dbd3d139526618074f384bba8cde37 2025-10-23T17:08:57] retrieved from: http://www.pyrosetta.org
+Net charge:  -11
+ interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6036 rotamers at 231 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.design_opt.Supercharge: Scoring native and design
+protocols.design_opt.Supercharge: Initialized vectors
+protocols.design_opt.Supercharge: Adding native energies
+protocols.design_opt.Supercharge: Adding designed energies
+protocols.design_opt.Supercharge: Subtracting design from native energies
+protocols.design_opt.Supercharge: eGFP.pdb 158 -0.9811 0.0000 0.0001 0.0155 0.0880 -0.0063 -0.1452 0.0676 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 -0.1055 0.0000 0.4138 -0.1898 0.0000 -1.2736 
+protocols.design_opt.Supercharge: eGFP.pdb 213 0.2109 0.2996 -0.0004 0.1059 0.0541 0.0482 -0.1539 0.3199 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 -0.0883 0.0000 0.3347 -0.0080 0.0000 -0.8055 
+protocols.design_opt.Supercharge: eGFP.pdb 215 -0.4325 0.2656 0.0000 -0.2235 -0.0272 0.0709 -1.4515 0.2857 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.1172 0.0000 1.6436 0.0167 0.0000 -2.0099 
+protocols.design_opt.Supercharge: eGFP.pdb SUM-DIFFS -1.2027 0.5652 -0.0002 -0.1022 0.1149 0.1127 -1.7507 0.6731 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 -0.0766 0.0000 2.3922 -0.1811 0.0000 -4.0890 
+protocols.design_opt.Supercharge: eGFP.pdb score_terms: total fa_atr fa_rep fa_sol fa_intra_sol_xover4 lk_ball_wt fa_intra_rep fa_elec pro_close hbond_sr_bb hbond_lr_bb hbond_bb_sc hbond_sc dslf_fa13 rama_prepro omega fa_dun p_aa_pp yhh_planarity ref

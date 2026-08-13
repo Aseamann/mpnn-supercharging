@@ -1,0 +1,81 @@
+NATAA
+start
+   1 A   PIKAA MRK
+   2 A   PIKAA VRK
+   4 A   NATAA  #same charge
+   7 A   NATRO  #has sc hbond energy=-1.04584
+   10 A   PIKAA TRK
+   12 A   PIKAA VRK
+   20 A   NATRO  #has sc hbond energy=-1.22803
+   22 A   NATRO  #has sc hbond energy=-0.546769
+   26 A   PIKAA HRK
+   27 A   NATAA  #same charge
+   31 A   PIKAA SRK
+   33 A   PIKAA ERK
+   39 A   PIKAA TRK
+   40 A   PIKAA YRK
+   44 A   PIKAA TRK
+   50 A   PIKAA TRK
+   51 A   NATRO  #has sc hbond energy=-1.92998
+   53 A   NATAA  #same charge
+   77 A   PIKAA DRK
+   78 A   NATRO  #has sc hbond energy=-1.42881
+   91 A   PIKAA ERK
+   96 A   PIKAA ERK
+   98 A   PIKAA TRK
+   100 A   PIKAA FRK
+   102 A   NATAA  #same charge
+   103 A   NATRO  #has sc hbond energy=-0.878056
+   108 A   NATAA  #same charge
+   110 A   NATAA  #same charge
+   112 A   NATRO  #has sc hbond energy=-1.30597
+   116 A   NATRO  #has sc hbond energy=-1.75344
+   118 A   PIKAA DRK
+   119 A   PIKAA TRK
+   123 A   NATAA  #same charge
+   125 A   PIKAA ERK
+   129 A   PIKAA IRK
+   130 A   PIKAA DRK
+   132 A   NATAA  #same charge
+   133 A   PIKAA ERK
+   134 A   PIKAA DRK
+   140 A   PIKAA HRK
+   143 A   NATRO  #has sc hbond energy=-1.65991
+   144 A   NATRO  #has sc hbond energy=-0.787705
+   145 A   NATRO  #has sc hbond energy=-1.65991
+   147 A   NATRO  #has sc hbond energy=-1.01282
+   148 A   NATRO  #has sc hbond energy=-0.794698
+   150 A   PIKAA NRK
+   154 A   PIKAA MRK
+   157 A   NATAA  #same charge
+   158 A   PIKAA QRK
+   159 A   NATAA  #same charge
+   163 A   NATAA  #same charge
+   165 A   PIKAA NRK
+   167 A   NATAA  #same charge
+   169 A   NATAA  #same charge
+   172 A   PIKAA IRK
+   173 A   PIKAA ERK
+   174 A   NATRO  #has sc hbond energy=-1.17752
+   176 A   NATRO  #has sc hbond energy=-1.44008
+   177 A   PIKAA VRK
+   179 A   PIKAA LRK
+   181 A   PIKAA DRK
+   183 A   PIKAA YRK
+   189 A   PIKAA IRK
+   191 A   PIKAA DRK
+   198 A   NATRO  #has sc hbond energy=-1.10443
+   199 A   PIKAA NRK
+   205 A   PIKAA QRK
+   207 A   PIKAA ARK
+   209 A   NATRO  #has sc hbond energy=-0.806599
+   210 A   NATAA  #same charge
+   211 A   NATRO  #has sc hbond energy=-1.42204
+   213 A   PIKAA NRK
+   214 A   NATRO  #has sc hbond energy=-1.62462
+   215 A   NATAA  #same charge
+   216 A   NATAA  #same charge
+   222 A   PIKAA LRK
+   228 A   PIKAA ARK
+   230 A   PIKAA IRK
+   231 A   PIKAA TRK
