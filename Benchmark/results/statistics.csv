@@ -1,0 +1,729 @@
+metric,comparison,stratum,n_pairs,test,statistic,p_raw,p_holm,median_diff,ci_low,ci_high,cliffs_delta
+hit_any,mpnn_soluble_vs_avnapsa,all,200,"mcnemar_exact(b=72,c=0); wilson ref [0.981,1.000] cmp [0.571,0.703]",72.0,4.235164736271502e-22,3.049318610115481e-20,0.36,,,0.36
+hit_rate,mpnn_soluble_vs_avnapsa,all,200,wilcoxon_signed_rank,0.0,1.4471689996169604e-19,1.027489989728042e-17,0.0,nan,nan,0.49
+median_mut_per_charge,mpnn_soluble_vs_avnapsa,all,200,wilcoxon_signed_rank,0.0,6.255951748846418e-34,4.5042852591694205e-32,0.23439325225039515,0.21875,0.25,0.940975
+median_d_reu_per_res,mpnn_soluble_vs_avnapsa,all,104,wilcoxon_signed_rank,805.0,4.3089544308220895e-10,1.637402683712394e-08,-0.0506351454273256,-0.0645289736241423,-0.0311573494028051,-0.3690828402366864
+median_d_hbond_strong,mpnn_soluble_vs_avnapsa,all,104,wilcoxon_signed_rank,549.5,1.9460770973262837e-10,7.784308389305135e-09,2.0,nan,nan,0.42474112426035504
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_avnapsa,all,200,wilcoxon_signed_rank,7338.0,0.0009359588727928084,0.059901367858739736,-0.4424026395939078,-0.739886760563401,-0.018199136090050527,-0.1551
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_avnapsa,all,200,wilcoxon_signed_rank,7313.0,0.0008389738940750448,0.05788919869117809,-0.001897804324612784,-0.004314758211792558,-0.00024138565991832506,-0.05135
+n_unique_mutation_sets,mpnn_soluble_vs_avnapsa,all,200,wilcoxon_signed_rank,0.0,6.82552064342828e-38,4.914374863268362e-36,9.0,nan,nan,1.0
+mean_pairwise_hamming,mpnn_soluble_vs_avnapsa,all,200,wilcoxon_signed_rank,0.0,1.4356003815849795e-34,1.0336322747411853e-32,8.88888888888889,8.38888888888889,9.522222222222222,1.0
+positional_entropy,mpnn_soluble_vs_avnapsa,all,200,wilcoxon_signed_rank,0.0,1.4361464127613523e-34,1.0340254171881737e-32,0.26993947478797087,0.25597628165124775,0.29405019098489676,1.0
+designable_coverage,mpnn_soluble_vs_avnapsa,all,200,wilcoxon_signed_rank,0.0,1.4352971182795503e-34,1.0334139251612762e-32,0.26249999999999996,0.2518656716417911,0.27083333333333337,0.930825
+hit_any,mpnn_soluble_vs_avnapsa,delta_q_density=-24,25,"mcnemar_exact(b=13,c=0); wilson ref [0.867,1.000] cmp [0.300,0.665]",13.0,0.000244140625,0.0166015625,0.52,,,0.52
+hit_rate,mpnn_soluble_vs_avnapsa,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,0.0001326859432953736,0.00809384254101779,1.0,0.5,1.0,0.68
+median_mut_per_charge,mpnn_soluble_vs_avnapsa,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,4.172325134277344e-06,0.18947368421052635,0.15999999999999992,0.21875,0.9424
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_avnapsa,delta_q_density=-24,25,wilcoxon_signed_rank,117.0,0.23036134243011475,1.0,-0.4091200000000086,-3.4261165048543845,0.7035563380281928,-0.12
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_avnapsa,delta_q_density=-24,25,wilcoxon_signed_rank,105.0,0.12664812803268433,1.0,-0.003497834032990532,-0.030312225338887222,0.0025646909286387576,-0.0496
+n_unique_mutation_sets,mpnn_soluble_vs_avnapsa,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,9.0,nan,nan,1.0
+mean_pairwise_hamming,mpnn_soluble_vs_avnapsa,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,9.6,8.066666666666666,13.622222222222222,1.0
+positional_entropy,mpnn_soluble_vs_avnapsa,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.3081481548941236,0.2362385895820694,0.3937640427806404,1.0
+designable_coverage,mpnn_soluble_vs_avnapsa,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.3,0.26,0.36249999999999993,1.0
+hit_any,mpnn_soluble_vs_avnapsa,delta_q_density=-16,25,"mcnemar_exact(b=10,c=0); wilson ref [0.867,1.000] cmp [0.407,0.766]",10.0,0.001953125,0.125,0.4,,,0.4
+hit_rate,mpnn_soluble_vs_avnapsa,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,0.00028961940975555264,0.017377164585333157,0.30000000000000004,nan,nan,0.64
+median_mut_per_charge,mpnn_soluble_vs_avnapsa,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,4.172325134277344e-06,0.20000000000000007,0.15384615384615385,0.25,0.9392
+median_d_reu_per_res,mpnn_soluble_vs_avnapsa,delta_q_density=-16,25,wilcoxon_signed_rank,10.0,2.562999725341797e-06,8.45789909362793e-05,-0.07942375599269058,-0.10398544211134089,-0.052614681539144795,-0.5392
+median_d_hbond_strong,mpnn_soluble_vs_avnapsa,delta_q_density=-16,25,wilcoxon_signed_rank,19.0,0.0004721993202747067,0.01605477688934003,3.0,nan,nan,0.4224
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_avnapsa,delta_q_density=-16,25,wilcoxon_signed_rank,78.0,0.021908342838287354,1.0,-1.1550471698113327,-3.270249999999983,-0.13196296296298726,-0.1328
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_avnapsa,delta_q_density=-16,25,wilcoxon_signed_rank,90.0,0.05157625675201416,1.0,-0.006063112060683218,-0.031698932490538456,0.0014503676612236394,-0.0816
+n_unique_mutation_sets,mpnn_soluble_vs_avnapsa,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,9.0,nan,nan,1.0
+mean_pairwise_hamming,mpnn_soluble_vs_avnapsa,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,9.666666666666666,8.533333333333335,11.377777777777778,1.0
+positional_entropy,mpnn_soluble_vs_avnapsa,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.2850827978323558,0.2596280560668013,0.3172480924241979,1.0
+designable_coverage,mpnn_soluble_vs_avnapsa,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.26415094339622636,0.2340425531914893,0.3114754098360656,0.9984
+hit_any,mpnn_soluble_vs_avnapsa,delta_q_density=-8,25,"mcnemar_exact(b=8,c=0); wilson ref [0.867,1.000] cmp [0.484,0.828]",8.0,0.0078125,0.4921875,0.31999999999999995,,,0.32
+hit_rate,mpnn_soluble_vs_avnapsa,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,0.0015598200168921137,0.0904695609797426,0.0,0.0,0.30000000000000004,0.48
+median_mut_per_charge,mpnn_soluble_vs_avnapsa,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,1.810804199678463e-05,0.0011045905618038625,0.23484848484848486,0.16666666666666674,0.2727272727272728,0.9136
+median_d_reu_per_res,mpnn_soluble_vs_avnapsa,delta_q_density=-8,25,wilcoxon_signed_rank,64.0,0.0067255496978759766,0.15468764305114746,-0.0316782621846564,-0.0663793881195982,-0.008842454971944098,-0.36
+median_d_hbond_strong,mpnn_soluble_vs_avnapsa,delta_q_density=-8,25,wilcoxon_signed_rank,52.5,0.04848749385688285,1.0,1.0,nan,nan,0.2832
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_avnapsa,delta_q_density=-8,25,wilcoxon_signed_rank,95.0,0.0709836483001709,1.0,-0.9909405940593885,-1.9543604651162991,0.4181716417910266,-0.3088
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_avnapsa,delta_q_density=-8,25,wilcoxon_signed_rank,127.0,0.3525196313858032,1.0,-0.0012748361361581972,-0.01089844827747033,0.0014280500243146754,-0.008
+n_unique_mutation_sets,mpnn_soluble_vs_avnapsa,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,9.0,nan,nan,1.0
+mean_pairwise_hamming,mpnn_soluble_vs_avnapsa,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,8.799999999999999,8.088888888888889,9.666666666666666,1.0
+positional_entropy,mpnn_soluble_vs_avnapsa,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.2562336126274985,0.2529384749058932,0.2813591789742508,1.0
+designable_coverage,mpnn_soluble_vs_avnapsa,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.24590163934426232,0.2063492063492063,0.2875,1.0
+hit_any,mpnn_soluble_vs_avnapsa,delta_q_density=-4,25,"mcnemar_exact(b=7,c=0); wilson ref [0.867,1.000] cmp [0.524,0.857]",7.0,0.015625,0.9375,0.28,,,0.28
+hit_rate,mpnn_soluble_vs_avnapsa,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,0.006655605482949377,0.35940269607926634,0.0,nan,nan,0.32
+median_mut_per_charge,mpnn_soluble_vs_avnapsa,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,3.816525962615782e-05,0.0022135850583171533,0.25,nan,nan,0.8768
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_avnapsa,delta_q_density=-4,25,wilcoxon_signed_rank,132.0,0.42614197731018066,1.0,-0.003774509803889936,-1.0569767441860307,0.22429577464788514,-0.2128
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_avnapsa,delta_q_density=-4,25,wilcoxon_signed_rank,85.0,0.036682069301605225,1.0,-0.0015861195364927916,-0.00843014828184252,0.0008211827822166562,-0.0112
+n_unique_mutation_sets,mpnn_soluble_vs_avnapsa,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,9.0,nan,nan,1.0
+mean_pairwise_hamming,mpnn_soluble_vs_avnapsa,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,6.133333333333334,5.466666666666667,6.466666666666667,1.0
+positional_entropy,mpnn_soluble_vs_avnapsa,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.1980842785518094,0.1643614677455724,0.2106753917765593,1.0
+designable_coverage,mpnn_soluble_vs_avnapsa,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.2295081967213115,0.2083333333333334,0.2567567567567568,1.0
+hit_any,mpnn_soluble_vs_avnapsa,delta_q_density=+4,25,"mcnemar_exact(b=11,c=0); wilson ref [0.867,1.000] cmp [0.371,0.733]",11.0,0.0009765625,0.064453125,0.43999999999999995,,,0.44
+hit_rate,mpnn_soluble_vs_avnapsa,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,0.0007891129890156299,0.04655766635192217,0.0,0.0,1.0,0.48
+median_mut_per_charge,mpnn_soluble_vs_avnapsa,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,4.172325134277344e-06,0.30000000000000004,0.25,0.33333333333333337,0.9712
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_avnapsa,delta_q_density=+4,25,wilcoxon_signed_rank,147.0,0.6915188431739807,1.0,-0.03262376237621112,-0.6271875000000122,0.4513592233009973,-0.0944
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_avnapsa,delta_q_density=+4,25,wilcoxon_signed_rank,150.0,0.7509929537773132,1.0,7.22451228736265e-05,-0.003827152773496434,0.005843242466806342,-0.0304
+n_unique_mutation_sets,mpnn_soluble_vs_avnapsa,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,9.0,nan,nan,1.0
+mean_pairwise_hamming,mpnn_soluble_vs_avnapsa,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,5.4,5.088888888888889,6.444444444444445,1.0
+positional_entropy,mpnn_soluble_vs_avnapsa,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.1803208581660482,0.1656716717468411,0.1976538359012702,1.0
+designable_coverage,mpnn_soluble_vs_avnapsa,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.19148936170212771,0.1774193548387097,0.22500000000000003,1.0
+hit_any,mpnn_soluble_vs_avnapsa,delta_q_density=+8,25,"mcnemar_exact(b=8,c=0); wilson ref [0.867,1.000] cmp [0.484,0.828]",8.0,0.0078125,0.4921875,0.31999999999999995,,,0.32
+hit_rate,mpnn_soluble_vs_avnapsa,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,0.003892417122778628,0.21408294175282455,0.0,nan,nan,0.36
+median_mut_per_charge,mpnn_soluble_vs_avnapsa,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,4.172325134277344e-06,0.2500000000000002,0.20833333333333337,0.28888888888888886,0.9712
+median_d_reu_per_res,mpnn_soluble_vs_avnapsa,delta_q_density=+8,25,wilcoxon_signed_rank,116.0,0.21998637914657593,1.0,-0.0100935532763348,-0.043975595280884704,0.0096974429249908,-0.2128
+median_d_hbond_strong,mpnn_soluble_vs_avnapsa,delta_q_density=+8,25,wilcoxon_signed_rank,44.5,0.004240218416628812,0.13568698933212198,2.0,nan,nan,0.3664
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_avnapsa,delta_q_density=+8,25,wilcoxon_signed_rank,113.0,0.19081425666809082,1.0,-0.179014084507081,-2.0286249999999986,0.6388461538461669,-0.1584
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_avnapsa,delta_q_density=+8,25,wilcoxon_signed_rank,96.0,0.07547956705093384,1.0,-0.004339967555549884,-0.017621574771254034,0.00034785204960463556,-0.0528
+n_unique_mutation_sets,mpnn_soluble_vs_avnapsa,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,9.0,nan,nan,1.0
+mean_pairwise_hamming,mpnn_soluble_vs_avnapsa,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,8.733333333333333,7.4,9.488888888888887,1.0
+positional_entropy,mpnn_soluble_vs_avnapsa,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.2598895955095976,0.2384783928969005,0.2929035379102005,1.0
+designable_coverage,mpnn_soluble_vs_avnapsa,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.2542372881355932,0.22222222222222218,0.2857142857142858,1.0
+hit_any,mpnn_soluble_vs_avnapsa,delta_q_density=+16,25,"mcnemar_exact(b=7,c=0); wilson ref [0.867,1.000] cmp [0.524,0.857]",7.0,0.015625,0.9375,0.28,,,0.28
+hit_rate,mpnn_soluble_vs_avnapsa,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,0.0017553794308967944,0.09830124813022048,0.0,0.0,0.19999999999999996,0.48
+median_mut_per_charge,mpnn_soluble_vs_avnapsa,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,4.172325134277344e-06,0.23529411764705876,0.18128654970760227,0.275,0.9584
+median_d_reu_per_res,mpnn_soluble_vs_avnapsa,delta_q_density=+16,25,wilcoxon_signed_rank,34.0,0.00021690130233764648,0.006290137767791748,-0.06309249231736269,-0.09628092884473989,-0.031240988667081398,-0.4432
+median_d_hbond_strong,mpnn_soluble_vs_avnapsa,delta_q_density=+16,25,wilcoxon_signed_rank,27.0,7.49826431274414e-05,0.0028493404388427734,4.0,2.0,7.0,0.6336
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_avnapsa,delta_q_density=+16,25,wilcoxon_signed_rank,133.0,0.4418373703956604,1.0,-0.9982733812949931,-3.0204185022026877,1.955441176470587,-0.1936
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_avnapsa,delta_q_density=+16,25,wilcoxon_signed_rank,120.0,0.2634761333465576,1.0,-0.0033402571010785476,-0.0334999249300767,0.0005251012287843526,-0.1136
+n_unique_mutation_sets,mpnn_soluble_vs_avnapsa,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,9.0,nan,nan,1.0
+mean_pairwise_hamming,mpnn_soluble_vs_avnapsa,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,12.311111111111112,11.022222222222222,13.511111111111113,1.0
+positional_entropy,mpnn_soluble_vs_avnapsa,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.3665476078219026,0.3278644868255375,0.4039176750355516,1.0
+designable_coverage,mpnn_soluble_vs_avnapsa,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.3125,0.27083333333333337,0.34328358208955234,1.0
+hit_any,mpnn_soluble_vs_avnapsa,delta_q_density=+24,25,"mcnemar_exact(b=8,c=0); wilson ref [0.867,1.000] cmp [0.484,0.828]",8.0,0.0078125,0.4921875,0.31999999999999995,,,0.32
+hit_rate,mpnn_soluble_vs_avnapsa,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,0.0015598200168921137,0.0904695609797426,0.0,0.0,0.30000000000000004,0.48
+median_mut_per_charge,mpnn_soluble_vs_avnapsa,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,4.172325134277344e-06,0.20000000000000007,0.16798941798941802,0.2186147186147186,0.9488
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_avnapsa,delta_q_density=+24,25,wilcoxon_signed_rank,136.0,0.49078595638275146,1.0,-0.6650373134328333,-3.8663392857142966,1.4219021739130397,-0.1744
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_avnapsa,delta_q_density=+24,25,wilcoxon_signed_rank,149.0,0.7309892177581787,1.0,-0.00053998258958321,-0.01877348596432249,0.016274393340919735,-0.0592
+n_unique_mutation_sets,mpnn_soluble_vs_avnapsa,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,9.0,nan,nan,1.0
+mean_pairwise_hamming,mpnn_soluble_vs_avnapsa,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,14.911111111111111,13.755555555555556,16.6,1.0
+positional_entropy,mpnn_soluble_vs_avnapsa,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.4648778680911882,0.4098689383168287,0.5283317257630609,1.0
+designable_coverage,mpnn_soluble_vs_avnapsa,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.33333333333333337,0.2903225806451613,0.4181818181818182,1.0
+hit_any,mpnn_soluble_vs_mpnn_halo,all,200,"mcnemar_exact(b=0,c=0); wilson ref [0.981,1.000] cmp [0.981,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_halo,all,200,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_halo,all,200,wilcoxon_signed_rank,2735.0,0.0030442931975248107,0.1704804190613894,0.0,nan,nan,0.101825
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_halo,all,104,wilcoxon_signed_rank,1455.0,3.556051945596391e-05,0.0010668155836789173,-0.0211083162437356,-0.0418500276173052,-0.0099589907809976,-0.22485207100591717
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_halo,all,104,wilcoxon_signed_rank,994.0,5.814586346651329e-07,2.267688675194018e-05,-2.0,nan,nan,-0.2677514792899408
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_halo,all,200,wilcoxon_signed_rank,7393.0,0.0011869728105488545,0.07477928706457783,-0.3004414014687897,-0.3869534313725397,-0.07084965234182317,-0.08855
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_halo,all,200,wilcoxon_signed_rank,8529.0,0.06347082851458759,1.0,-0.0007923446505522236,-0.0019116357013598817,0.000215511865589324,-0.01735
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_halo,all,200,wilcoxon_signed_rank,43.5,1.3331523768452766e-09,9.332066637916936e-08,0.0,nan,nan,0.229475
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_halo,all,200,wilcoxon_signed_rank,4976.5,5.995678794609199e-10,4.077061580334255e-08,2.677777777777778,2.022222222222222,3.2111111111111112,0.3316
+positional_entropy,mpnn_soluble_vs_mpnn_halo,all,200,wilcoxon_signed_rank,5279.0,5.834556363203262e-09,3.967498326978218e-07,0.08054787334397229,0.0688072450182156,0.10523566468841845,0.35005
+designable_coverage,mpnn_soluble_vs_mpnn_halo,all,200,wilcoxon_signed_rank,4348.5,1.8234889581146742e-10,1.2399724915179785e-08,0.08098360655737702,0.05202702702702702,0.09999999999999998,0.259225
+hit_any,mpnn_soluble_vs_mpnn_halo,delta_q_density=-24,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_halo,delta_q_density=-24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_halo,delta_q_density=-24,25,wilcoxon_signed_rank,54.5,0.7546567300568573,1.0,0.0,nan,nan,0.0192
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_halo,delta_q_density=-24,25,wilcoxon_signed_rank,152.0,0.7914759516716003,1.0,0.1942537313432524,-0.8901079136690413,0.8711650485436735,0.0528
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_halo,delta_q_density=-24,25,wilcoxon_signed_rank,103.0,0.1134914755821228,1.0,-0.003386369068017925,-0.029277878394611767,0.002690572249881673,-0.024
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_halo,delta_q_density=-24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_halo,delta_q_density=-24,25,wilcoxon_signed_rank,46.0,0.0010271072387695312,0.03184032440185547,-6.844444444444442,-10.8,-1.488888888888888,-0.5216
+positional_entropy,mpnn_soluble_vs_mpnn_halo,delta_q_density=-24,25,wilcoxon_signed_rank,39.0,0.000429689884185791,0.013320386409759521,-0.2135964714504382,-0.32987744485409665,-0.07241248294370572,-0.6032
+designable_coverage,mpnn_soluble_vs_mpnn_halo,delta_q_density=-24,25,wilcoxon_signed_rank,60.0,0.01012799054939065,0.2633277542841569,-0.06382978723404265,-0.17045454545454553,-0.015151515151515138,-0.312
+hit_any,mpnn_soluble_vs_mpnn_halo,delta_q_density=-16,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_halo,delta_q_density=-16,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_halo,delta_q_density=-16,25,wilcoxon_signed_rank,51.0,0.6091628911933872,1.0,0.0,nan,nan,0.048
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_halo,delta_q_density=-16,25,wilcoxon_signed_rank,91.0,0.055070459842681885,0.8260568976402283,-0.01827390346968,-0.0486720836004043,0.0001447341685204967,-0.2096
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_halo,delta_q_density=-16,25,wilcoxon_signed_rank,94.0,0.28758586740693004,1.0,-1.0,-3.0,0.0,-0.1424
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_halo,delta_q_density=-16,25,wilcoxon_signed_rank,120.0,0.2634761333465576,1.0,-0.34207920792080415,-1.7855232558139562,0.7423788546255565,-0.072
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_halo,delta_q_density=-16,25,wilcoxon_signed_rank,108.0,0.14847958087921143,1.0,-0.0009277282256544561,-0.025130500028934688,0.003317823618549598,-0.0272
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_halo,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,0.31731050786291415,1.0,0.0,nan,nan,-0.04
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_halo,delta_q_density=-16,25,wilcoxon_signed_rank,162.5,1.0,1.0,-0.4666666666666668,-3.355555555555556,3.844444444444445,0.064
+positional_entropy,mpnn_soluble_vs_mpnn_halo,delta_q_density=-16,25,wilcoxon_signed_rank,147.0,0.6915188431739807,1.0,-0.0097916579990176,-0.09510025458210841,0.11656756671872329,0.0016
+designable_coverage,mpnn_soluble_vs_mpnn_halo,delta_q_density=-16,25,wilcoxon_signed_rank,138.5,0.7424669730514414,0.9657062135281778,-0.045454545454545525,-0.06779661016949157,0.1071428571428572,0.0112
+hit_any,mpnn_soluble_vs_mpnn_halo,delta_q_density=-8,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_halo,delta_q_density=-8,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_halo,delta_q_density=-8,25,wilcoxon_signed_rank,43.0,0.8607986106330248,1.0,0.0,nan,nan,-0.0368
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_halo,delta_q_density=-8,25,wilcoxon_signed_rank,87.0,0.04215019941329956,0.7165533900260925,0.02291098360463971,-0.006651080593527901,0.03823586028908259,0.1168
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_halo,delta_q_density=-8,25,wilcoxon_signed_rank,124.0,0.6657989395719883,1.0,0.0,-1.0,1.0,-0.0048
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_halo,delta_q_density=-8,25,wilcoxon_signed_rank,120.0,0.2634761333465576,1.0,-0.22237864077666814,-0.6467164179104825,0.28806167400883,-0.1168
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_halo,delta_q_density=-8,25,wilcoxon_signed_rank,150.0,0.7509929537773132,1.0,-0.0008111810429286548,-0.004040216824097609,0.0035346430993502542,-0.0208
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_halo,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,0.0006772921726461462,0.03251002428701502,1.0,nan,nan,0.56
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_halo,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,4.755555555555556,3.7555555555555555,6.37777777777778,0.952
+positional_entropy,mpnn_soluble_vs_mpnn_halo,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.13223769648168893,0.1132375478123851,0.17515135940619542,0.888
+designable_coverage,mpnn_soluble_vs_mpnn_halo,delta_q_density=-8,25,wilcoxon_signed_rank,1.0,2.0705605648246455e-05,0.0007246961976886259,0.13095238095238101,0.09999999999999998,0.175,0.8128
+hit_any,mpnn_soluble_vs_mpnn_halo,delta_q_density=-4,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_halo,delta_q_density=-4,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_halo,delta_q_density=-4,25,wilcoxon_signed_rank,40.0,0.25435417986445963,1.0,0.0,nan,nan,0.1552
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_halo,delta_q_density=-4,25,wilcoxon_signed_rank,128.0,0.3665854334831238,1.0,-0.1887817258883046,-0.3611255411254959,0.3042857142856903,-0.1104
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_halo,delta_q_density=-4,25,wilcoxon_signed_rank,154.0,0.8325093984603882,1.0,-0.00029562682892619874,-0.004691111511077373,0.002421829881946169,-0.024
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_halo,delta_q_density=-4,25,wilcoxon_signed_rank,3.0,0.0004626659921152729,0.022670633613648374,1.0,0.0,2.0,0.648
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_halo,delta_q_density=-4,25,wilcoxon_signed_rank,1.0,1.1920928955078125e-07,4.887580871582031e-06,3.066666666666667,2.3333333333333335,4.7333333333333325,0.9008
+positional_entropy,mpnn_soluble_vs_mpnn_halo,delta_q_density=-4,25,wilcoxon_signed_rank,3.0,2.980232238769531e-07,1.1622905731201172e-05,0.1009350378799144,0.0765807648865735,0.1183204602073569,0.8848
+designable_coverage,mpnn_soluble_vs_mpnn_halo,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.14772727272727268,0.1351351351351352,0.16091954022988508,0.9328
+hit_any,mpnn_soluble_vs_mpnn_halo,delta_q_density=+4,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_halo,delta_q_density=+4,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_halo,delta_q_density=+4,25,wilcoxon_signed_rank,26.5,0.3264271543115763,1.0,0.0,nan,nan,0.1424
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_halo,delta_q_density=+4,25,wilcoxon_signed_rank,144.0,0.6338268518447876,1.0,-0.07445544554455097,-0.3612230215827948,0.6259999999999903,-0.088
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_halo,delta_q_density=+4,25,wilcoxon_signed_rank,147.0,0.6915188431739807,1.0,-0.0007270294254632659,-0.0038262145350407284,0.001207913036086028,-0.0272
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_halo,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,0.011209733383895203,0.48201853550749374,0.0,nan,nan,0.296
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_halo,delta_q_density=+4,25,wilcoxon_signed_rank,1.0,1.1920928955078125e-07,4.887580871582031e-06,1.1333333333333329,0.7111111111111112,1.5333333333333332,0.5104
+positional_entropy,mpnn_soluble_vs_mpnn_halo,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.045981379510780684,0.030632735982066284,0.06553546324156939,0.7152
+designable_coverage,mpnn_soluble_vs_mpnn_halo,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,1.821529714896801e-05,0.0006739659945118163,0.06382978723404259,0.0416666666666666,0.09433962264150941,0.7232
+hit_any,mpnn_soluble_vs_mpnn_halo,delta_q_density=+8,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_halo,delta_q_density=+8,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_halo,delta_q_density=+8,25,wilcoxon_signed_rank,49.5,0.03816791291016695,1.0,0.05555555555555558,0.0,0.11111111111111116,0.2336
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_halo,delta_q_density=+8,25,wilcoxon_signed_rank,73.0,0.014722049236297607,0.30916303396224976,-0.0334564429691713,-0.059716334170212805,-0.0136724782230441,-0.3408
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_halo,delta_q_density=+8,25,wilcoxon_signed_rank,32.0,0.0007205888194684586,0.023779431042459134,-3.0,nan,nan,-0.456
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_halo,delta_q_density=+8,25,wilcoxon_signed_rank,129.0,0.3809836506843567,1.0,-0.1225108225108755,-0.6488157894736943,0.3841875000000168,-0.2288
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_halo,delta_q_density=+8,25,wilcoxon_signed_rank,142.0,0.5964998602867126,1.0,0.0007014339352937604,-0.009218531522527607,0.005099550585139667,-0.0336
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_halo,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,0.002959748749966364,0.1391081912484191,0.0,nan,nan,0.3648
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_halo,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,3.088888888888889,1.955555555555554,3.9555555555555557,0.72
+positional_entropy,mpnn_soluble_vs_mpnn_halo,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.1053287201101186,0.0699568787734888,0.1311097289774189,0.8848
+designable_coverage,mpnn_soluble_vs_mpnn_halo,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,2.7015948487105512e-05,0.0009185422485615874,0.1071428571428572,0.04081632653061229,0.1132075471698113,0.6912
+hit_any,mpnn_soluble_vs_mpnn_halo,delta_q_density=+16,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_halo,delta_q_density=+16,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_halo,delta_q_density=+16,25,wilcoxon_signed_rank,43.5,0.06734991793925268,1.0,0.021739130434782594,0.0,0.04166666666666663,0.1328
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_halo,delta_q_density=+16,25,wilcoxon_signed_rank,17.0,1.233816146850586e-05,0.0003948211669921875,-0.0980944758703945,-0.1107168149386486,-0.0534905920287251,-0.5936
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_halo,delta_q_density=+16,25,wilcoxon_signed_rank,14.0,9.801045341867182e-05,0.0036263867764908574,-3.0,nan,nan,-0.4976
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_halo,delta_q_density=+16,25,wilcoxon_signed_rank,79.0,0.023649930953979492,1.0,-1.2558333333333282,-3.5715740740740642,-0.27816901408453276,-0.2256
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_halo,delta_q_density=+16,25,wilcoxon_signed_rank,158.0,0.9158032536506653,1.0,0.0008970444761305929,-0.02392573054154279,0.013551742131487576,0.008
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_halo,delta_q_density=+16,25,wilcoxon_signed_rank,1.5,0.4142161782425252,1.0,0.0,nan,nan,0.0416
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_halo,delta_q_density=+16,25,wilcoxon_signed_rank,9.0,1.9669532775878906e-06,7.277727127075195e-05,5.555555555555555,3.288888888888887,6.644444444444444,0.6768
+positional_entropy,mpnn_soluble_vs_mpnn_halo,delta_q_density=+16,25,wilcoxon_signed_rank,10.0,2.562999725341797e-06,8.71419906616211e-05,0.158839108294652,0.1188697869667574,0.2115112323390097,0.76
+designable_coverage,mpnn_soluble_vs_mpnn_halo,delta_q_density=+16,25,wilcoxon_signed_rank,30.0,0.00012022256851196289,0.0037268996238708496,0.10169491525423735,0.0204081632653062,0.1375,0.5952
+hit_any,mpnn_soluble_vs_mpnn_halo,delta_q_density=+24,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_halo,delta_q_density=+24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_halo,delta_q_density=+24,25,wilcoxon_signed_rank,53.0,0.2659466461059248,1.0,0.0,nan,nan,0.0752
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_halo,delta_q_density=+24,25,wilcoxon_signed_rank,99.0,0.09031611680984497,1.0,-1.2043171806167907,-2.1988839285714477,0.44926056338029197,-0.12
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_halo,delta_q_density=+24,25,wilcoxon_signed_rank,121.0,0.2751842737197876,1.0,-0.0029111304851699993,-0.019078057648509672,0.004030288576738594,-0.0496
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_halo,delta_q_density=+24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_halo,delta_q_density=+24,25,wilcoxon_signed_rank,63.0,0.006129205226898193,0.1777469515800476,4.022222222222222,1.0,6.28888888888889,0.4304
+positional_entropy,mpnn_soluble_vs_mpnn_halo,delta_q_density=+24,25,wilcoxon_signed_rank,75.0,0.017312347888946533,0.421875,0.14196035606364582,0.03129406236190263,0.18993353242425037,0.3952
+designable_coverage,mpnn_soluble_vs_mpnn_halo,delta_q_density=+24,25,wilcoxon_signed_rank,107.0,0.3457507008948919,0.9657062135281778,0.03749999999999998,-0.04255319148936165,0.07547169811320753,0.2016
+hit_any,mpnn_soluble_vs_mpnn_hyper,all,200,"mcnemar_exact(b=0,c=0); wilson ref [0.981,1.000] cmp [0.981,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_hyper,all,200,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_hyper,all,200,wilcoxon_signed_rank,2399.5,9.905051395655018e-06,0.0006141131865306111,0.0,nan,nan,0.16135
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_hyper,all,104,wilcoxon_signed_rank,1932.0,0.009660217026221565,0.21252477457687444,-0.01308448219873325,-0.019966404279844224,-0.006485222941472649,-0.10724852071005918
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_hyper,all,104,wilcoxon_signed_rank,1404.0,0.12066672194105739,1.0,0.0,nan,nan,-0.06832470414201183
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_hyper,all,200,wilcoxon_signed_rank,7747.0,0.004953350677698733,0.297201040661924,-0.29467929131142845,-0.5413310201012074,-0.10165178571429578,-0.08775
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_hyper,all,200,wilcoxon_signed_rank,8316.0,0.034363940045743634,1.0,-0.001233991827489539,-0.002280991509464314,6.566649902439714e-05,-0.01385
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_hyper,all,200,wilcoxon_signed_rank,50.0,2.5906609998268876e-08,1.7616494798822835e-06,0.0,nan,nan,0.18025
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_hyper,all,200,wilcoxon_signed_rank,7486.0,0.0017568914819081755,0.05270674445724526,1.2777777777777777,0.5222222222222221,2.1000000000000005,0.14305
+positional_entropy,mpnn_soluble_vs_mpnn_hyper,all,200,wilcoxon_signed_rank,7841.0,0.0070313476468653255,0.20390908175909445,0.03875292499587521,0.01761103783086289,0.05906033065946881,0.12235
+designable_coverage,mpnn_soluble_vs_mpnn_hyper,all,200,wilcoxon_signed_rank,5216.5,1.5235165207928583e-07,6.246417735250719e-06,0.05830188679245285,0.037500000000000006,0.08134920634920637,0.234225
+hit_any,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-24,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-24,25,wilcoxon_signed_rank,115.0,0.9861333548723077,1.0,0.0,-0.01851851851851849,0.024116396689809156,0.0032
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-24,25,wilcoxon_signed_rank,98.0,0.08513903617858887,1.0,0.9975242718446964,0.1435855263157535,1.8288306451613252,0.1488
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-24,25,wilcoxon_signed_rank,160.0,0.9578450322151184,1.0,8.072826975957792e-05,-0.005711425645828383,0.010230919140304828,0.0176
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-24,25,wilcoxon_signed_rank,38.0,0.0003764033317565918,0.012044906616210938,-8.933333333333334,-12.844444444444445,-2.9333333333333327,-0.6272
+positional_entropy,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-24,25,wilcoxon_signed_rank,29.0,0.000102996826171875,0.003398895263671875,-0.31898163926712925,-0.454082477466433,-0.0961087453478876,-0.6736
+designable_coverage,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-24,25,wilcoxon_signed_rank,27.0,0.0007353193273928831,0.02132426049439361,-0.16326530612244894,-0.2033898305084746,-0.06382978723404265,-0.5152
+hit_any,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-16,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-16,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-16,25,wilcoxon_signed_rank,28.0,0.221330082993901,1.0,0.0,nan,nan,0.112
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-16,25,wilcoxon_signed_rank,125.0,0.325391948223114,1.0,-0.013213776872125903,-0.0486167022234877,0.013779075137803798,-0.1072
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-16,25,wilcoxon_signed_rank,59.5,0.41448520063042593,1.0,0.0,nan,nan,-0.024
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-16,25,wilcoxon_signed_rank,150.0,0.7509929537773132,1.0,-0.49494565217392505,-1.3444607843137453,1.1135682819382993,0.0176
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-16,25,wilcoxon_signed_rank,126.0,0.33878785371780396,1.0,-0.0015119675589244652,-0.013262832889234133,0.0018380922910123942,-0.0368
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-16,25,wilcoxon_signed_rank,2.0,0.5637028616507731,1.0,0.0,nan,nan,0.04
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-16,25,wilcoxon_signed_rank,139.0,0.5424043536186218,1.0,-0.844444444444445,-4.711111111111112,2.844444444444445,-0.0976
+positional_entropy,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-16,25,wilcoxon_signed_rank,121.0,0.2751842737197876,1.0,-0.03296909660420472,-0.15581076924877663,0.0914938624934378,-0.1904
+designable_coverage,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-16,25,wilcoxon_signed_rank,103.0,0.17931823604537578,0.9187647061180171,-0.08196721311475408,-0.175,0.02380952380952378,-0.2144
+hit_any,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-8,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-8,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-8,25,wilcoxon_signed_rank,19.5,0.22863963633602935,1.0,0.0,nan,nan,0.1152
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-8,25,wilcoxon_signed_rank,157.0,0.8948604464530945,1.0,-0.000413664123227301,-0.014464508932754399,0.0206824419824794,0.0176
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-8,25,wilcoxon_signed_rank,56.0,0.06314420901694494,1.0,0.0,-1.0,1.0,0.1856
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-8,25,wilcoxon_signed_rank,161.0,0.978915274143219,1.0,-0.1327664974619012,-0.8137665198238508,1.0648239436619704,-0.0784
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-8,25,wilcoxon_signed_rank,157.0,0.8948604464530945,1.0,-0.0015185569700242318,-0.003894360731985902,0.005194683902135067,-0.0112
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,0.00040754117273447004,0.020377058636723504,1.0,0.0,3.0,0.64
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-8,25,wilcoxon_signed_rank,1.0,1.1920928955078125e-07,4.887580871582031e-06,5.044444444444444,4.311111111111112,6.4444444444444455,0.8816
+positional_entropy,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-8,25,wilcoxon_signed_rank,3.0,2.980232238769531e-07,1.1622905731201172e-05,0.16406083232990537,0.1262157945897643,0.19927027127295427,0.8592
+designable_coverage,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-8,25,wilcoxon_signed_rank,8.0,1.4901161193847656e-06,5.6624412536621094e-05,0.11904761904761912,0.0952380952380952,0.2,0.7536
+hit_any,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-4,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-4,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-4,25,wilcoxon_signed_rank,42.5,0.3180008665637304,1.0,0.0,nan,nan,0.152
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-4,25,wilcoxon_signed_rank,135.0,0.4741646647453308,1.0,-0.14709821428571246,-0.6928431372548831,0.18186619718310482,-0.0752
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-4,25,wilcoxon_signed_rank,139.0,0.5424043536186218,1.0,-0.0011915678415491682,-0.005024368428212522,0.002403603279578337,0.0368
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.547279998415179e-05,0.002940058399160045,2.0,nan,nan,0.7856
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,3.022222222222222,2.488888888888889,4.088888888888889,0.9504
+positional_entropy,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.1018716102162849,0.08410827904740381,0.13474110398196,0.952
+designable_coverage,mpnn_soluble_vs_mpnn_hyper,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.16949152542372883,0.1375,0.1891891891891892,0.9808
+hit_any,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+4,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+4,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+4,25,wilcoxon_signed_rank,25.0,0.08336645406055253,1.0,0.0,nan,nan,0.2464
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+4,25,wilcoxon_signed_rank,110.0,0.16449612379074097,1.0,-0.20074074074072734,-0.4868604651162585,0.137851851851856,-0.1584
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+4,25,wilcoxon_signed_rank,139.0,0.5424043536186218,1.0,0.001741568070774413,-0.0029624009668032247,0.006262378413772862,0.0048
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+4,25,wilcoxon_signed_rank,5.0,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+4,25,wilcoxon_signed_rank,162.0,1.0,1.0,-0.08888888888888946,-0.5555555555555554,0.4222222222222225,0.0512
+positional_entropy,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+4,25,wilcoxon_signed_rank,157.0,0.8948604464530945,1.0,0.004576195329686311,-0.016603667039009395,0.018425743370836495,0.0112
+designable_coverage,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+4,25,wilcoxon_signed_rank,93.0,0.0626264214515686,0.4383849501609802,0.020833333333333287,-0.016129032258064502,0.05454545454545459,0.3552
+hit_any,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+8,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+8,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+8,25,wilcoxon_signed_rank,61.0,0.1003394685603176,1.0,0.045454545454545414,0.0,0.0625,0.2032
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+8,25,wilcoxon_signed_rank,129.0,0.3809836506843567,1.0,-0.0084527655651216,-0.020098219655809102,0.012059062931759297,-0.1712
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+8,25,wilcoxon_signed_rank,54.0,0.030690976090686103,0.8286563544485248,-1.0,nan,nan,-0.2736
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+8,25,wilcoxon_signed_rank,58.0,0.0037809014320373535,0.23441588878631592,-0.8545185185185104,-1.2601630434782436,-0.17673267326733122,-0.2384
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+8,25,wilcoxon_signed_rank,121.0,0.2751842737197876,1.0,-0.0010326968227437616,-0.008224180047200047,0.0009172806112264231,-0.0304
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+8,25,wilcoxon_signed_rank,1.5,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+8,25,wilcoxon_signed_rank,146.5,0.6915188431739807,1.0,0.04444444444444429,-1.1333333333333329,1.1999999999999993,0.1072
+positional_entropy,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+8,25,wilcoxon_signed_rank,152.0,0.7914759516716003,1.0,0.009066791859624002,-0.024267267664464742,0.027518035894743692,0.0688
+designable_coverage,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+8,25,wilcoxon_signed_rank,17.0,0.00023304255763850054,0.006991276729155016,0.050847457627118675,0.03749999999999998,0.1071428571428571,0.6048
+hit_any,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+16,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+16,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+16,25,wilcoxon_signed_rank,28.5,0.007424269891981643,0.39803123474121094,0.027027027027026973,0.0,0.06666666666666654,0.2864
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+16,25,wilcoxon_signed_rank,61.0,0.0050716400146484375,0.1217193603515625,-0.0319982156822089,-0.0486285220418219,-0.008194997253473203,-0.2576
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+16,25,wilcoxon_signed_rank,73.0,0.08110995021124462,1.0,-1.0,nan,nan,-0.1888
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+16,25,wilcoxon_signed_rank,69.0,0.010510802268981934,0.5991157293319702,-1.7136940298507781,-3.4737946428571647,-0.5621370967741974,-0.296
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+16,25,wilcoxon_signed_rank,118.0,0.24106645584106445,1.0,-0.0020175031328227844,-0.022705717925025626,0.0025716437051931385,-0.0496
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+16,25,wilcoxon_signed_rank,1.5,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+16,25,wilcoxon_signed_rank,64.0,0.0067255496978759766,0.18831539154052734,2.288888888888887,-0.9111111111111105,3.2,0.4032
+positional_entropy,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+16,25,wilcoxon_signed_rank,70.0,0.011453330516815186,0.3206932544708252,0.07421948860342642,-0.022876970091677273,0.10659007133112608,0.4528
+designable_coverage,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+16,25,wilcoxon_signed_rank,12.0,8.051662013688955e-05,0.0025765318443804657,0.11864406779661019,0.06,0.16250000000000003,0.688
+hit_any,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+24,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+24,25,wilcoxon_signed_rank,31.0,0.0176206611104818,0.8634123944136082,0.021276595744680882,0.0,0.03703703703703709,0.1664
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+24,25,wilcoxon_signed_rank,82.0,0.029578447341918945,1.0,-1.1857835820895417,-4.442767857142847,0.2517605633802871,-0.168
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+24,25,wilcoxon_signed_rank,71.0,0.012466490268707275,0.7978553771972656,-0.010399981413250381,-0.03577377724832431,-0.00021413917436041707,-0.0784
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+24,25,wilcoxon_signed_rank,112.0,0.18172985315322876,1.0,0.9111111111111079,-0.15555555555555323,3.066666666666668,0.1984
+positional_entropy,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+24,25,wilcoxon_signed_rank,115.0,0.20993918180465698,1.0,0.039551397691234,0.005013908379519205,0.07469586348875301,0.2416
+designable_coverage,mpnn_soluble_vs_mpnn_hyper,delta_q_density=+24,25,wilcoxon_signed_rank,45.0,0.004672957316230428,0.12616984753822155,0.05405405405405406,0.0,0.11111111111111116,0.352
+hit_any,mpnn_soluble_vs_mpnn_soluble_hbond_protected,all,56,"mcnemar_exact(b=0,c=0); wilson ref [0.936,1.000] cmp [0.936,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_soluble_hbond_protected,all,56,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_soluble_hbond_protected,all,56,wilcoxon_signed_rank,130.0,0.020740796815702862,0.9955582471537374,0.0,nan,nan,-0.18176020408163265
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_soluble_hbond_protected,all,32,wilcoxon_signed_rank,254.0,0.8609301364049315,1.0,0.0017179203929770497,-0.015633692129439603,0.022984352352667603,0.111328125
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_soluble_hbond_protected,all,32,wilcoxon_signed_rank,52.0,0.0003288219728717943,0.011508769050512799,-2.0,nan,nan,-0.4189453125
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_soluble_hbond_protected,all,56,wilcoxon_signed_rank,775.0,0.8511800801472735,1.0,0.09137059859156693,-0.22860676056339682,0.3045311646282123,-0.008928571428571428
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_soluble_hbond_protected,all,56,wilcoxon_signed_rank,634.0,0.18097408261285086,1.0,0.0010268580799440152,-0.0013435881521516313,0.003580968591563427,0.05038265306122449
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_soluble_hbond_protected,all,56,wilcoxon_signed_rank,12.0,0.007075383933466031,0.3183922770059714,0.0,nan,nan,0.19451530612244897
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_soluble_hbond_protected,all,56,wilcoxon_signed_rank,295.0,0.00011662779208063806,0.0038487171386610564,0.8222222222222215,0.5555555555555554,1.3222222222222224,0.24362244897959184
+positional_entropy,mpnn_soluble_vs_mpnn_soluble_hbond_protected,all,56,wilcoxon_signed_rank,185.0,5.724332802956412e-07,2.003516481034744e-05,-0.081170079538531,-0.10401181392985198,-0.0506795868712856,-0.3469387755102041
+designable_coverage,mpnn_soluble_vs_mpnn_soluble_hbond_protected,all,56,wilcoxon_signed_rank,19.0,2.0928421512210112e-10,1.4022042413180776e-08,-0.09131476489967055,-0.12666617751363515,-0.06272573901091252,-0.3510841836734694
+hit_any,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-24,7,"mcnemar_exact(b=0,c=0); wilson ref [0.646,1.000] cmp [0.646,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-24,7,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-24,7,wilcoxon_signed_rank,0.0,0.027707849358079864,1.0,-0.05263157894736836,-0.09090909090909094,-0.033333333333333326,-0.4897959183673469
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-24,7,wilcoxon_signed_rank,13.0,0.9375,1.0,0.15869718309865277,-1.6607359307359317,0.3694399999999973,0.02040816326530612
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-24,7,wilcoxon_signed_rank,13.0,0.9375,1.0,-0.0008340844850694973,-0.007079740853476568,0.06367241351371977,0.02040816326530612
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-24,7,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-24,7,wilcoxon_signed_rank,12.0,0.8125,1.0,-0.5333333333333341,-2.711111111111112,1.4222222222222225,0.10204081632653061
+positional_entropy,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-24,7,wilcoxon_signed_rank,3.0,0.078125,0.9812343716621399,-0.12928775737207937,-0.29933968888422596,0.008824020391170417,-0.673469387755102
+designable_coverage,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-24,7,wilcoxon_signed_rank,0.0,0.015625,0.375,-0.19047619047619052,-0.21794871794871795,-0.06560222145088512,-0.7755102040816326
+hit_any,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-16,7,"mcnemar_exact(b=0,c=0); wilson ref [0.646,1.000] cmp [0.646,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-16,7,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-16,7,wilcoxon_signed_rank,0.0,0.06788915486182899,1.0,-0.02777777777777779,-0.08108108108108114,0.0,-0.3673469387755102
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-16,7,wilcoxon_signed_rank,13.0,0.9375,1.0,-0.0018307247658327017,-0.0447308162428363,0.038428792641385996,-0.02040816326530612
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-16,7,wilcoxon_signed_rank,5.5,0.15625,1.0,-2.0,-11.0,1.0,-0.3469387755102041
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-16,7,wilcoxon_signed_rank,9.0,0.46875,1.0,-0.031197183098633507,-2.6923786407766954,1.25388000000002,-0.1836734693877551
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-16,7,wilcoxon_signed_rank,13.0,0.9375,1.0,-0.011983182461617337,-0.013486068219032754,0.03714105589132566,0.02040816326530612
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-16,7,wilcoxon_signed_rank,0.0,0.10247043485974937,1.0,0.0,0.0,1.0,0.42857142857142855
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-16,7,wilcoxon_signed_rank,6.0,0.21875,1.0,2.5555555555555562,0.6222222222222218,4.866666666666669,0.46938775510204084
+positional_entropy,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-16,7,wilcoxon_signed_rank,9.0,0.46875,1.0,-0.015669770572404818,-0.10568915244706162,0.027471998808032194,-0.22448979591836735
+designable_coverage,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-16,7,wilcoxon_signed_rank,0.0,0.015625,0.375,-0.09206349206349207,-0.21263482280431434,-0.029350104821802947,-0.7551020408163265
+hit_any,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-8,7,"mcnemar_exact(b=0,c=0); wilson ref [0.646,1.000] cmp [0.646,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-8,7,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-8,7,wilcoxon_signed_rank,0.0,0.10880943004054568,1.0,0.0,-0.05555555555555558,0.0,-0.32653061224489793
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-8,7,wilcoxon_signed_rank,8.0,0.375,1.0,0.0270880728725552,-0.0229687833159819,0.0451710822581126,0.14285714285714285
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-8,7,wilcoxon_signed_rank,2.5,0.09259159575022993,1.0,-2.0,-4.5,0.0,-0.5510204081632653
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-8,7,wilcoxon_signed_rank,3.0,0.078125,1.0,-0.35575892857141156,-1.1006926406926856,0.09186619718312272,-0.1836734693877551
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-8,7,wilcoxon_signed_rank,6.0,0.21875,1.0,-0.002619300883778375,-0.020326426608891723,-0.0008475551940165804,-0.14285714285714285
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-8,7,wilcoxon_signed_rank,0.0,0.17971249487899976,1.0,0.0,nan,nan,0.2857142857142857
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-8,7,wilcoxon_signed_rank,0.0,0.015625,0.40625,2.3999999999999995,1.7111111111111117,4.333333333333334,0.7551020408163265
+positional_entropy,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-8,7,wilcoxon_signed_rank,11.0,0.6875,1.0,-8.414905665848904e-05,-0.08381985841367501,0.0375989176181209,-0.10204081632653061
+designable_coverage,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-8,7,wilcoxon_signed_rank,2.0,0.046875,0.375,-0.03408110440034512,-0.11523776466504682,-0.007704160246533087,-0.42857142857142855
+hit_any,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-4,7,"mcnemar_exact(b=0,c=0); wilson ref [0.646,1.000] cmp [0.646,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-4,7,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-4,7,wilcoxon_signed_rank,1.0,0.6547208460185769,1.0,0.0,nan,nan,0.0
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-4,7,wilcoxon_signed_rank,8.0,0.375,1.0,-0.28709821428574855,-0.962437500000014,0.3231599999999659,-0.1836734693877551
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-4,7,wilcoxon_signed_rank,14.0,1.0,1.0,-0.001222441539805219,-0.004968138424150004,0.0034703784815749428,-0.02040816326530612
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-4,7,wilcoxon_signed_rank,2.5,0.31731050786291415,1.0,0.0,-1.0,1.0,0.3469387755102041
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-4,7,wilcoxon_signed_rank,0.0,0.027707849358079864,0.4396705627441406,0.7111111111111139,0.3777777777777782,1.155555555555556,0.46938775510204084
+positional_entropy,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-4,7,wilcoxon_signed_rank,0.0,0.015625,0.421875,-0.078520300663387,-0.08454193105389848,-0.032396320492940694,-0.7551020408163265
+designable_coverage,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=-4,7,wilcoxon_signed_rank,1.0,0.03125,0.375,-0.06341673856773078,-0.10220852593733948,-0.03354297693920341,-0.5918367346938775
+hit_any,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+4,7,"mcnemar_exact(b=0,c=0); wilson ref [0.646,1.000] cmp [0.646,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+4,7,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+4,7,wilcoxon_signed_rank,1.0,0.6547208460185769,1.0,0.0,nan,nan,-0.02040816326530612
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+4,7,wilcoxon_signed_rank,12.0,0.8125,1.0,0.16264069264072128,-0.539187499999997,1.459910714285705,0.22448979591836735
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+4,7,wilcoxon_signed_rank,8.0,0.375,1.0,0.0022082375609450144,-0.0020114544226002007,0.017153683148520393,0.14285714285714285
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+4,7,wilcoxon_signed_rank,0.0,0.10247043485974937,1.0,0.0,0.0,1.0,0.42857142857142855
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+4,7,wilcoxon_signed_rank,3.0,0.078125,1.0,0.44444444444444464,0.2666666666666666,1.2222222222222223,0.5510204081632653
+positional_entropy,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+4,7,wilcoxon_signed_rank,3.0,0.078125,0.9812343716621399,-0.07206725110300022,-0.11810879630864032,-0.010066925835250512,-0.5918367346938775
+designable_coverage,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+4,7,wilcoxon_signed_rank,1.0,0.03125,0.375,-0.0562448304383788,-0.11525537634408609,-0.033649698015530694,-0.7551020408163265
+hit_any,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+8,7,"mcnemar_exact(b=0,c=0); wilson ref [0.646,1.000] cmp [0.646,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+8,7,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+8,7,wilcoxon_signed_rank,4.0,0.34523107177184,1.0,0.0,-0.09999999999999998,0.0625,-0.1836734693877551
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+8,7,wilcoxon_signed_rank,10.0,0.578125,1.0,0.0004148260860161006,-0.015633692129439603,0.040321661550936694,0.10204081632653061
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+8,7,wilcoxon_signed_rank,5.5,0.15625,1.0,-2.0,-7.5,-1.0,-0.3673469387755102
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+8,7,wilcoxon_signed_rank,6.0,0.21875,1.0,0.39192640692630226,-0.13354368932040472,2.696981132075461,0.14285714285714285
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+8,7,wilcoxon_signed_rank,3.0,0.078125,1.0,0.00450571405111555,-0.00014599610486698555,0.06034957132003921,0.14285714285714285
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+8,7,wilcoxon_signed_rank,0.0,0.31731050786291415,1.0,0.0,nan,nan,0.14285714285714285
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+8,7,wilcoxon_signed_rank,4.0,0.109375,1.0,0.7999999999999998,0.5555555555555554,1.1333333333333329,0.20408163265306123
+positional_entropy,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+8,7,wilcoxon_signed_rank,1.0,0.03125,0.5028336048126221,-0.0908236886932699,-0.121464806269456,-0.06475628571430228,-0.7959183673469388
+designable_coverage,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+8,7,wilcoxon_signed_rank,1.0,0.03125,0.375,-0.08105872622001653,-0.15875754961173422,-0.038875390489413464,-0.7142857142857143
+hit_any,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+16,7,"mcnemar_exact(b=0,c=0); wilson ref [0.646,1.000] cmp [0.646,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+16,7,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+16,7,wilcoxon_signed_rank,4.0,0.7150006546880893,1.0,0.0,-0.013513513513513598,0.08333333333333326,-0.08163265306122448
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+16,7,wilcoxon_signed_rank,11.0,0.6875,1.0,-0.0047193811904913,-0.028457322598723495,0.022058053203070204,-0.02040816326530612
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+16,7,wilcoxon_signed_rank,1.5,0.10405923452892792,1.0,-1.0,-8.0,0.0,-0.40816326530612246
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+16,7,wilcoxon_signed_rank,6.0,0.21875,1.0,0.3960714285714175,0.04190140845071255,0.7634905660377136,0.3469387755102041
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+16,7,wilcoxon_signed_rank,3.0,0.078125,1.0,0.02945178454543651,-0.0004067583961140375,0.047545479379108135,0.14285714285714285
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+16,7,wilcoxon_signed_rank,0.0,0.31731050786291415,1.0,0.0,nan,nan,-0.14285714285714285
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+16,7,wilcoxon_signed_rank,4.0,0.109375,1.0,0.8444444444444432,-0.20000000000000107,4.022222222222223,0.2653061224489796
+positional_entropy,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+16,7,wilcoxon_signed_rank,2.0,0.046875,0.65625,-0.10546649081698367,-0.20451596896053614,-0.011379287748677303,-0.46938775510204084
+designable_coverage,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+16,7,wilcoxon_signed_rank,0.0,0.015625,0.375,-0.14474772539288672,-0.17641129032258063,-0.05067684831655672,-0.9183673469387755
+hit_any,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+24,7,"mcnemar_exact(b=0,c=0); wilson ref [0.646,1.000] cmp [0.646,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+24,7,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+24,7,wilcoxon_signed_rank,7.0,0.892738400944348,1.0,0.0,-0.045454545454545414,0.11111111111111105,-0.24489795918367346
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+24,7,wilcoxon_signed_rank,12.0,0.8125,1.0,0.40606796116503574,-3.216556603773583,0.7021830985915469,0.061224489795918366
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+24,7,wilcoxon_signed_rank,13.0,0.9375,1.0,0.001569573554535575,-0.010389486533752823,0.017354058140873596,0.02040816326530612
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+24,7,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+24,7,wilcoxon_signed_rank,9.0,0.7531523647659145,1.0,0.4666666666666668,-3.733333333333336,3.422222222222217,0.16326530612244897
+positional_entropy,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+24,7,wilcoxon_signed_rank,1.0,0.03125,0.5028336048126221,-0.19811655715311272,-0.29774915407621405,-0.0454222602069827,-0.673469387755102
+designable_coverage,mpnn_soluble_vs_mpnn_soluble_hbond_protected,delta_q_density=+24,7,wilcoxon_signed_rank,0.0,0.015625,0.375,-0.24191063174114025,-0.2948717948717948,-0.09056603773584904,-0.9183673469387755
+hit_any,mpnn_soluble_vs_mpnn_vanilla_weights,all,200,"mcnemar_exact(b=0,c=0); wilson ref [0.981,1.000] cmp [0.981,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_vanilla_weights,all,200,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_vanilla_weights,all,200,wilcoxon_signed_rank,1491.0,9.664603501439227e-08,6.185346240921105e-06,0.0,nan,nan,0.1584
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_vanilla_weights,all,104,wilcoxon_signed_rank,2634.0,0.7555653362520258,1.0,-0.0052748692101917995,-0.016348782037527095,0.0041696477100164,-0.026442307692307692
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_vanilla_weights,all,104,wilcoxon_signed_rank,1216.0,0.01049102484703896,0.3147307454111688,-0.25,-1.0,0.0,-0.1108542899408284
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_vanilla_weights,all,200,wilcoxon_signed_rank,7875.0,0.00795744423316274,0.46153176552343894,-0.17249226501652615,-0.479131941200297,-0.03375025331850523,-0.044
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_vanilla_weights,all,200,wilcoxon_signed_rank,9513.0,0.5123187881831309,1.0,-4.711625742487291e-05,-0.0006961116822277458,0.0008811061777056484,-0.01925
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_vanilla_weights,all,200,wilcoxon_signed_rank,59.5,0.007241340132944736,0.3186189658495684,0.0,nan,nan,0.0514
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_vanilla_weights,all,200,wilcoxon_signed_rank,6497.5,2.192121687203552e-05,0.0007453213736492077,1.011111111111111,0.5333333333333332,1.244444444444444,0.109625
+positional_entropy,mpnn_soluble_vs_mpnn_vanilla_weights,all,200,wilcoxon_signed_rank,7056.0,0.00025900291117889,0.00828809315772448,0.028297297161179888,0.015263923833221102,0.03931975078454951,0.1081
+designable_coverage,mpnn_soluble_vs_mpnn_vanilla_weights,all,200,wilcoxon_signed_rank,4057.5,2.822374890678567e-10,1.8627674278478544e-08,0.0397012578616352,0.024999999999999994,0.05429975429975435,0.1817
+hit_any,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-24,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-24,25,wilcoxon_signed_rank,70.0,0.31429135223587323,1.0,0.0,nan,nan,0.0752
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-24,25,wilcoxon_signed_rank,161.0,0.978915274143219,1.0,0.14082524271846353,-1.224230769230779,0.9083450704225484,0.0208
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-24,25,wilcoxon_signed_rank,131.0,0.4107651710510254,1.0,-0.0005097637325475191,-0.007585633509843981,0.002375806233357647,-0.0272
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-24,25,wilcoxon_signed_rank,64.0,0.0067255496978759766,0.18831539154052734,-4.422222222222221,-6.044444444444444,-0.3111111111111109,-0.3632
+positional_entropy,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-24,25,wilcoxon_signed_rank,62.0,0.005578815937042236,0.1673644781112671,-0.14371034950913136,-0.1865264194391758,-0.014621222540508516,-0.4176
+designable_coverage,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-24,25,wilcoxon_signed_rank,109.0,0.24142655338204444,0.9657062135281778,-0.02985074626865669,-0.11864406779661019,0.018867924528301827,-0.0912
+hit_any,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-16,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-16,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-16,25,wilcoxon_signed_rank,17.0,0.2845026979112075,1.0,0.0,nan,nan,0.0512
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-16,25,wilcoxon_signed_rank,139.0,0.5424043536186218,1.0,-0.0010127782197614996,-0.0200525394262384,0.0308593834494876,0.056
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-16,25,wilcoxon_signed_rank,84.0,0.4296525899411918,1.0,0.0,-1.0,1.0,-0.056
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-16,25,wilcoxon_signed_rank,130.0,0.39571136236190796,1.0,-0.1287500000000108,-1.320457746478894,0.5717910447761483,-0.0208
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-16,25,wilcoxon_signed_rank,116.0,0.21998637914657593,1.0,-0.0007140678327656191,-0.020395099729972666,0.0017296580046025634,-0.0592
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-16,25,wilcoxon_signed_rank,1.5,0.4142161782425252,1.0,0.0,nan,nan,0.0416
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-16,25,wilcoxon_signed_rank,135.0,0.4741646647453308,1.0,0.33333333333333215,-1.0444444444444443,2.5777777777777775,0.0624
+positional_entropy,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-16,25,wilcoxon_signed_rank,146.0,0.6720751523971558,1.0,0.0077604767943983965,-0.028748045321336402,0.0691442641561002,0.0432
+designable_coverage,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-16,25,wilcoxon_signed_rank,100.0,0.1531274510196695,0.9187647061180171,0.03749999999999998,-0.011904761904761918,0.08749999999999997,0.2176
+hit_any,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-8,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-8,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-8,25,wilcoxon_signed_rank,7.5,0.022967332964787552,1.0,0.0,nan,nan,0.2176
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-8,25,wilcoxon_signed_rank,105.0,0.12664812803268433,1.0,0.018758386275771703,-0.0084919451437763,0.038751082716278897,0.1232
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-8,25,wilcoxon_signed_rank,109.0,0.8187398367654553,1.0,0.0,nan,nan,-0.048
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-8,25,wilcoxon_signed_rank,103.0,0.1134914755821228,1.0,-0.23573529411766714,-0.9961046511628031,-0.05376237623761426,-0.1392
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-8,25,wilcoxon_signed_rank,129.0,0.3809836506843567,1.0,-0.00017034347872535438,-0.005089360062639603,0.0012188183476320447,-0.0144
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,0.10880943004054568,1.0,0.0,nan,nan,0.12
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-8,25,wilcoxon_signed_rank,1.0,1.1920928955078125e-07,4.887580871582031e-06,3.133333333333333,2.222222222222223,3.6222222222222227,0.696
+positional_entropy,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-8,25,wilcoxon_signed_rank,2.0,1.7881393432617188e-07,7.152557373046875e-06,0.0801968288362492,0.05078499984275903,0.10504088220426838,0.7472
+designable_coverage,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-8,25,wilcoxon_signed_rank,9.0,5.6116811452435115e-05,0.0018518547779303588,0.06349206349206349,0.047619047619047616,0.07575757575757575,0.6192
+hit_any,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-4,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-4,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-4,25,wilcoxon_signed_rank,22.5,0.19502283267453324,1.0,0.0,nan,nan,0.128
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-4,25,wilcoxon_signed_rank,148.0,0.7111607789993286,1.0,-0.0008333333333612192,-0.429064748201462,0.26195652173912265,-0.104
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-4,25,wilcoxon_signed_rank,159.0,0.936802864074707,1.0,-0.0002968832346187389,-0.002416543990788611,0.001253712138847951,0.008
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-4,25,wilcoxon_signed_rank,12.0,0.053463014573454544,1.0,0.0,nan,nan,0.2448
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,1.2666666666666666,1.0222222222222221,1.9333333333333327,0.6368
+positional_entropy,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.039028842207197795,0.03275909273513972,0.06471215155232071,0.6704
+designable_coverage,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.08955223880597024,0.0675675675675676,0.11290322580645162,0.7968
+hit_any,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+4,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+4,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+4,25,wilcoxon_signed_rank,30.5,0.09330877100400632,1.0,0.0,nan,nan,0.2256
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+4,25,wilcoxon_signed_rank,140.0,0.5601714849472046,1.0,-0.0535148514851187,-0.865326086956482,0.1363028169014413,0.0272
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+4,25,wilcoxon_signed_rank,86.0,0.03933870792388916,1.0,0.003104488838270525,-0.00020080914575559827,0.005816700904308747,0.0304
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+4,25,wilcoxon_signed_rank,2.0,0.25683925795785656,1.0,0.0,nan,nan,0.0464
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+4,25,wilcoxon_signed_rank,68.0,0.01909993842270315,0.40625,0.24444444444444358,0.04444444444444429,0.7111111111111108,0.2384
+positional_entropy,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+4,25,wilcoxon_signed_rank,82.0,0.029578447341918945,0.5028336048126221,0.012314733664618688,-0.002288728853376415,0.0267850188636245,0.248
+designable_coverage,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+4,25,wilcoxon_signed_rank,47.0,0.017270445346494193,0.375,0.013513513513513514,0.0,0.04545454545454547,0.3312
+hit_any,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+8,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+8,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+8,25,wilcoxon_signed_rank,39.5,0.025460324496363467,1.0,0.0714285714285714,0.0,0.09090909090909094,0.2048
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+8,25,wilcoxon_signed_rank,149.0,0.7309892177581787,1.0,-0.0117239861185512,-0.029626315097106698,0.0142028889316127,-0.1424
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+8,25,wilcoxon_signed_rank,66.0,0.14180960700033543,1.0,-1.0,-2.0,0.0,-0.1472
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+8,25,wilcoxon_signed_rank,126.0,0.33878785371780396,1.0,-0.5410606060606042,-1.112407407407396,0.8993518518518826,-0.0368
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+8,25,wilcoxon_signed_rank,148.0,0.7111607789993286,1.0,0.0010681359859978645,-0.002221319452699766,0.0036398219456084124,-0.024
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+8,25,wilcoxon_signed_rank,1.5,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+8,25,wilcoxon_signed_rank,80.5,0.02747941017150879,0.4396705627441406,1.1333333333333333,-0.06666666666666732,2.2222222222222223,0.24
+positional_entropy,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+8,25,wilcoxon_signed_rank,96.0,0.07547956705093384,0.9812343716621399,0.043539482386571876,-0.002047405586722506,0.0605412170418361,0.1872
+designable_coverage,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+8,25,wilcoxon_signed_rank,32.0,0.0021534805723585205,0.06029745602603857,0.04761904761904756,0.0,0.0655737704918033,0.3536
+hit_any,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+16,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+16,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+16,25,wilcoxon_signed_rank,18.0,0.005611359778014527,0.308624787790799,0.023809523809523836,0.0,0.05555555555555558,0.2032
+median_d_reu_per_res,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+16,25,wilcoxon_signed_rank,86.0,0.03933870792388916,0.7080967426300049,-0.0232175534198031,-0.056442252891272,0.0018423485105963,-0.2576
+median_d_hbond_strong,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+16,25,wilcoxon_signed_rank,52.5,0.02706865622563981,0.7579223743179146,-1.0,nan,nan,-0.2112
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+16,25,wilcoxon_signed_rank,113.0,0.19081425666809082,1.0,-0.5530970149254272,-3.08213709677422,0.9679207920792336,-0.104
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+16,25,wilcoxon_signed_rank,161.0,0.978915274143219,1.0,-5.995534572778016e-05,-0.003264052723808586,0.00850029747083536,-0.0048
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,0.31731050786291415,1.0,0.0,nan,nan,-0.04
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+16,25,wilcoxon_signed_rank,99.0,0.09031611680984497,1.0,0.7333333333333334,-0.6000000000000014,1.7777777777777786,0.152
+positional_entropy,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+16,25,wilcoxon_signed_rank,108.0,0.14847958087921143,1.0,0.03379157305823871,-0.0167134563551794,0.0592518966776161,0.2192
+designable_coverage,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+16,25,wilcoxon_signed_rank,62.0,0.01192737613987041,0.29818440349676023,0.045454545454545414,0.0,0.0793650793650793,0.32
+hit_any,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+24,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+24,25,wilcoxon_signed_rank,19.5,0.03825291382349293,1.0,0.0,nan,nan,0.12
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+24,25,wilcoxon_signed_rank,87.0,0.04215019941329956,1.0,-0.3122674418604561,-2.7866304347826194,-0.035801886792448556,-0.1328
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+24,25,wilcoxon_signed_rank,122.0,0.2872292995452881,1.0,-0.0015258828034179217,-0.023603329405875062,0.0009673010070170296,-0.056
+n_unique_mutation_sets,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+24,25,wilcoxon_signed_rank,146.5,0.6915188431739807,1.0,0.5333333333333332,-0.33333333333333215,1.6888888888888882,-0.0064
+positional_entropy,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+24,25,wilcoxon_signed_rank,154.0,0.8325093984603882,1.0,0.00978806771832269,-0.019298655534920328,0.04982217358251767,-0.0336
+designable_coverage,mpnn_soluble_vs_mpnn_vanilla_weights,delta_q_density=+24,25,wilcoxon_signed_rank,92.0,0.2626860925759784,0.9657062135281778,0.011363636363636354,-0.01492537313432829,0.04166666666666663,0.12
+hit_any,mpnn_soluble_vs_random_control,all,200,"mcnemar_exact(b=0,c=0); wilson ref [0.981,1.000] cmp [0.981,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_random_control,all,200,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_random_control,all,200,wilcoxon_signed_rank,4044.0,0.23043297251532413,1.0,0.0,nan,nan,0.03255
+median_d_reu_per_res,mpnn_soluble_vs_random_control,all,104,wilcoxon_signed_rank,214.0,3.3807966793768663e-16,1.3523186717507466e-14,-0.0753483258159455,-0.08743245099295024,-0.0632474912269056,-0.5961538461538461
+median_d_hbond_strong,mpnn_soluble_vs_random_control,all,104,wilcoxon_signed_rank,1970.0,0.753597273180594,1.0,0.0,nan,nan,-0.027181952662721894
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_random_control,all,200,wilcoxon_signed_rank,3331.0,2.4376271851157014e-16,1.755091573283305e-14,1.3203110070112274,0.952120000000015,1.5642315466875236,0.21445
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_random_control,all,200,wilcoxon_signed_rank,4788.0,1.3579579482933358e-10,9.777297227712017e-09,0.005692750424815873,0.0037609612866622566,0.009705959369590067,0.06875
+n_unique_mutation_sets,mpnn_soluble_vs_random_control,all,200,wilcoxon_signed_rank,0.0,0.006655605482949377,0.3061578522156713,0.0,nan,nan,-0.04
+mean_pairwise_hamming,mpnn_soluble_vs_random_control,all,200,wilcoxon_signed_rank,36.0,2.4670580613433275e-34,1.726940642940329e-32,-7.2555555555555555,-9.222222222222221,-5.766666666666667,-0.552275
+positional_entropy,mpnn_soluble_vs_random_control,all,200,wilcoxon_signed_rank,14.0,1.7729943823825292e-34,1.2410960676677705e-32,-0.2827250395504745,-0.3464542658515744,-0.23021399642512802,-0.62905
+designable_coverage,mpnn_soluble_vs_random_control,all,200,wilcoxon_signed_rank,21.0,2.8766343276729166e-34,2.0136440293710416e-32,-0.2572727272727272,-0.2777777777777778,-0.22540322580645167,-0.710775
+hit_any,mpnn_soluble_vs_random_control,delta_q_density=-24,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_random_control,delta_q_density=-24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_random_control,delta_q_density=-24,25,wilcoxon_signed_rank,50.5,0.04176318400544036,1.0,0.0,-0.033333333333333326,0.02777777777777779,-0.0992
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_random_control,delta_q_density=-24,25,wilcoxon_signed_rank,4.0,4.172325134277344e-07,2.9206275939941406e-05,3.0297697368420557,2.0663736263736254,5.986274509803913,0.3984
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_random_control,delta_q_density=-24,25,wilcoxon_signed_rank,28.0,8.803606033325195e-05,0.006162524223327637,0.037091217271613686,0.006434005076313198,0.10233982239953576,0.1808
+n_unique_mutation_sets,mpnn_soluble_vs_random_control,delta_q_density=-24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_random_control,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,-20.622222222222224,-23.133333333333333,-15.466666666666665,-1.0
+positional_entropy,mpnn_soluble_vs_random_control,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,-0.6942918749035334,-0.8038147829588687,-0.6195463722232137,-1.0
+designable_coverage,mpnn_soluble_vs_random_control,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,1.821529714896801e-05,0.0006739659945118163,-0.2380952380952382,-0.2777777777777778,-0.21311475409836067,-0.9264
+hit_any,mpnn_soluble_vs_random_control,delta_q_density=-16,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_random_control,delta_q_density=-16,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_random_control,delta_q_density=-16,25,wilcoxon_signed_rank,38.0,0.03855667750566695,1.0,-0.02777777777777779,-0.04999999999999993,0.0,-0.176
+median_d_reu_per_res,mpnn_soluble_vs_random_control,delta_q_density=-16,25,wilcoxon_signed_rank,3.0,2.980232238769531e-07,1.1026859283447266e-05,-0.13732668416330118,-0.18476020733854848,-0.11659219140421559,-0.776
+median_d_hbond_strong,mpnn_soluble_vs_random_control,delta_q_density=-16,25,wilcoxon_signed_rank,112.5,0.647236742644139,1.0,0.0,nan,nan,-0.0624
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_random_control,delta_q_density=-16,25,wilcoxon_signed_rank,12.0,4.172325134277344e-06,0.0002878904342651367,2.2496830985915395,1.4891279069767407,3.546964285714296,0.3376
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_random_control,delta_q_density=-16,25,wilcoxon_signed_rank,67.0,0.008822321891784668,0.5822732448577881,0.011451179564529124,0.001448672917073679,0.01876125584209276,0.0688
+n_unique_mutation_sets,mpnn_soluble_vs_random_control,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,0.31731050786291415,1.0,0.0,nan,nan,-0.04
+mean_pairwise_hamming,mpnn_soluble_vs_random_control,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,-14.933333333333334,-17.71111111111111,-9.466666666666669,-0.9984
+positional_entropy,mpnn_soluble_vs_random_control,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,-0.5112190205342284,-0.6393184238200686,-0.41240936665263994,-1.0
+designable_coverage,mpnn_soluble_vs_random_control,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,-0.32786885245901637,-0.35593220338983056,-0.2777777777777778,-1.0
+hit_any,mpnn_soluble_vs_random_control,delta_q_density=-8,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_random_control,delta_q_density=-8,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_random_control,delta_q_density=-8,25,wilcoxon_signed_rank,31.0,0.3106012563000855,1.0,0.0,nan,nan,-0.0464
+median_d_reu_per_res,mpnn_soluble_vs_random_control,delta_q_density=-8,25,wilcoxon_signed_rank,17.0,1.233816146850586e-05,0.0003948211669921875,-0.0718416101328352,-0.08007531413416691,-0.0427244682467031,-0.6288
+median_d_hbond_strong,mpnn_soluble_vs_random_control,delta_q_density=-8,25,wilcoxon_signed_rank,100.0,0.3864550963539167,1.0,-1.0,-2.0,0.0,-0.064
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_random_control,delta_q_density=-8,25,wilcoxon_signed_rank,29.0,0.000102996826171875,0.006900787353515625,1.4250000000000003,0.933062500000009,1.9901111111111545,0.3376
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_random_control,delta_q_density=-8,25,wilcoxon_signed_rank,52.0,0.002025127410888672,0.1377086639404297,0.005781209969573764,0.0025356897533603817,0.024604654957692373,0.088
+n_unique_mutation_sets,mpnn_soluble_vs_random_control,delta_q_density=-8,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_random_control,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,-5.0444444444444425,-5.999999999999999,-2.844444444444445,-0.792
+positional_entropy,mpnn_soluble_vs_random_control,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,-0.21682599469976788,-0.24929202256838628,-0.15180496102491292,-0.9296
+designable_coverage,mpnn_soluble_vs_random_control,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,-0.3,-0.3606557377049181,-0.22580645161290325,-1.0
+hit_any,mpnn_soluble_vs_random_control,delta_q_density=-4,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_random_control,delta_q_density=-4,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_random_control,delta_q_density=-4,25,wilcoxon_signed_rank,46.0,0.6824986356283287,1.0,0.0,nan,nan,0.1008
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_random_control,delta_q_density=-4,25,wilcoxon_signed_rank,70.0,0.011453330516815186,0.6413865089416504,0.5366483516483456,0.1422535211267686,1.0402302631578735,0.2992
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_random_control,delta_q_density=-4,25,wilcoxon_signed_rank,101.0,0.10139739513397217,1.0,0.0017849874458643056,0.0001924342146158997,0.004907658782467572,0.0432
+n_unique_mutation_sets,mpnn_soluble_vs_random_control,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,0.10247043485974937,1.0,0.0,nan,nan,-0.12
+mean_pairwise_hamming,mpnn_soluble_vs_random_control,delta_q_density=-4,25,wilcoxon_signed_rank,12.0,4.172325134277344e-06,0.00014603137969970703,-0.9555555555555557,-1.7777777777777786,-0.6888888888888891,-0.3248
+positional_entropy,mpnn_soluble_vs_random_control,delta_q_density=-4,25,wilcoxon_signed_rank,4.0,4.172325134277344e-07,1.5020370483398438e-05,-0.0575720771087922,-0.09812449713911575,-0.03888423285830492,-0.488
+designable_coverage,mpnn_soluble_vs_random_control,delta_q_density=-4,25,wilcoxon_signed_rank,7.0,1.1324882507324219e-06,4.416704177856445e-05,-0.1746031746031746,-0.21818181818181814,-0.1016949152542373,-0.7984
+hit_any,mpnn_soluble_vs_random_control,delta_q_density=+4,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_random_control,delta_q_density=+4,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_random_control,delta_q_density=+4,25,wilcoxon_signed_rank,35.0,0.15505158562285898,1.0,0.0,0.0,0.08333333333333348,0.1728
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_random_control,delta_q_density=+4,25,wilcoxon_signed_rank,93.0,0.0626264214515686,1.0,0.46733812949629805,0.05479695431477438,0.9643703703703821,0.1424
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_random_control,delta_q_density=+4,25,wilcoxon_signed_rank,119.0,0.25210392475128174,1.0,0.001445352823647994,-0.0015996873843657777,0.0024139315867652833,0.0272
+n_unique_mutation_sets,mpnn_soluble_vs_random_control,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,0.15729920705028502,1.0,0.0,nan,nan,-0.08
+mean_pairwise_hamming,mpnn_soluble_vs_random_control,delta_q_density=+4,25,wilcoxon_signed_rank,9.0,1.9669532775878906e-06,7.277727127075195e-05,-1.1111111111111107,-1.9111111111111105,-0.7777777777777777,-0.4304
+positional_entropy,mpnn_soluble_vs_random_control,delta_q_density=+4,25,wilcoxon_signed_rank,3.0,2.980232238769531e-07,1.1622905731201172e-05,-0.059843879164003105,-0.0728938921497338,-0.03978894542500769,-0.632
+designable_coverage,mpnn_soluble_vs_random_control,delta_q_density=+4,25,wilcoxon_signed_rank,3.0,2.980232238769531e-07,1.1920928955078125e-05,-0.16666666666666669,-0.2096774193548387,-0.12500000000000003,-0.9472
+hit_any,mpnn_soluble_vs_random_control,delta_q_density=+8,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_random_control,delta_q_density=+8,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_random_control,delta_q_density=+8,25,wilcoxon_signed_rank,49.0,0.06406852503128296,1.0,0.045454545454545414,0.0,0.08333333333333348,0.1696
+median_d_reu_per_res,mpnn_soluble_vs_random_control,delta_q_density=+8,25,wilcoxon_signed_rank,45.0,0.0009118914604187012,0.02462106943130493,-0.0443573615790631,-0.0629774750348556,-0.0112302634277852,-0.4848
+median_d_hbond_strong,mpnn_soluble_vs_random_control,delta_q_density=+8,25,wilcoxon_signed_rank,92.5,0.637620847570951,1.0,0.0,nan,nan,0.024
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_random_control,delta_q_density=+8,25,wilcoxon_signed_rank,112.0,0.18172985315322876,1.0,1.2191007194244534,-0.34113207547170177,2.0599253731343197,0.2544
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_random_control,delta_q_density=+8,25,wilcoxon_signed_rank,106.0,0.13364005088806152,1.0,0.004097123880034803,-0.002479862972353253,0.009926821333328673,0.0272
+n_unique_mutation_sets,mpnn_soluble_vs_random_control,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,0.31731050786291415,1.0,0.0,nan,nan,-0.04
+mean_pairwise_hamming,mpnn_soluble_vs_random_control,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,-4.933333333333335,-7.266666666666666,-2.666666666666668,-0.8064
+positional_entropy,mpnn_soluble_vs_random_control,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,-0.20983409461119507,-0.28295498201398084,-0.12344182273258819,-0.9552
+designable_coverage,mpnn_soluble_vs_random_control,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,-0.3095238095238095,-0.35227272727272724,-0.26415094339622647,-1.0
+hit_any,mpnn_soluble_vs_random_control,delta_q_density=+16,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_random_control,delta_q_density=+16,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_random_control,delta_q_density=+16,25,wilcoxon_signed_rank,60.5,0.09659434751047219,1.0,0.023809523809523836,0.0,0.045454545454545525,0.1232
+median_d_reu_per_res,mpnn_soluble_vs_random_control,delta_q_density=+16,25,wilcoxon_signed_rank,3.0,2.980232238769531e-07,1.1026859283447266e-05,-0.08413791625441841,-0.1100241652522312,-0.0520829509678642,-0.584
+median_d_hbond_strong,mpnn_soluble_vs_random_control,delta_q_density=+16,25,wilcoxon_signed_rank,109.5,0.5776530307622585,1.0,0.0,-1.0,2.0,0.0272
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_random_control,delta_q_density=+16,25,wilcoxon_signed_rank,99.0,0.09031611680984497,1.0,1.1996703296703117,-0.36495999999999995,1.8902830188679136,0.1424
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_random_control,delta_q_density=+16,25,wilcoxon_signed_rank,92.0,0.05875152349472046,1.0,0.009627891464992877,0.00046520385073522963,0.06584258619266792,0.0752
+n_unique_mutation_sets,mpnn_soluble_vs_random_control,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,0.31731050786291415,1.0,0.0,nan,nan,-0.04
+mean_pairwise_hamming,mpnn_soluble_vs_random_control,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,-12.266666666666667,-13.999999999999998,-8.844444444444445,-0.9552
+positional_entropy,mpnn_soluble_vs_random_control,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,-0.465933567085818,-0.5223926738927386,-0.35938602541168435,-1.0
+designable_coverage,mpnn_soluble_vs_random_control,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,-0.3068181818181819,-0.3625,-0.25999999999999995,-1.0
+hit_any,mpnn_soluble_vs_random_control,delta_q_density=+24,25,"mcnemar_exact(b=0,c=0); wilson ref [0.867,1.000] cmp [0.867,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_random_control,delta_q_density=+24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+median_mut_per_charge,mpnn_soluble_vs_random_control,delta_q_density=+24,25,wilcoxon_signed_rank,65.5,0.8971253901089049,1.0,0.0,nan,nan,-0.0208
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_random_control,delta_q_density=+24,25,wilcoxon_signed_rank,60.0,0.004604637622833252,0.28088289499282837,1.6533955223881098,0.1494174757281428,2.88151851851849,0.1872
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_random_control,delta_q_density=+24,25,wilcoxon_signed_rank,86.0,0.03933870792388916,1.0,0.009821162492031799,0.0023637094358087696,0.04800227311026528,0.1264
+n_unique_mutation_sets,mpnn_soluble_vs_random_control,delta_q_density=+24,25,wilcoxon_signed_rank,nan,1.0,1.0,0.0,nan,nan,0.0
+mean_pairwise_hamming,mpnn_soluble_vs_random_control,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,-15.266666666666666,-18.95555555555556,-11.133333333333333,-0.9296
+positional_entropy,mpnn_soluble_vs_random_control,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,-0.5398168669443051,-0.603040226535655,-0.4567809508384266,-1.0
+designable_coverage,mpnn_soluble_vs_random_control,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,-0.21818181818181825,-0.2837837837837839,-0.15873015873015872,-0.9456
+hit_any,mpnn_soluble_vs_rosetta,all,200,"mcnemar_exact(b=59,c=0); wilson ref [0.981,1.000] cmp [0.638,0.764]",59.0,3.469446951953614e-18,2.463307335887066e-16,0.29500000000000004,,,0.295
+hit_rate,mpnn_soluble_vs_rosetta,all,200,wilcoxon_signed_rank,0.0,1.4766457655958414e-34,1.0631849512290058e-32,0.8,nan,nan,0.99
+median_mut_per_charge,mpnn_soluble_vs_rosetta,all,200,wilcoxon_signed_rank,3042.5,1.9476790554905487e-15,1.3828521293982895e-13,0.06311274509803921,0.04756054756054762,0.08333333333333337,0.389975
+median_d_reu_per_res,mpnn_soluble_vs_rosetta,all,104,wilcoxon_signed_rank,515.0,6.828876050096137e-13,2.6632616595374934e-11,0.0558884280152977,0.0466530958356832,0.06749534357838405,0.4691198224852071
+median_d_hbond_strong,mpnn_soluble_vs_rosetta,all,104,wilcoxon_signed_rank,1190.0,0.00012889364588354894,0.004640171251807762,-1.0,nan,nan,-0.24528476331360946
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta,all,200,wilcoxon_signed_rank,4343.0,3.3189468239846603e-12,2.3564522450291086e-10,-1.2075704225352126,-1.7030357142857473,-0.7936049350510004,-0.2602
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta,all,200,wilcoxon_signed_rank,6642.0,3.205686707362803e-05,0.0022760375622275903,-0.0029151139863219377,-0.005070867976273319,-0.0011986645702092846,-0.0751
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta,all,200,wilcoxon_signed_rank,14.0,1.599878137116932e-30,1.1359134773530218e-28,3.0,nan,nan,0.86305
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta,all,200,wilcoxon_signed_rank,0.0,1.4357823695138084e-34,1.0336322747411853e-32,6.477777777777778,5.933333333333334,7.133333333333335,0.940375
+positional_entropy,mpnn_soluble_vs_rosetta,all,200,wilcoxon_signed_rank,0.0,1.4361464127613523e-34,1.0340254171881737e-32,0.20634047041510034,0.1927618339418957,0.21925486840430175,0.9706
+designable_coverage,mpnn_soluble_vs_rosetta,all,200,wilcoxon_signed_rank,0.0,1.4355801620904495e-34,1.0334139251612762e-32,0.20634920634920628,nan,nan,0.80035
+hit_any,mpnn_soluble_vs_rosetta,delta_q_density=-24,25,"mcnemar_exact(b=18,c=0); wilson ref [0.867,1.000] cmp [0.143,0.476]",18.0,7.62939453125e-06,0.0005340576171875,0.72,,,0.72
+hit_rate,mpnn_soluble_vs_rosetta,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,4.112720489501953e-06,1.0,nan,nan,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta,delta_q_density=-24,25,wilcoxon_signed_rank,114.0,0.3036811097223192,1.0,0.0072727272727273196,0.0,0.04264705882352948,0.1232
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta,delta_q_density=-24,25,wilcoxon_signed_rank,21.0,2.664327621459961e-05,0.0018117427825927734,-3.4082746478873247,-6.537880000000021,-1.7858139534883755,-0.4624
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta,delta_q_density=-24,25,wilcoxon_signed_rank,63.0,0.006129205226898193,0.41065675020217896,-0.010007773143779652,-0.04109076469334083,-0.0031332972186361996,-0.1616
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,0.00012256807670123993,0.006373539988464476,2.0,0.0,4.0,0.76
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,7.288888888888889,5.466666666666664,9.377777777777778,0.9296
+positional_entropy,mpnn_soluble_vs_rosetta,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.2357006560645808,0.1869872925972646,0.26671541560009004,0.9648
+designable_coverage,mpnn_soluble_vs_rosetta,delta_q_density=-24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.3064516129032258,0.22727272727272724,0.32786885245901654,1.0
+hit_any,mpnn_soluble_vs_rosetta,delta_q_density=-16,25,"mcnemar_exact(b=13,c=0); wilson ref [0.867,1.000] cmp [0.300,0.665]",13.0,0.000244140625,0.0166015625,0.52,,,0.52
+hit_rate,mpnn_soluble_vs_rosetta,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,4.112720489501953e-06,1.0,0.9,1.0,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta,delta_q_density=-16,25,wilcoxon_signed_rank,120.0,0.2634761333465576,1.0,0.019230769230769273,-0.008658008658008698,0.058799171842650155,0.1712
+median_d_reu_per_res,mpnn_soluble_vs_rosetta,delta_q_density=-16,25,wilcoxon_signed_rank,4.0,4.172325134277344e-07,1.4603137969970703e-05,0.067621706796053,0.049403112608887904,0.1056696547514179,0.6288
+median_d_hbond_strong,mpnn_soluble_vs_rosetta,delta_q_density=-16,25,wilcoxon_signed_rank,38.5,0.00723374109428379,0.2242459739227975,-3.0,-5.0,-1.0,-0.3456
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta,delta_q_density=-16,25,wilcoxon_signed_rank,37.0,0.00032907724380493164,0.02171909809112549,-2.4461851851852146,-4.564562499999986,-1.1863380281690608,-0.3376
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta,delta_q_density=-16,25,wilcoxon_signed_rank,69.0,0.010510802268981934,0.6832021474838257,-0.0072022728375777945,-0.045885508535848274,-0.0005494822979497105,-0.1584
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,3.49773206713133e-05,0.0019237526369222317,3.0,nan,nan,0.8736
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,7.266666666666666,5.866666666666666,8.333333333333332,0.9504
+positional_entropy,mpnn_soluble_vs_rosetta,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.2127352727490789,0.1861949970647654,0.257684095207158,0.9904
+designable_coverage,mpnn_soluble_vs_rosetta,delta_q_density=-16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.2297297297297298,0.18181818181818177,0.26415094339622636,0.9824
+hit_any,mpnn_soluble_vs_rosetta,delta_q_density=-8,25,"mcnemar_exact(b=5,c=0); wilson ref [0.867,1.000] cmp [0.609,0.911]",5.0,0.0625,1.0,0.19999999999999996,,,0.2
+hit_rate,mpnn_soluble_vs_rosetta,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,4.112720489501953e-06,0.8,0.7,0.9,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta,delta_q_density=-8,25,wilcoxon_signed_rank,94.0,0.10950803070119186,1.0,0.033333333333333326,0.008928571428571397,0.07954545454545459,0.2336
+median_d_reu_per_res,mpnn_soluble_vs_rosetta,delta_q_density=-8,25,wilcoxon_signed_rank,38.0,0.0003764033317565918,0.01053929328918457,0.047414718040483,0.016332782198018397,0.07176618704086699,0.3632
+median_d_hbond_strong,mpnn_soluble_vs_rosetta,delta_q_density=-8,25,wilcoxon_signed_rank,139.5,0.7626445817650125,1.0,-1.0,-3.0,0.0,-0.0448
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta,delta_q_density=-8,25,wilcoxon_signed_rank,88.0,0.04512268304824829,1.0,-0.8505241935483809,-1.6691860465116233,0.2605392156862436,-0.2032
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta,delta_q_density=-8,25,wilcoxon_signed_rank,79.0,0.023649930953979492,1.0,-0.0017615710997928025,-0.008032813489854296,-0.0001262964895492047,-0.024
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,1.7250840611220994e-05,0.0010005487554508178,4.0,3.0,5.0,0.96
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,6.644444444444445,5.888888888888888,7.755555555555555,1.0
+positional_entropy,mpnn_soluble_vs_rosetta,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.20361917971737248,0.18342476361463228,0.2275507587131723,1.0
+designable_coverage,mpnn_soluble_vs_rosetta,delta_q_density=-8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.19148936170212771,0.1694915254237288,0.2321428571428572,0.9968
+hit_any,mpnn_soluble_vs_rosetta,delta_q_density=-4,25,"mcnemar_exact(b=5,c=0); wilson ref [0.867,1.000] cmp [0.609,0.911]",5.0,0.0625,1.0,0.19999999999999996,,,0.2
+hit_rate,mpnn_soluble_vs_rosetta,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,4.112720489501953e-06,0.7,0.6,0.8,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta,delta_q_density=-4,25,wilcoxon_signed_rank,44.0,0.03989363439768132,1.0,0.08333333333333337,0.0,0.20073053487669015,0.3088
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta,delta_q_density=-4,25,wilcoxon_signed_rank,128.0,0.3665854334831238,1.0,-0.1333663366336992,-1.2124999999999915,0.3611650485437039,-0.1072
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta,delta_q_density=-4,25,wilcoxon_signed_rank,151.0,0.7711594104766846,1.0,-0.00018944329998138443,-0.0023386452061282537,0.0049088411351307926,0.0272
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,1.7336796639612633e-05,0.0010005487554508178,5.0,nan,nan,0.9504
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,4.9111111111111105,3.7111111111111112,5.711111111111112,0.9968
+positional_entropy,mpnn_soluble_vs_rosetta,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.1404864310300515,0.1288925781732993,0.17238218146535042,1.0
+designable_coverage,mpnn_soluble_vs_rosetta,delta_q_density=-4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.19791666666666669,0.16666666666666663,0.2297297297297298,1.0
+hit_any,mpnn_soluble_vs_rosetta,delta_q_density=+4,25,"mcnemar_exact(b=4,c=0); wilson ref [0.867,1.000] cmp [0.653,0.936]",4.0,0.125,1.0,0.16000000000000003,,,0.16
+hit_rate,mpnn_soluble_vs_rosetta,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,1.697806458040569e-05,0.0010526400039851528,0.7,0.5,0.8,0.96
+median_mut_per_charge,mpnn_soluble_vs_rosetta,delta_q_density=+4,25,wilcoxon_signed_rank,18.5,0.00017002925970912674,0.009691667803420224,0.16666666666666674,0.125,0.25,0.6416
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta,delta_q_density=+4,25,wilcoxon_signed_rank,134.0,0.457846462726593,1.0,-0.18352112676053878,-0.8547407407407093,0.3532843137255242,-0.184
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta,delta_q_density=+4,25,wilcoxon_signed_rank,112.0,0.18172985315322876,1.0,-0.0017774426086127892,-0.005429681093294503,0.0012466051697459513,-0.0144
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,5.0,4.0,6.0,0.9968
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,3.511111111111111,3.1111111111111116,4.3999999999999995,0.9936
+positional_entropy,mpnn_soluble_vs_rosetta,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.1228310788352392,0.1095899274817422,0.1583944912253295,1.0
+designable_coverage,mpnn_soluble_vs_rosetta,delta_q_density=+4,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.1527777777777778,0.14516129032258068,0.1940298507462687,1.0
+hit_any,mpnn_soluble_vs_rosetta,delta_q_density=+8,25,"mcnemar_exact(b=2,c=0); wilson ref [0.867,1.000] cmp [0.750,0.978]",2.0,0.5,1.0,0.07999999999999996,,,0.08
+hit_rate,mpnn_soluble_vs_rosetta,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,1.634401017001108e-05,0.001029672640710698,0.7,0.6,0.8,0.96
+median_mut_per_charge,mpnn_soluble_vs_rosetta,delta_q_density=+8,25,wilcoxon_signed_rank,19.0,1.8298625946044922e-05,0.0011045905618038625,0.1428571428571429,0.09649122807017552,0.19696969696969702,0.6688
+median_d_reu_per_res,mpnn_soluble_vs_rosetta,delta_q_density=+8,25,wilcoxon_signed_rank,58.0,0.0037809014320373535,0.09452253580093384,0.034747926691061595,-0.003600396900909797,0.0803533449668806,0.4176
+median_d_hbond_strong,mpnn_soluble_vs_rosetta,delta_q_density=+8,25,wilcoxon_signed_rank,91.0,0.15016902213557004,1.0,-1.0,nan,nan,-0.1984
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta,delta_q_density=+8,25,wilcoxon_signed_rank,84.0,0.034173786640167236,1.0,-0.620685279187775,-3.732999999999997,-0.011296296296301023,-0.2832
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta,delta_q_density=+8,25,wilcoxon_signed_rank,118.0,0.24106645584106445,1.0,-0.0015264006885261638,-0.016662391203623894,0.0001384764983743958,-0.024
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta,delta_q_density=+8,25,wilcoxon_signed_rank,4.5,2.8899798513423832e-05,0.0016183887167517347,4.0,3.0,6.0,0.9056
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,6.111111111111109,3.911111111111111,6.666666666666667,0.9808
+positional_entropy,mpnn_soluble_vs_rosetta,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.1805972645244847,0.1315159846871748,0.2332154429914399,1.0
+designable_coverage,mpnn_soluble_vs_rosetta,delta_q_density=+8,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.19047619047619047,0.15476190476190482,0.23880597014925373,0.9904
+hit_any,mpnn_soluble_vs_rosetta,delta_q_density=+16,25,"mcnemar_exact(b=1,c=0); wilson ref [0.867,1.000] cmp [0.805,0.993]",1.0,1.0,1.0,0.040000000000000036,,,0.04
+hit_rate,mpnn_soluble_vs_rosetta,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,4.112720489501953e-06,0.7,0.6,0.8,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,1.821529714896801e-05,0.0011045905618038625,0.10848348348348347,0.04761904761904767,0.1428571428571428,0.5664
+median_d_reu_per_res,mpnn_soluble_vs_rosetta,delta_q_density=+16,25,wilcoxon_signed_rank,50.0,0.001625359058380127,0.0422593355178833,0.054916950592302,0.0425361300810971,0.0762940357064113,0.4016
+median_d_hbond_strong,mpnn_soluble_vs_rosetta,delta_q_density=+16,25,wilcoxon_signed_rank,51.5,0.014377313390907654,0.41694208833632196,-2.0,-5.0,-1.0,-0.3488
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta,delta_q_density=+16,25,wilcoxon_signed_rank,65.0,0.007370948791503906,0.43488597869873047,-1.7684701492537016,-5.461116504854374,-0.19667512690356412,-0.3184
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta,delta_q_density=+16,25,wilcoxon_signed_rank,144.0,0.6338268518447876,1.0,-0.0003570103026241944,-0.02799728661139922,0.004610662627357098,-0.0944
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.0644723389387845e-05,0.0027348150630269437,2.0,1.0,4.0,0.8608
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,8.044444444444444,6.9111111111111105,9.8,0.9808
+positional_entropy,mpnn_soluble_vs_rosetta,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.2724066941439431,0.2009231792435579,0.3199631261047415,0.9968
+designable_coverage,mpnn_soluble_vs_rosetta,delta_q_density=+16,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.20634920634920628,0.1639344262295082,0.27118644067796616,0.9936
+hit_any,mpnn_soluble_vs_rosetta,delta_q_density=+24,25,"mcnemar_exact(b=11,c=0); wilson ref [0.867,1.000] cmp [0.371,0.733]",11.0,0.0009765625,0.064453125,0.43999999999999995,,,0.44
+hit_rate,mpnn_soluble_vs_rosetta,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,4.112720489501953e-06,0.9,nan,nan,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta,delta_q_density=+24,25,wilcoxon_signed_rank,65.0,0.007370948791503906,0.39803123474121094,0.045638945233265726,-0.006578947368421129,0.08874458874458879,0.3024
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta,delta_q_density=+24,25,wilcoxon_signed_rank,37.0,0.00032907724380493164,0.02171909809112549,-2.724229074889898,-6.522696078431359,-1.0694964028776965,-0.3504
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta,delta_q_density=+24,25,wilcoxon_signed_rank,107.0,0.14091521501541138,1.0,-0.004778897635125845,-0.03412172555114812,0.0017796475994563687,-0.1296
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,0.0003858592413921355,0.01967882131099891,1.0,nan,nan,0.64
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,11.466666666666669,8.933333333333334,13.777777777777779,0.9936
+positional_entropy,mpnn_soluble_vs_rosetta,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.993511199951172e-06,0.3391714644908418,0.2877460690678691,0.4018434660734838,1.0
+designable_coverage,mpnn_soluble_vs_rosetta,delta_q_density=+24,25,wilcoxon_signed_rank,0.0,5.960464477539063e-08,3.874301910400391e-06,0.2181818181818182,0.1864406779661017,0.2916666666666667,0.9712
+hit_any,mpnn_soluble_vs_rosetta_hbond_off,all,56,"mcnemar_exact(b=16,c=0); wilson ref [0.936,1.000] cmp [0.585,0.816]",16.0,3.0517578125e-05,0.002105712890625,0.2857142857142857,,,0.2857142857142857
+hit_rate,mpnn_soluble_vs_rosetta_hbond_off,all,56,wilcoxon_signed_rank,0.0,9.294789381131902e-11,6.506352566792331e-09,0.7,0.6,0.8,0.9821428571428571
+median_mut_per_charge,mpnn_soluble_vs_rosetta_hbond_off,all,56,wilcoxon_signed_rank,155.0,6.975393553818042e-07,4.394497938905366e-05,0.0822072072072072,0.0290849673202615,0.11948529411764697,0.5098852040816326
+median_d_reu_per_res,mpnn_soluble_vs_rosetta_hbond_off,all,32,wilcoxon_signed_rank,31.0,1.1059455573558807e-06,3.7602148950099945e-05,0.05852931410990535,0.035328937664694,0.08767429036185291,0.53125
+median_d_hbond_strong,mpnn_soluble_vs_rosetta_hbond_off,all,32,wilcoxon_signed_rank,141.5,0.2514872985417941,1.0,-0.75,-2.0,0.0,-0.1171875
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta_hbond_off,all,56,wilcoxon_signed_rank,537.0,0.033254340028622924,1.0,-0.3127650943396194,-0.9488517024476727,0.017235915492946785,-0.23533163265306123
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta_hbond_off,all,56,wilcoxon_signed_rank,671.0,0.3002255985830241,1.0,-0.0018050201106976083,-0.011014708298014375,0.001047589784889058,-0.11288265306122448
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta_hbond_off,all,56,wilcoxon_signed_rank,3.5,1.8162391426706777e-09,1.2532050084427676e-07,3.0,nan,nan,0.8249362244897959
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta_hbond_off,all,56,wilcoxon_signed_rank,0.0,7.544778688384163e-11,5.205897294985073e-09,6.211111111111111,4.755555555555556,7.0777777777777775,0.9477040816326531
+positional_entropy,mpnn_soluble_vs_rosetta_hbond_off,all,56,wilcoxon_signed_rank,0.0,7.547498213151496e-11,5.207773767074532e-09,0.19612888289692365,0.1595189876537071,0.22734037837238202,0.9751275510204082
+designable_coverage,mpnn_soluble_vs_rosetta_hbond_off,all,56,wilcoxon_signed_rank,0.0,7.536625455631608e-11,5.20027156438581e-09,0.18245967741935487,0.1668353149506704,0.20967741935483875,0.7904974489795918
+hit_any,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-24,7,"mcnemar_exact(b=6,c=0); wilson ref [0.646,1.000] cmp [0.026,0.513]",6.0,0.03125,1.0,0.8571428571428572,,,0.8571428571428571
+hit_rate,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-24,7,wilcoxon_signed_rank,0.0,0.015625,0.828125,1.0,nan,nan,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-24,7,wilcoxon_signed_rank,13.0,0.9375,1.0,0.012001156737998842,-0.02777777777777779,0.028758169934640643,0.061224489795918366
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-24,7,wilcoxon_signed_rank,2.0,0.046875,1.0,-2.8799528301887025,-6.599200000000014,-0.42316964285716097,-0.5102040816326531
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-24,7,wilcoxon_signed_rank,5.0,0.15625,1.0,-0.06073655846511394,-0.09422686955652282,0.001047589784889058,-0.3877551020408163
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-24,7,wilcoxon_signed_rank,0.0,0.026014479622894226,1.0,2.0,nan,nan,0.8571428571428571
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-24,7,wilcoxon_signed_rank,0.0,0.015625,0.40625,5.644444444444444,3.822222222222222,9.222222222222221,1.0
+positional_entropy,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-24,7,wilcoxon_signed_rank,0.0,0.015625,0.421875,0.1987541657668283,0.1206230765713703,0.2522185229902557,1.0
+designable_coverage,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-24,7,wilcoxon_signed_rank,0.0,0.015625,0.375,0.2622950819672132,0.2096774193548387,0.2830188679245283,1.0
+hit_any,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-16,7,"mcnemar_exact(b=4,c=0); wilson ref [0.646,1.000] cmp [0.158,0.750]",4.0,0.125,1.0,0.5714285714285714,,,0.5714285714285714
+hit_rate,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-16,7,wilcoxon_signed_rank,0.0,0.015625,0.828125,1.0,0.9,1.0,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-16,7,wilcoxon_signed_rank,7.0,0.296875,1.0,0.012767425810904176,0.006535947712418277,0.019230769230769273,0.20408163265306123
+median_d_reu_per_res,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-16,7,wilcoxon_signed_rank,1.0,0.03125,0.625,0.035328937664694,0.0231301420425143,0.1791156685842865,0.5918367346938775
+median_d_hbond_strong,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-16,7,wilcoxon_signed_rank,6.0,0.338724147759658,1.0,-2.0,-3.0,4.0,-0.24489795918367346
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-16,7,wilcoxon_signed_rank,10.0,0.578125,1.0,0.04711267605630831,-4.080079999999986,0.8280000000000314,-0.22448979591836735
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-16,7,wilcoxon_signed_rank,12.0,0.8125,1.0,-0.008458349300982604,-0.03173269817927393,0.04231408348477028,-0.2653061224489796
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-16,7,wilcoxon_signed_rank,0.0,0.027281171477617997,1.0,3.0,1.0,6.0,0.8571428571428571
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-16,7,wilcoxon_signed_rank,0.0,0.015625,0.40625,6.466666666666668,4.666666666666667,9.600000000000001,1.0
+positional_entropy,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-16,7,wilcoxon_signed_rank,0.0,0.015625,0.421875,0.19574664456205318,0.14370246047334567,0.30699849770239396,1.0
+designable_coverage,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-16,7,wilcoxon_signed_rank,0.0,0.015625,0.375,0.1774193548387097,0.1746031746031746,0.26415094339622636,1.0
+hit_any,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-8,7,"mcnemar_exact(b=0,c=0); wilson ref [0.646,1.000] cmp [0.646,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-8,7,wilcoxon_signed_rank,0.0,0.015625,0.828125,0.7,0.6,0.9,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-8,7,wilcoxon_signed_rank,6.0,0.21875,1.0,0.0357142857142857,0.018181818181818188,0.08333333333333337,0.46938775510204084
+median_d_reu_per_res,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-8,7,wilcoxon_signed_rank,1.0,0.03125,0.625,0.0462119433096067,0.026889703880604188,0.09591400851741841,0.5102040816326531
+median_d_hbond_strong,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-8,7,wilcoxon_signed_rank,6.0,0.6802795473344503,1.0,0.0,-2.0,2.5,-0.24489795918367346
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-8,7,wilcoxon_signed_rank,13.0,0.9375,1.0,0.1404854368932149,-1.2817410714285629,0.8870399999999945,-0.061224489795918366
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-8,7,wilcoxon_signed_rank,10.0,0.578125,1.0,-0.0014529986651176108,-0.030156936402651713,0.0017965013322706058,-0.061224489795918366
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-8,7,wilcoxon_signed_rank,0.0,0.015625,0.65625,5.0,2.0,6.0,1.0
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-8,7,wilcoxon_signed_rank,0.0,0.015625,0.40625,7.4222222222222225,4.977777777777778,8.71111111111111,1.0
+positional_entropy,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-8,7,wilcoxon_signed_rank,0.0,0.015625,0.421875,0.22439486044895762,0.1792060029138744,0.2532479497475107,1.0
+designable_coverage,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-8,7,wilcoxon_signed_rank,0.0,0.015625,0.375,0.169811320754717,0.15873015873015872,0.25373134328358216,1.0
+hit_any,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-4,7,"mcnemar_exact(b=3,c=0); wilson ref [0.646,1.000] cmp [0.250,0.842]",3.0,0.25,1.0,0.4285714285714286,,,0.42857142857142855
+hit_rate,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-4,7,wilcoxon_signed_rank,0.0,0.015625,0.828125,0.9,0.7,1.0,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-4,7,wilcoxon_signed_rank,7.0,0.892738400944348,1.0,0.0,-0.33333333333333337,0.2333333333333334,0.12244897959183673
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-4,7,wilcoxon_signed_rank,10.0,0.578125,1.0,0.39242718446602254,-0.09792207792202845,2.416499999999992,0.061224489795918366
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-4,7,wilcoxon_signed_rank,11.0,0.6875,1.0,-0.00015238882575407953,-0.014822421830733346,0.006373653456270945,0.02040816326530612
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-4,7,wilcoxon_signed_rank,0.0,0.015625,0.65625,5.0,3.0,7.0,1.0
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-4,7,wilcoxon_signed_rank,0.0,0.015625,0.40625,4.5777777777777775,4.133333333333333,6.022222222222223,1.0
+positional_entropy,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-4,7,wilcoxon_signed_rank,0.0,0.015625,0.421875,0.1439443865050628,0.1360893162526648,0.1883399698583611,1.0
+designable_coverage,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=-4,7,wilcoxon_signed_rank,0.0,0.015625,0.375,0.18750000000000008,0.1509433962264151,0.2542372881355932,1.0
+hit_any,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+4,7,"mcnemar_exact(b=1,c=0); wilson ref [0.646,1.000] cmp [0.487,0.974]",1.0,1.0,1.0,0.1428571428571429,,,0.14285714285714285
+hit_rate,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+4,7,wilcoxon_signed_rank,0.0,0.027281171477617997,1.0,0.7,0.0,0.9,0.8571428571428571
+median_mut_per_charge,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+4,7,wilcoxon_signed_rank,0.0,0.027707849358079864,1.0,0.18888888888888888,0.13333333333333341,0.261904761904762,0.8571428571428571
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+4,7,wilcoxon_signed_rank,12.0,0.8125,1.0,-0.10447183098591495,-0.4378354978355219,2.0289732142857133,-0.061224489795918366
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+4,7,wilcoxon_signed_rank,10.0,0.578125,1.0,0.001028927926790879,-0.00937039662236705,0.010198330179648107,0.02040816326530612
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+4,7,wilcoxon_signed_rank,0.0,0.015625,0.65625,3.0,2.0,7.0,1.0
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+4,7,wilcoxon_signed_rank,0.0,0.015625,0.40625,4.222222222222222,2.8000000000000003,4.4222222222222225,1.0
+positional_entropy,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+4,7,wilcoxon_signed_rank,0.0,0.015625,0.421875,0.1427218296739847,0.1030822891888839,0.1613174782905272,1.0
+designable_coverage,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+4,7,wilcoxon_signed_rank,0.0,0.015625,0.375,0.15873015873015872,0.1147540983606557,0.1774193548387097,1.0
+hit_any,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+8,7,"mcnemar_exact(b=0,c=0); wilson ref [0.646,1.000] cmp [0.646,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+8,7,wilcoxon_signed_rank,0.0,0.015625,0.828125,0.4,0.19999999999999996,0.7,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+8,7,wilcoxon_signed_rank,0.0,0.015625,0.8125,0.1636363636363637,0.11111111111111116,0.18939393939393934,0.8163265306122449
+median_d_reu_per_res,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+8,7,wilcoxon_signed_rank,2.0,0.046875,0.75,0.059785375907099605,0.0040428260954342,0.102346233423045,0.7551020408163265
+median_d_hbond_strong,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+8,7,wilcoxon_signed_rank,6.5,0.4003808031520797,1.0,-1.0,-3.0,1.0,-0.1836734693877551
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+8,7,wilcoxon_signed_rank,5.0,0.15625,1.0,-0.5430952380952618,-3.9195624999999557,-0.2253301886792478,-0.22448979591836735
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+8,7,wilcoxon_signed_rank,13.0,0.9375,1.0,-0.001269187099291802,-0.017754709853461392,0.12495676775027303,-0.02040816326530612
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+8,7,wilcoxon_signed_rank,0.0,0.027281171477617997,1.0,2.0,0.0,5.0,0.8571428571428571
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+8,7,wilcoxon_signed_rank,0.0,0.015625,0.40625,4.5777777777777775,3.51111111111111,6.3999999999999995,1.0
+positional_entropy,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+8,7,wilcoxon_signed_rank,0.0,0.015625,0.421875,0.1534939254665162,0.11468828546872928,0.21056520546646673,1.0
+designable_coverage,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+8,7,wilcoxon_signed_rank,0.0,0.015625,0.375,0.2083333333333334,0.1428571428571428,0.20967741935483877,1.0
+hit_any,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+16,7,"mcnemar_exact(b=0,c=0); wilson ref [0.646,1.000] cmp [0.646,1.000]",nan,1.0,1.0,0.0,,,0.0
+hit_rate,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+16,7,wilcoxon_signed_rank,0.0,0.015625,0.828125,0.5,0.30000000000000004,0.6,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+16,7,wilcoxon_signed_rank,0.0,0.015625,0.8125,0.12683823529411753,0.09329710144927539,0.15384615384615385,0.7959183673469388
+median_d_reu_per_res,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+16,7,wilcoxon_signed_rank,4.0,0.109375,1.0,0.050386897793781096,-0.0065672683910939,0.0898617359174521,0.3469387755102041
+median_d_hbond_strong,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+16,7,wilcoxon_signed_rank,9.5,0.8334840043889592,1.0,0.0,-1.5,2.0,0.061224489795918366
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+16,7,wilcoxon_signed_rank,6.0,0.21875,1.0,-4.506456310679631,-7.995999999999981,1.1304464285714104,-0.42857142857142855
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+16,7,wilcoxon_signed_rank,12.0,0.8125,1.0,-0.016882762418448216,-0.04894135718085335,0.17897079914323577,-0.1836734693877551
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+16,7,wilcoxon_signed_rank,2.0,0.13079706180685857,1.0,1.0,0.0,6.0,0.46938775510204084
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+16,7,wilcoxon_signed_rank,0.0,0.015625,0.40625,7.6,6.7555555555555555,11.71111111111111,0.9183673469387755
+positional_entropy,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+16,7,wilcoxon_signed_rank,0.0,0.015625,0.421875,0.23757037685969562,0.2262982563287209,0.2980267867457329,1.0
+designable_coverage,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+16,7,wilcoxon_signed_rank,0.0,0.015625,0.375,0.1746031746031746,0.14516129032258068,0.27118644067796616,1.0
+hit_any,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+24,7,"mcnemar_exact(b=2,c=0); wilson ref [0.646,1.000] cmp [0.359,0.918]",2.0,0.5,1.0,0.2857142857142857,,,0.2857142857142857
+hit_rate,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+24,7,wilcoxon_signed_rank,0.0,0.015625,0.828125,0.8,0.6,1.0,1.0
+median_mut_per_charge,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+24,7,wilcoxon_signed_rank,0.0,0.015625,0.8125,0.10769230769230775,0.07272727272727275,0.1860215053763441,0.9183673469387755
+median_d_plddt_vs_wt_pred,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+24,7,wilcoxon_signed_rank,10.0,0.578125,1.0,-0.47082524271848336,-6.288320000000006,2.4204716981132,-0.2653061224489796
+median_tm_score_to_wt_crystal,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+24,7,wilcoxon_signed_rank,10.0,0.578125,1.0,-0.0021570415562776057,-0.026548063006524902,0.24232900682540148,0.061224489795918366
+n_unique_mutation_sets,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+24,7,wilcoxon_signed_rank,0.0,0.06559969214707187,1.0,2.0,0.0,6.0,0.5714285714285714
+mean_pairwise_hamming,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+24,7,wilcoxon_signed_rank,0.0,0.015625,0.40625,7.999999999999999,6.511111111111111,12.600000000000001,1.0
+positional_entropy,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+24,7,wilcoxon_signed_rank,0.0,0.015625,0.421875,0.2632469194111784,0.2532798729027813,0.4393174083019372,1.0
+designable_coverage,mpnn_soluble_vs_rosetta_hbond_off,delta_q_density=+24,7,wilcoxon_signed_rank,0.0,0.015625,0.375,0.2033898305084746,0.14285714285714296,0.2238805970149254,1.0

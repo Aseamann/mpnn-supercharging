@@ -1,0 +1,78 @@
+\begin{table}
+\caption{Predicted-confidence drop-off by mutation load, charge demand and decoding temperature. 10 of 25 wild types already predict below 80 pLDDT, so frac_below_abs80 is scaffold-dependent and is context, not a result. median_d_plddt is the median of per-scaffold medians.}
+\label{tab:T7_plddt_dropoff}
+\begin{tabular}{lllrrrrrrrrrr}
+\toprule
+method & axis & bin & n\_designs & n\_scaffolds & median\_d\_plddt & q25\_across\_scaffolds & q75\_across\_scaffolds & pooled\_median\_d\_plddt & median\_plddt\_abs & frac\_below\_abs80 & frac\_below\_5 & frac\_below\_10 \\
+\midrule
+mpnn\_soluble & abs\_delta\_q\_density & 8 & 500 & 25 & -1.120 & -3.320 & 0.030 & -1.030 & 78.660 & 0.576 & 0.170 & 0.050 \\
+mpnn\_soluble & abs\_delta\_q\_density & 24 & 500 & 25 & -4.050 & -9.590 & -1.390 & -4.310 & 72.980 & 0.698 & 0.458 & 0.262 \\
+mpnn\_soluble & abs\_delta\_q\_density & 16 & 500 & 25 & -2.670 & -7.670 & -0.230 & -2.710 & 76.640 & 0.634 & 0.328 & 0.136 \\
+mpnn\_soluble & abs\_delta\_q\_density & 4 & 500 & 25 & -0.340 & -1.100 & -0.010 & -0.380 & 80.020 & 0.498 & 0.076 & 0.030 \\
+mpnn\_soluble & final\_temperature & 0.6 & 26 & 7 & -2.690 & -4.150 & -0.180 & -5.230 & 81.510 & 0.423 & 0.538 & 0.385 \\
+mpnn\_soluble & final\_temperature & 0.5 & 72 & 8 & -1.050 & -1.920 & 0.380 & -0.790 & 84.380 & 0.319 & 0.139 & 0.111 \\
+mpnn\_soluble & final\_temperature & 0.4 & 92 & 13 & -3.760 & -8.740 & -0.090 & -2.390 & 82.770 & 0.391 & 0.272 & 0.185 \\
+mpnn\_soluble & final\_temperature & 0.3 & 1774 & 25 & -1.360 & -4.490 & -0.170 & -1.540 & 76.830 & 0.638 & 0.255 & 0.114 \\
+mpnn\_soluble & mutations & 26-30 & 101 & 8 & -4.220 & -8.160 & -2.130 & -5.150 & 82.420 & 0.465 & 0.505 & 0.248 \\
+mpnn\_soluble & mutations & 21-25 & 221 & 17 & -3.620 & -7.990 & -1.200 & -3.970 & 72.560 & 0.697 & 0.421 & 0.235 \\
+mpnn\_soluble & mutations & 16-20 & 307 & 24 & -2.160 & -7.500 & -0.190 & -1.490 & 76.490 & 0.635 & 0.238 & 0.127 \\
+mpnn\_soluble & mutations & 11-15 & 325 & 22 & -2.160 & -6.320 & -0.910 & -2.790 & 74.560 & 0.649 & 0.357 & 0.178 \\
+mpnn\_soluble & mutations & 6-10 & 469 & 25 & -1.080 & -4.580 & -0.010 & -1.010 & 78.250 & 0.582 & 0.207 & 0.049 \\
+mpnn\_soluble & mutations & 1-5 & 491 & 24 & -0.350 & -0.940 & 0.090 & -0.620 & 78.380 & 0.605 & 0.098 & 0.031 \\
+mpnn\_vanilla\_weights & abs\_delta\_q\_density & 8 & 500 & 25 & -1.540 & -2.440 & -0.470 & -1.190 & 79.380 & 0.534 & 0.136 & 0.034 \\
+mpnn\_vanilla\_weights & abs\_delta\_q\_density & 16 & 500 & 25 & -1.990 & -4.380 & -0.710 & -2.710 & 78.030 & 0.594 & 0.258 & 0.100 \\
+mpnn\_vanilla\_weights & abs\_delta\_q\_density & 24 & 500 & 25 & -3.530 & -8.080 & -0.950 & -3.770 & 74.530 & 0.652 & 0.386 & 0.180 \\
+mpnn\_vanilla\_weights & abs\_delta\_q\_density & 4 & 500 & 25 & -0.480 & -1.190 & 0.030 & -0.380 & 80.290 & 0.488 & 0.056 & 0.020 \\
+mpnn\_vanilla\_weights & final\_temperature & 0.6 & 55 & 8 & -3.780 & -11.650 & -2.780 & -2.840 & 82.620 & 0.309 & 0.291 & 0.182 \\
+mpnn\_vanilla\_weights & final\_temperature & 0.5 & 126 & 16 & -4.270 & -8.110 & -1.470 & -4.480 & 72.230 & 0.730 & 0.468 & 0.254 \\
+mpnn\_vanilla\_weights & final\_temperature & 0.4 & 155 & 20 & -4.160 & -7.870 & -0.270 & -4.460 & 72.830 & 0.690 & 0.439 & 0.245 \\
+mpnn\_vanilla\_weights & final\_temperature & 0.3 & 1600 & 25 & -1.100 & -2.480 & -0.270 & -1.250 & 78.720 & 0.568 & 0.161 & 0.053 \\
+mpnn\_vanilla\_weights & mutations & 26-30 & 110 & 8 & -2.950 & -8.990 & -2.320 & -4.160 & 81.600 & 0.482 & 0.436 & 0.227 \\
+mpnn\_vanilla\_weights & mutations & 21-25 & 195 & 16 & -4.600 & -8.900 & -1.760 & -4.460 & 72.290 & 0.687 & 0.415 & 0.210 \\
+mpnn\_vanilla\_weights & mutations & 16-20 & 297 & 22 & -2.140 & -6.370 & -0.270 & -1.930 & 77.390 & 0.623 & 0.222 & 0.098 \\
+mpnn\_vanilla\_weights & mutations & 11-15 & 327 & 22 & -1.520 & -4.320 & -0.520 & -2.130 & 76.680 & 0.593 & 0.254 & 0.046 \\
+mpnn\_vanilla\_weights & mutations & 6-10 & 474 & 25 & -1.950 & -3.050 & -0.120 & -1.200 & 79.500 & 0.525 & 0.137 & 0.032 \\
+mpnn\_vanilla\_weights & mutations & 1-5 & 509 & 24 & -0.520 & -1.650 & -0.100 & -0.730 & 79.000 & 0.570 & 0.069 & 0.022 \\
+mpnn\_soluble\_hbond\_protected & abs\_delta\_q\_density & 4 & 140 & 7 & -1.590 & -3.310 & -0.330 & -0.840 & 79.020 & 0.536 & 0.114 & 0.079 \\
+mpnn\_soluble\_hbond\_protected & abs\_delta\_q\_density & 8 & 140 & 7 & -2.800 & -6.350 & -0.710 & -2.360 & 78.210 & 0.643 & 0.286 & 0.114 \\
+mpnn\_soluble\_hbond\_protected & abs\_delta\_q\_density & 24 & 140 & 7 & -8.490 & -12.920 & -2.840 & -7.470 & 68.630 & 0.736 & 0.579 & 0.421 \\
+mpnn\_soluble\_hbond\_protected & abs\_delta\_q\_density & 16 & 140 & 7 & -3.870 & -10.090 & -1.190 & -4.860 & 70.750 & 0.743 & 0.479 & 0.279 \\
+mpnn\_soluble\_hbond\_protected & final\_temperature & 0.4 & 29 & 6 & -5.370 & -7.500 & -0.890 & -3.380 & 68.940 & 0.690 & 0.310 & 0.000 \\
+mpnn\_soluble\_hbond\_protected & final\_temperature & 0.5 & 35 & 5 & -5.620 & -14.230 & -3.730 & -11.810 & 58.790 & 0.743 & 0.686 & 0.600 \\
+mpnn\_soluble\_hbond\_protected & final\_temperature & 0.3 & 414 & 7 & -3.130 & -6.680 & -0.800 & -2.240 & 74.100 & 0.652 & 0.300 & 0.155 \\
+mpnn\_soluble\_hbond\_protected & mutations & 11-15 & 59 & 5 & -2.120 & -9.340 & -1.500 & -3.850 & 72.800 & 0.678 & 0.441 & 0.254 \\
+mpnn\_soluble\_hbond\_protected & mutations & 16-20 & 114 & 7 & -1.720 & -7.200 & -0.570 & -2.480 & 71.320 & 0.579 & 0.377 & 0.184 \\
+mpnn\_soluble\_hbond\_protected & mutations & 6-10 & 133 & 7 & -4.650 & -8.150 & -0.470 & -2.090 & 74.420 & 0.647 & 0.316 & 0.135 \\
+mpnn\_soluble\_hbond\_protected & mutations & 1-5 & 144 & 6 & -2.270 & -3.920 & -0.780 & -1.590 & 78.620 & 0.639 & 0.153 & 0.076 \\
+avnapsa & abs\_delta\_q\_density & 16 & 500 & 25 & -1.480 & -2.670 & -0.640 & -2.110 & 77.370 & 0.600 & 0.174 & 0.100 \\
+avnapsa & abs\_delta\_q\_density & 24 & 500 & 25 & -2.950 & -5.450 & -1.520 & -3.380 & 74.310 & 0.620 & 0.302 & 0.120 \\
+avnapsa & abs\_delta\_q\_density & 4 & 500 & 25 & -0.460 & -0.930 & 0.260 & -0.230 & 80.880 & 0.472 & 0.040 & 0.020 \\
+avnapsa & abs\_delta\_q\_density & 8 & 500 & 25 & -0.420 & -1.610 & 0.320 & -0.600 & 79.760 & 0.506 & 0.060 & 0.020 \\
+avnapsa & mutations & 21-25 & 100 & 6 & -2.390 & -7.740 & -0.240 & -1.270 & 80.050 & 0.500 & 0.300 & 0.200 \\
+avnapsa & mutations & 16-20 & 260 & 15 & -1.770 & -4.590 & -0.730 & -2.760 & 75.310 & 0.577 & 0.196 & 0.077 \\
+avnapsa & mutations & 11-15 & 445 & 24 & -2.220 & -4.050 & -0.840 & -2.590 & 75.210 & 0.611 & 0.247 & 0.090 \\
+avnapsa & mutations & 6-10 & 506 & 25 & -0.690 & -2.370 & 0.050 & -0.620 & 79.620 & 0.510 & 0.093 & 0.040 \\
+avnapsa & mutations & 1-5 & 649 & 23 & -0.460 & -1.270 & -0.010 & -0.470 & 79.310 & 0.538 & 0.046 & 0.015 \\
+rosetta & abs\_delta\_q\_density & 24 & 500 & 25 & -1.410 & -3.380 & -0.290 & -1.030 & 78.460 & 0.572 & 0.190 & 0.056 \\
+rosetta & abs\_delta\_q\_density & 16 & 500 & 25 & -1.550 & -3.250 & -0.260 & -0.770 & 78.400 & 0.572 & 0.124 & 0.044 \\
+rosetta & abs\_delta\_q\_density & 4 & 500 & 25 & -0.140 & -1.250 & 0.140 & -0.170 & 79.410 & 0.518 & 0.058 & 0.030 \\
+rosetta & abs\_delta\_q\_density & 8 & 500 & 25 & -1.030 & -2.360 & 0.110 & -0.610 & 79.190 & 0.530 & 0.086 & 0.026 \\
+rosetta & mutations & 26-30 & 63 & 5 & -0.300 & -1.510 & -0.080 & 0.360 & 89.650 & 0.222 & 0.079 & 0.079 \\
+rosetta & mutations & 21-25 & 72 & 12 & -0.750 & -4.510 & 0.280 & -0.590 & 79.380 & 0.500 & 0.194 & 0.056 \\
+rosetta & mutations & 16-20 & 261 & 23 & -0.670 & -2.940 & 1.170 & -0.680 & 77.580 & 0.632 & 0.234 & 0.096 \\
+rosetta & mutations & 11-15 & 463 & 24 & -1.500 & -3.870 & 0.190 & -1.230 & 77.550 & 0.620 & 0.151 & 0.028 \\
+rosetta & mutations & 6-10 & 557 & 25 & -0.930 & -2.610 & 0.150 & -0.610 & 80.650 & 0.496 & 0.063 & 0.014 \\
+rosetta & mutations & 1-5 & 570 & 24 & -0.170 & -1.300 & 0.330 & -0.390 & 79.150 & 0.558 & 0.075 & 0.040 \\
+random\_control & abs\_delta\_q\_density & 24 & 500 & 25 & -7.560 & -14.500 & -3.430 & -7.250 & 66.490 & 0.760 & 0.618 & 0.380 \\
+random\_control & abs\_delta\_q\_density & 16 & 500 & 25 & -5.340 & -11.290 & -1.690 & -4.830 & 71.170 & 0.692 & 0.480 & 0.284 \\
+random\_control & abs\_delta\_q\_density & 8 & 500 & 25 & -3.520 & -4.340 & -1.410 & -2.370 & 76.890 & 0.608 & 0.272 & 0.098 \\
+random\_control & abs\_delta\_q\_density & 4 & 500 & 25 & -1.060 & -2.100 & -0.450 & -0.970 & 78.660 & 0.548 & 0.128 & 0.042 \\
+random\_control & mutations & 26-30 & 133 & 13 & -6.290 & -10.600 & -4.830 & -6.510 & 76.300 & 0.571 & 0.632 & 0.361 \\
+random\_control & mutations & 21-25 & 182 & 18 & -6.940 & -12.050 & -3.420 & -7.810 & 65.810 & 0.824 & 0.648 & 0.401 \\
+random\_control & mutations & 11-15 & 308 & 24 & -3.130 & -10.060 & -1.220 & -5.160 & 68.310 & 0.747 & 0.506 & 0.315 \\
+random\_control & mutations & 16-20 & 333 & 24 & -5.280 & -12.610 & -1.770 & -3.880 & 71.830 & 0.685 & 0.420 & 0.246 \\
+random\_control & mutations & 6-10 & 467 & 25 & -2.600 & -5.770 & -1.040 & -2.210 & 76.690 & 0.602 & 0.296 & 0.103 \\
+random\_control & mutations & 1-5 & 493 & 24 & -1.070 & -2.220 & -0.820 & -1.390 & 77.320 & 0.635 & 0.152 & 0.051 \\
+\bottomrule
+\end{tabular}
+\end{table}

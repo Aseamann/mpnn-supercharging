@@ -1,0 +1,167 @@
+# Cluster-specific configuration. This is the ONLY file a new user must edit.
+# Everything else in Benchmark/ reads its paths and partitions from here.
+
+user: als515
+
+paths:
+  # Repository root (the directory containing protein_mpnn_supercharge.py).
+  repo_root: /projects/f_sdk94_1/als515/mpnn-supercharging
+  # Benchmark working directory, created under repo_root.
+  benchmark_root: /projects/f_sdk94_1/als515/mpnn-supercharging/Benchmark
+  # ProteinMPNN clone, already patched with supercharge_sample. Read-only.
+  proteinmpnn: /home/als515/GitHub_Repos/ProteinMPNN
+  # Shared lab tool installs. Read-only: copy examples out, never write in.
+  alphafold3: /projects/f_sdk94_1/Tools/AlphaFold3
+  esmfold: /projects/f_sdk94_1/Tools/ESMfold2
+  # Shared HuggingFace/torch cache the ESMFold2 wrapper pins every download to.
+  # Not under /home; the weights are staged there already.
+  esmfold_cache: /projects/f_sdk94_1/conda/cache
+  mmseqs_examples: /projects/f_sdk94_1/Tools/mmseqs2
+  # eGFP focus scaffold, added as scaffold 33 outside the CATH split.
+  egfp_pdb: /projects/f_sdk94_1/als515/mpnn-supercharging/Former_Methods/eGFP/eGFP.pdb
+  # Reference implementation for both Phase 3 baselines. Read-only; the mover
+  # settings in scripts/lib/baseline.py are copied from it value for value.
+  pyrosetta_supercharge_script: /projects/f_sdk94_1/als515/mpnn-supercharging/Former_Methods/eGFP/run_pyrosetta_supercharge.py
+  # Threading and FastRelax driver used by Phase 5. Read-only; the wild-type
+  # reference is built in scripts/lib/rosetta_metrics.py instead of here,
+  # because this script does not relax a zero-mutation sequence. See its
+  # docstring and logs/ISSUES.md.
+  threading_script: /projects/f_sdk94_1/als515/mpnn-supercharging/threading_only.py
+  # DSSP binary. DSSP has no pip distribution, so this is a conda install rather
+  # than the pip line PLAN.md Section 2.1 assumes. Kept as an explicit path so
+  # DSSP can live in its own env if putting it in the shared benchmark env ever
+  # turns out to disturb other packages. See logs/ISSUES.md.
+  dssp_bin: /projects/f_sdk94_1/conda/envs/dssp/bin/mkdssp
+
+conda:
+  # Only env carrying torch and pyrosetta together. Python 3.11.8.
+  benchmark_env: /projects/f_sdk94_1/conda/envs/py311
+  # MMseqs2 is not on the default PATH; it needs its own env.
+  mmseqs_env: /projects/f_sdk94_1/conda/envs/mmseqs
+  # ESMFold2 has its own env (Python 3.12) and is invoked by interpreter path
+  # rather than `conda activate`, the way its own wrapper does it.
+  esmfold_env: /projects/f_sdk94_1/conda/envs/esmfold2
+  # DSSP gets its own env for the same reason. The salilab dssp 3.0.0 package
+  # does not declare its boost dependency, so boost-cpp 1.73 is installed
+  # alongside it explicitly. It cannot live in the benchmark env because
+  # boost-cpp 1.73 is unsatisfiable against that env's Python 3.11 pin.
+  dssp_env: /projects/f_sdk94_1/conda/envs/dssp
+  # Phase 8 only. The benchmark env has IPython but no jupyter, nbconvert or
+  # ipykernel, and it is shared with other lab members, so jupyter is not
+  # installed into it. This env already has jupyter plus numpy, pandas and
+  # matplotlib, which is all the notebook needs; it has no torch or pyrosetta
+  # and cannot run any other phase. `scripts/run_notebook.py` is the equivalent
+  # route from the benchmark env and needs nothing extra.
+  notebook_env: /projects/f_sdk94_1/conda/envs/shared_als515
+  # Sourced before every `conda activate` in the sbatch scripts. The envs above
+  # live under /projects/f_sdk94_1/conda/, but that is an envs directory, not a
+  # conda installation; the base install is the community anaconda module.
+  conda_sh: /projects/community/anaconda/2022.10/bd387/etc/profile.d/conda.sh
+
+slurm:
+  # There is no cpu-redhat partition on Amarel. `main` is the CPU partition.
+  # Renamed cluster-side between 2026-08-14 and 2026-08-26: the old names
+  # main-redhat and gpu-redhat no longer resolve and sbatch rejects them with
+  # "invalid partition specified". `sinfo` on 2026-08-26 lists main (509 nodes),
+  # gpu (55) and p_sdk94_1 (1). Node families are unchanged (hal0xx, halk0xx),
+  # so this is a rename, not new hardware. Rows written before 2026-08-26 carry
+  # partition="main-redhat"; rows written after carry "main".
+  cpu_partition: main
+  gpu_partition: gpu
+  # One node, 4 owner-priority GPUs. For unblocking Phase 6, not routine work.
+  owner_partition: p_sdk94_1
+  # Counted with array tasks individually, not one count per array job.
+  max_cpu_jobs: 500
+  max_gpu_jobs: 200
+  # Nodes to keep every submission off, passed through as sbatch --exclude.
+  # Empty string means no exclusion. This is where a bad node goes: it is a
+  # cluster fact, not a benchmark parameter, so no script hardcodes it.
+  #
+  # gpu029 added 2026-08-13: all 8 failures in the first Phase 6 ESMFold array
+  # landed there with "CUDA error: uncorrectable ECC error encountered" at model
+  # load, while all 31 tasks on the other 17 GPU nodes succeeded. Hardware, not
+  # code. Remove this once the node is fixed.
+  exclude_nodes: "gpu029"
+  # Per-phase resource requests. Walltimes are provisional until the single
+  # timing task described in PLAN.md Sections 4 and 5 has been run; the value
+  # actually used is recorded into results/runtime.csv per job.
+  # Serial curation pipeline: fetch, filter, cluster. One job, not an array.
+  # Dominated by 1054 sequential RCSB downloads, so the walltime is network
+  # bound rather than compute bound.
+  phase1_curate:
+    cpus_per_task: 4
+    mem: 8G
+    time: "02:00:00"
+  # Measured: 9.87 s for 1a1x_A (106 residues, 62 designable) on main-redhat,
+  # 1 CPU. 30 min gives ample headroom for the 231-residue eGFP.
+  phase1_layerselect:
+    cpus_per_task: 1
+    mem: 8G
+    time: "00:30:00"
+  # Measured: 14.98 s for 1a1x_A (106 residues) at target -32, the most extreme
+  # ladder rung, 10 samples, 0 retries, on main-redhat with 4 CPUs. One hour is
+  # ~240x that, which covers eGFP at 231 residues and cells that escalate
+  # temperature repeatedly under -u before giving up at 0.9.
+  # Measured on main-redhat with 4 CPUs, scaffold 1a1x_A (106 residues) at the
+  # most extreme rung: avnapsa 17.1 s for 1 structure, rosetta 116.3 s for 10.
+  # One hour is ~30x the rosetta measurement, covering eGFP at 231 residues.
+  phase3_baseline:
+    cpus_per_task: 4
+    mem: 16G
+    time: "01:00:00"
+  phase2_mpnn:
+    cpus_per_task: 4
+    mem: 16G
+    time: "01:00:00"
+  # Phase 4a. 2,000 unmodified ProteinMPNN samples per scaffold on CPU, per
+  # Decision D. Same 4 CPUs as every other method so the runtime column in
+  # Table T5 stays comparable.
+  # Measured on main-redhat with 4 CPUs: eGFP, the longest scaffold at 231
+  # residues, took 627.24 s for its 2,000 samples (0.314 s per sample). Every
+  # other scaffold is shorter, so this is the worst case rather than a median.
+  # One hour is ~5.7x it.
+  phase4_rejection:
+    cpus_per_task: 4
+    mem: 16G
+    time: "01:00:00"
+  # Phase 4b. Pure Python: one scaffold's 8 targets x 10 replicates is a
+  # fraction of a second. No torch, no PyRosetta.
+  phase4_random:
+    cpus_per_task: 1
+    mem: 4G
+    time: "00:20:00"
+  # Phase 5 wild-type references. One unrestricted FastRelax per scaffold per
+  # tier, repeated num_relax times. Unrestricted relax moves every residue, so
+  # this is slower per run than a design's shell-restricted relax.
+  # PROVISIONAL until the timing task has run.
+  phase5_wt:
+    cpus_per_task: 4
+    mem: 16G
+    time: "04:00:00"
+  # Phase 5 design cells. threading_only.py fans out over --workers, set from
+  # cpus_per_task, so a tier A cell threads its 10 designs in parallel.
+  # PROVISIONAL until the timing task has run.
+  phase5_thread:
+    cpus_per_task: 4
+    mem: 16G
+    time: "08:00:00"
+  # Phase 6a. GPU is allowed here: CLAUDE.md reserves the GPU partition for ESMFold2
+  # and AF3, and this is ESMFold2. partition_key names the cluster.slurm entry
+  # to use, so switching the whole array to the owner-priority GPUs when the
+  # queue backs up is a one-word edit here rather than a code change.
+  phase6_esmfold:
+    partition_key: gpu_partition
+    gpus: 1
+    cpus_per_task: 8
+    mem: 32G
+    time: "08:00:00"
+  # Phase 6b. PLAN.md Section 9 says to send AF3 to the owner-priority GPUs from
+  # the start rather than queueing behind the shared `gpu` partition, since it is the longest
+  # single-job step. The constraint is the one the shared example uses.
+  phase6_af3:
+    partition_key: owner_partition
+    gpus: 1
+    cpus_per_task: 8
+    mem: 64G
+    time: "04:00:00"
+    constraint: "ampere|adalovelace"
