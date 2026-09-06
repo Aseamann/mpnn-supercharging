@@ -910,6 +910,158 @@ def fig10(data: dict):
 
 
 # ---------------------------------------------------------------------------
+# F11 charge capacity ceiling
+#
+# Restored 2026-09-06 on the author's instruction (PLAN.md Section 0.1 item 26).
+# It was one of the six-arm figures retired the same day, and it is the only one
+# whose question nothing else answers: how much charge the method can actually
+# move on a given scaffold. F1 is the complement, what unguided sampling reaches
+# without the method, and the two are read together.
+#
+# PLAN.md Section 11.1 calls this manuscript Figure 2A generalised from one
+# protein to the panel, so it is the multi-scaffold form of the eGFP range test.
+#
+# **The ceiling is censored for most scaffolds and the figure says so.** The
+# ladder stops at |ΔQ density| 24, so a scaffold that reaches 24 has reached the
+# largest target it was ever asked for, not its limit. Twenty of 25 scaffolds
+# are in that state on the primary arm. Those points are drawn as upward arrows
+# meaning "at least 24" and are excluded from the medians, because a median over
+# a mostly censored sample would report the ladder rather than the method. The
+# uncensored minority is what the medians describe, and the panel title says how
+# many that is. Reading a ceiling of 24 off this figure is reading the cap.
+#
+# Decision E (Section 0.1 item 9) fixes the definition: the ceiling is the
+# largest |ΔQ density| hit with final_temperature == 0.3, so it is capacity at
+# the base decoding temperature rather than capacity after escalation.
+# ---------------------------------------------------------------------------
+
+LADDER_CAP = 24
+
+
+def capacity_ceiling(data: dict, method: str = "mpnn_soluble") -> pd.Series:
+    """Largest |ΔQ density| an arm hit at T = 0.3, per scaffold.
+
+    Returns an empty series rather than raising if the arm never hit at 0.3, so
+    a caller can report the absence instead of inventing a ceiling.
+    """
+    d = data["designs"]
+    arm = d[d["method"] == method].copy()
+    # final_temperature is blank on the non-MPNN arms, so the column arrives as
+    # mixed str/float and any ordered comparison on it raises. Coerce once.
+    arm["final_temperature"] = pd.to_numeric(arm["final_temperature"],
+                                             errors="coerce")
+    at_base = arm[arm["hit_exact"] & (arm["final_temperature"] == 0.3)]
+    if at_base.empty:
+        return pd.Series(dtype=float)
+    return (at_base.assign(a=at_base["delta_q_density"].abs())
+            .groupby("scaffold_id")["a"].max())
+
+
+def fig11(data: dict):
+    ceiling = capacity_ceiling(data)
+    if ceiling.empty:
+        return None
+    manifest = data["manifest"].set_index("scaffold_id")
+    colour = METHOD_COLOR["mpnn_soluble"]
+
+    fig, axes = plt.subplots(1, 2, figsize=(12.5, 4.6),
+                             gridspec_kw={"width_ratios": [1, 1.35]})
+
+    # a. capacity by fold class. eGFP has no fold class, having been added
+    # outside the CATH split, and is labelled rather than dropped: it is the
+    # scaffold manuscript Figure 2A is about and this figure generalises it.
+    classes = manifest.loc[ceiling.index, "fold_class"].fillna(A.FOCUS_CLASS_LABEL)
+    names = [f for f in FOLD_FACETS if f in set(classes)] + \
+            [f for f in sorted(set(classes)) if f not in FOLD_FACETS]
+    rng = np.random.default_rng(0)
+    ax = axes[0]
+    n_censored = 0
+    for i, fold in enumerate(names):
+        vals = ceiling[classes == fold]
+        at_cap = vals >= LADDER_CAP
+        n_censored += int(at_cap.sum())
+        x = i + rng.uniform(-0.13, 0.13, len(vals))
+        free_x, cap_x = x[~at_cap.values], x[at_cap.values]
+        # Below the cap: a measured ceiling, filled.
+        ax.scatter(free_x, vals[~at_cap], s=42, color=colour, alpha=0.85,
+                   zorder=3)
+        # At the cap: censored, so drawn as "at least", open and arrow-headed.
+        ax.scatter(cap_x, vals[at_cap], s=60, marker="^", facecolor="white",
+                   edgecolor=colour, linewidths=1.3, zorder=3)
+        free = vals[~at_cap]
+        if len(free):
+            ax.hlines(free.median(), i - 0.26, i + 0.26, color=TEXT, lw=2,
+                      zorder=4)
+    ax.axhline(LADDER_CAP, color=MUTED, lw=1.0, ls="--", zorder=1)
+    ax.annotate(f"ladder cap, |ΔQ density| {LADDER_CAP}", xy=(0.02, LADDER_CAP),
+                xycoords=("axes fraction", "data"), va="bottom", fontsize=9,
+                color=MUTED)
+    ax.set_xticks(range(len(names)))
+    ax.set_xticklabels([n.replace("_", " ") for n in names], rotation=20,
+                       ha="right")
+    ax.set_ylabel("max |ΔQ density| reached at T = 0.3")
+    ax.set_ylim(0, LADDER_CAP * 1.18)
+    ax.set_title(f"a  per-scaffold charge capacity  "
+                 f"({n_censored} of {len(ceiling)} censored at the cap)",
+                 fontsize=12, loc="left")
+    ax.scatter([], [], s=42, color=colour, label="ceiling measured")
+    ax.scatter([], [], s=60, marker="^", facecolor="white", edgecolor=colour,
+               linewidths=1.3, label=f"≥ {LADDER_CAP}, never asked for more")
+    ax.hlines([], [], [], color=TEXT, lw=2, label="median of the measured")
+    ax.legend(frameon=False, fontsize=9, loc="lower right")
+
+    # b. what each cell cost in temperature. Signed rungs, so the direction
+    # asymmetry F10 quantifies is visible on the scaffold grid too.
+    arm = data["designs"]
+    arm = arm[arm["method"] == "mpnn_soluble"].copy()
+    arm["final_temperature"] = pd.to_numeric(arm["final_temperature"],
+                                             errors="coerce")
+    pivot = arm.pivot_table(index="scaffold_id", columns="delta_q_density",
+                            values="final_temperature", aggfunc="max")
+    pivot = pivot.loc[ceiling.sort_values(kind="stable").index]
+    ax = axes[1]
+    im = ax.imshow(pivot.values, aspect="auto", cmap="YlGnBu", vmin=0.3, vmax=0.9)
+    ax.set_xticks(range(len(pivot.columns)))
+    ax.set_xticklabels(pivot.columns)
+    ax.set_yticks(range(len(pivot.index)))
+    ax.set_yticklabels(pivot.index, fontsize=9)
+    ax.set_xlabel("ΔQ density")
+    ax.set_title("b  final decoding temperature the cell required", fontsize=12,
+                 loc="left")
+    ax.grid(False)
+    fig.colorbar(im, ax=ax, label="final temperature")
+
+    fig.suptitle("F11  Charge capacity ceiling (MPNN supercharge, soluble), "
+                 f"manuscript Fig. 2A generalised to {len(ceiling)} scaffolds",
+                 y=1.03, fontsize=14)
+    fig.tight_layout()
+    return fig
+
+
+def capacity_by_arm(data: dict) -> pd.DataFrame:
+    """Ceiling per MPNN arm, with the censored count stated rather than buried.
+
+    F11 draws the primary arm. This is the same measurement for all five, and it
+    is where the notes cell reads its numbers from.
+    """
+    rows = []
+    for method in MPNN_ARMS:
+        c = capacity_ceiling(data, method)
+        if c.empty:
+            continue
+        at_cap = c >= LADDER_CAP
+        free = c[~at_cap]
+        rows.append({
+            "method": METHOD_LABEL[method],
+            "n_scaffolds": len(c),
+            "n_at_ladder_cap": int(at_cap.sum()),
+            "median_all_censored": c.median(),
+            "median_measured_only": free.median() if len(free) else float("nan"),
+            "min": c.min(),
+        })
+    return pd.DataFrame(rows).set_index("method")
+
+# ---------------------------------------------------------------------------
 # numbers the notebook's notes cells quote, computed rather than typed
 # ---------------------------------------------------------------------------
 
