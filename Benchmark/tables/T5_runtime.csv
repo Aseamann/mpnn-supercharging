@@ -1,0 +1,11 @@
+method,n_cells,cell_seconds_median,cell_seconds_total_h,cells_with_no_hit,seconds_per_on_target_median
+MPNN supercharge (soluble),200,9.41,0.658511111111111,0,0.9410000000000001
+MPNN supercharge (original weights),200,9.665,0.7167083333333334,0,0.9665
+MPNN supercharge (h-bond protected),56,7.055,0.16000833333333334,0,0.7055
+MPNN supercharge (HyperMPNN),200,11.3,0.9043888888888889,0,1.13
+MPNN supercharge (HaloMPNN),200,17.84,1.308275,0,1.7839999999999998
+AvNAPSA,200,73.945,4.453080555555555,72,7.794
+Rosetta supercharge,200,237.5,16.42650833333333,59,108.315
+Rosetta supercharge (h-bond off),56,370.56,5.352677777777777,16,92.45375
+Random charge control,200,0.0004,2.4333333333333336e-05,0,4e-05
+Vanilla ProteinMPNN + rejection,200,399.56,2.942211111111111,119,8.6184

@@ -1,0 +1,63 @@
+# What of Benchmark/ is published, and why.
+#
+# The directory is roughly 2.3 GB across ~38,000 files. Almost all of that is
+# regenerable output: predicted structures, relaxed PDBs, cleaned scaffolds,
+# per-cell logs. What goes in git is the code that produces it, the
+# configuration that parameterises it, the task files that record exactly what
+# was submitted, the CSVs every figure reads, and the figures and tables
+# themselves. That is roughly 30 MB and it is enough to check any number in the
+# manuscript without cluster access, and enough to regenerate the rest with it.
+#
+# Three of these rules exist to override the repo-root .gitignore, which ignores
+# *.ipynb, *.fa and *.fasta globally. A nested .gitignore can re-include a file
+# whose parent directory is not itself excluded, which is the case for both
+# notebooks/ and designs/.
+
+# ── Regenerable bulk ───────────────────────────────────────────────────────────
+# Cleaned scaffolds, CATH splits, LayerSelector caches, alt-weight shims (886 MB)
+data/
+# ESMFold and AF3 inputs and predicted structures (721 MB)
+predictions/
+# Relaxed PDBs from Phase 5 threading; also matched by the root's threaded*/
+threaded/
+# PyRosetta baseline working directories, one per cell (312 MB)
+baselines/
+
+# ── Logs ───────────────────────────────────────────────────────────────────────
+# Slurm stdout, one file per array task
+logs/slurm/
+# Per-cell ProteinMPNN stdout. Kept out on the same reasoning as logs/slurm/:
+# regenerable, and results/cells/*.json already carries the per-cell provenance
+# independently. This closes the open item in logs/ISSUES.md that asked whether
+# these should be published.
+logs/mpnn/
+
+# ── Per-record sidecars ────────────────────────────────────────────────────────
+# results/*.csv is the published form of all of these. They are the inputs
+# 10_aggregate.py reads, not the results, and there are ~2,700 of them.
+results/cells/
+results/threaded/
+results/rejection/
+# Same for the temperature sweep pools (PLAN.md Section 0.1 item 23). The
+# published form is results/rejection_curve_T*.csv, which is tracked.
+results/rejection_T*/
+# Per-cell sidecars from the superseded AvNAPSA nstruct 1 run, kept on disk
+# as the evidence that s00 reproduces it (logs/ISSUES.md, 2026-08-26).
+# Same class as results/cells/: an input to aggregation, not a result.
+logs/nstruct1_backup/
+
+# ── Editor and interpreter noise ───────────────────────────────────────────────
+__pycache__/
+.ipynb_checkpoints/
+
+# ── Re-included against the repo-root rules ────────────────────────────────────
+# The analysis notebooks. Root ignores *.ipynb.
+!notebooks/*.ipynb
+# The designed sequences. One FASTA per cell, ~1.9 MB total, and the only place
+# a reader can check a reported mutation set. Root ignores *.fa.
+!designs/*.fa
+
+# Author-supplied licensed fonts (Myriad Pro). analysis_lib._register_fonts()
+# reads them from here if present, but they may not be redistributed and this
+# repo is published, so they are never committed.
+assets/fonts/

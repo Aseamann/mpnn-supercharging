@@ -1,0 +1,19 @@
+\begin{table}
+\caption{Headline comparison by method. Hit rate is per design; diversity is per scaffold x target cell.}
+\label{tab:T2_headline_comparison}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+method & n\_cells & n\_designs & hit\_rate & mut\_per\_charge\_median & unique\_sets\_median & pairwise\_hamming\_median & d\_reu\_per\_res\_median & d\_hbond\_strong\_median & d\_plddt\_vs\_wt\_median \\
+\midrule
+MPNN supercharge (soluble) & 200 & 2000 & 1.000 & 0.824 & 10.000 & 9.133 & -0.008 & 1.000 & -1.576 \\
+MPNN supercharge (original weights) & 200 & 2000 & 1.000 & 0.808 & 10.000 & 8.356 & -0.004 & 1.000 & -1.571 \\
+MPNN supercharge (h-bond protected) & 56 & 560 & 1.000 & 0.826 & 10.000 & 7.067 & -0.013 & 5.000 & -3.266 \\
+MPNN supercharge (HyperMPNN) & 200 & 2000 & 1.000 & 0.800 & 10.000 & 8.211 & 0.004 & 1.000 & -1.334 \\
+MPNN supercharge (HaloMPNN) & 200 & 2000 & 1.000 & 0.818 & 10.000 & 6.211 & 0.018 & 2.000 & -1.423 \\
+AvNAPSA & 200 & 2000 & 0.593 & 0.600 & 1.000 & 0.000 & 0.028 & -2.000 & -0.810 \\
+Rosetta supercharge & 200 & 2000 & 0.232 & 0.750 & 7.000 & 2.467 & -0.054 & 2.000 & -0.622 \\
+Rosetta supercharge (h-bond off) & 56 & 560 & 0.289 & 0.721 & 7.000 & 2.200 & -0.056 & 2.000 & -1.679 \\
+Random charge control & 200 & 2000 & 1.000 & 0.824 & 10.000 & 18.122 & 0.063 & 1.000 & -3.227 \\
+\bottomrule
+\end{tabular}
+\end{table}

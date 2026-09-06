@@ -1,0 +1,857 @@
+task_id	scaffold_id	chain	method	weights	weights_root	mutate_hbonded_sidechains	workdir	delta_q_density	delta_q	target_charge	n_samples	seed
+0	1a1x_A	A	mpnn_soluble	soluble		True	data	-24	-25	-32	10	3960110700
+1	1a1x_A	A	mpnn_soluble	soluble		True	data	-16	-17	-24	10	1186541720
+2	1a1x_A	A	mpnn_soluble	soluble		True	data	-8	-8	-15	10	403315302
+3	1a1x_A	A	mpnn_soluble	soluble		True	data	-4	-4	-11	10	1855006872
+4	1a1x_A	A	mpnn_soluble	soluble		True	data	4	4	-3	10	3338145628
+5	1a1x_A	A	mpnn_soluble	soluble		True	data	8	8	1	10	2306224419
+6	1a1x_A	A	mpnn_soluble	soluble		True	data	16	17	10	10	1957273125
+7	1a1x_A	A	mpnn_soluble	soluble		True	data	24	25	18	10	2135694730
+8	1at0_A	A	mpnn_soluble	soluble		True	data	-24	-34	-36	10	224587207
+9	1at0_A	A	mpnn_soluble	soluble		True	data	-16	-23	-25	10	1514385952
+10	1at0_A	A	mpnn_soluble	soluble		True	data	-8	-11	-13	10	4192907954
+11	1at0_A	A	mpnn_soluble	soluble		True	data	-4	-6	-8	10	4236056629
+12	1at0_A	A	mpnn_soluble	soluble		True	data	4	6	4	10	2310861708
+13	1at0_A	A	mpnn_soluble	soluble		True	data	8	11	9	10	1310149743
+14	1at0_A	A	mpnn_soluble	soluble		True	data	16	23	21	10	3888045830
+15	1at0_A	A	mpnn_soluble	soluble		True	data	24	34	32	10	1276342081
+16	1kll_A	A	mpnn_soluble	soluble		True	data	-24	-30	-39	10	3166913071
+17	1kll_A	A	mpnn_soluble	soluble		True	data	-16	-20	-29	10	1145338713
+18	1kll_A	A	mpnn_soluble	soluble		True	data	-8	-10	-19	10	4144640317
+19	1kll_A	A	mpnn_soluble	soluble		True	data	-4	-5	-14	10	3242400548
+20	1kll_A	A	mpnn_soluble	soluble		True	data	4	5	-4	10	623577654
+21	1kll_A	A	mpnn_soluble	soluble		True	data	8	10	1	10	2169594982
+22	1kll_A	A	mpnn_soluble	soluble		True	data	16	20	11	10	3576200963
+23	1kll_A	A	mpnn_soluble	soluble		True	data	24	30	21	10	2454586419
+24	1l8d_A	A	mpnn_soluble	soluble		True	data	-24	-25	-23	10	1474469477
+25	1l8d_A	A	mpnn_soluble	soluble		True	data	-16	-16	-14	10	2521277319
+26	1l8d_A	A	mpnn_soluble	soluble		True	data	-8	-8	-6	10	1467265454
+27	1l8d_A	A	mpnn_soluble	soluble		True	data	-4	-4	-2	10	699795909
+28	1l8d_A	A	mpnn_soluble	soluble		True	data	4	4	6	10	633160004
+29	1l8d_A	A	mpnn_soluble	soluble		True	data	8	8	10	10	1652242940
+30	1l8d_A	A	mpnn_soluble	soluble		True	data	16	16	18	10	406150758
+31	1l8d_A	A	mpnn_soluble	soluble		True	data	24	25	27	10	1126720282
+32	1li1_B	B	mpnn_soluble	soluble		True	data	-24	-54	-52	10	3977816158
+33	1li1_B	B	mpnn_soluble	soluble		True	data	-16	-36	-34	10	1718745029
+34	1li1_B	B	mpnn_soluble	soluble		True	data	-8	-18	-16	10	1330612930
+35	1li1_B	B	mpnn_soluble	soluble		True	data	-4	-9	-7	10	4068064073
+36	1li1_B	B	mpnn_soluble	soluble		True	data	4	9	11	10	3798884926
+37	1li1_B	B	mpnn_soluble	soluble		True	data	8	18	20	10	1252608116
+38	1li1_B	B	mpnn_soluble	soluble		True	data	16	36	38	10	2290647956
+39	1li1_B	B	mpnn_soluble	soluble		True	data	24	54	56	10	1623225628
+40	1lom_A	A	mpnn_soluble	soluble		True	data	-24	-24	-27	10	3403319634
+41	1lom_A	A	mpnn_soluble	soluble		True	data	-16	-16	-19	10	330736543
+42	1lom_A	A	mpnn_soluble	soluble		True	data	-8	-8	-11	10	344789792
+43	1lom_A	A	mpnn_soluble	soluble		True	data	-4	-4	-7	10	994826069
+44	1lom_A	A	mpnn_soluble	soluble		True	data	4	4	1	10	2416689423
+45	1lom_A	A	mpnn_soluble	soluble		True	data	8	8	5	10	1150438923
+46	1lom_A	A	mpnn_soluble	soluble		True	data	16	16	13	10	2689210778
+47	1lom_A	A	mpnn_soluble	soluble		True	data	24	24	21	10	4268017661
+48	1vmg_A	A	mpnn_soluble	soluble		True	data	-24	-19	-28	10	700618949
+49	1vmg_A	A	mpnn_soluble	soluble		True	data	-16	-13	-22	10	711475199
+50	1vmg_A	A	mpnn_soluble	soluble		True	data	-8	-6	-15	10	477397385
+51	1vmg_A	A	mpnn_soluble	soluble		True	data	-4	-3	-12	10	1897294358
+52	1vmg_A	A	mpnn_soluble	soluble		True	data	4	3	-6	10	1403235727
+53	1vmg_A	A	mpnn_soluble	soluble		True	data	8	6	-3	10	2792307514
+54	1vmg_A	A	mpnn_soluble	soluble		True	data	16	13	4	10	2202888669
+55	1vmg_A	A	mpnn_soluble	soluble		True	data	24	19	10	10	626157083
+56	2gux_A	A	mpnn_soluble	soluble		True	data	-24	-30	-32	10	831989620
+57	2gux_A	A	mpnn_soluble	soluble		True	data	-16	-20	-22	10	2786607210
+58	2gux_A	A	mpnn_soluble	soluble		True	data	-8	-10	-12	10	3541610192
+59	2gux_A	A	mpnn_soluble	soluble		True	data	-4	-5	-7	10	1206825422
+60	2gux_A	A	mpnn_soluble	soluble		True	data	4	5	3	10	1543028562
+61	2gux_A	A	mpnn_soluble	soluble		True	data	8	10	8	10	2931393917
+62	2gux_A	A	mpnn_soluble	soluble		True	data	16	20	18	10	990490927
+63	2gux_A	A	mpnn_soluble	soluble		True	data	24	30	28	10	4069087603
+64	2i7r_A	A	mpnn_soluble	soluble		True	data	-24	-27	-35	10	3836071906
+65	2i7r_A	A	mpnn_soluble	soluble		True	data	-16	-18	-26	10	3715394568
+66	2i7r_A	A	mpnn_soluble	soluble		True	data	-8	-9	-17	10	1863367653
+67	2i7r_A	A	mpnn_soluble	soluble		True	data	-4	-4	-12	10	2660660287
+68	2i7r_A	A	mpnn_soluble	soluble		True	data	4	4	-4	10	2255082025
+69	2i7r_A	A	mpnn_soluble	soluble		True	data	8	9	1	10	1872246514
+70	2i7r_A	A	mpnn_soluble	soluble		True	data	16	18	10	10	1263148905
+71	2i7r_A	A	mpnn_soluble	soluble		True	data	24	27	19	10	736437851
+72	2rfr_A	A	mpnn_soluble	soluble		True	data	-24	-36	-38	10	2190672968
+73	2rfr_A	A	mpnn_soluble	soluble		True	data	-16	-24	-26	10	1816147196
+74	2rfr_A	A	mpnn_soluble	soluble		True	data	-8	-12	-14	10	3824430939
+75	2rfr_A	A	mpnn_soluble	soluble		True	data	-4	-6	-8	10	386805291
+76	2rfr_A	A	mpnn_soluble	soluble		True	data	4	6	4	10	1072811067
+77	2rfr_A	A	mpnn_soluble	soluble		True	data	8	12	10	10	3632299015
+78	2rfr_A	A	mpnn_soluble	soluble		True	data	16	24	22	10	2573677155
+79	2rfr_A	A	mpnn_soluble	soluble		True	data	24	36	34	10	3977509615
+80	2waw_A	A	mpnn_soluble	soluble		True	data	-24	-47	-54	10	2535864639
+81	2waw_A	A	mpnn_soluble	soluble		True	data	-16	-32	-39	10	254824802
+82	2waw_A	A	mpnn_soluble	soluble		True	data	-8	-16	-23	10	793080749
+83	2waw_A	A	mpnn_soluble	soluble		True	data	-4	-8	-15	10	1090521470
+84	2waw_A	A	mpnn_soluble	soluble		True	data	4	8	1	10	2162070927
+85	2waw_A	A	mpnn_soluble	soluble		True	data	8	16	9	10	3233977168
+86	2waw_A	A	mpnn_soluble	soluble		True	data	16	32	25	10	3486226933
+87	2waw_A	A	mpnn_soluble	soluble		True	data	24	47	40	10	723756253
+88	2yxh_A	A	mpnn_soluble	soluble		True	data	-24	-27	-35	10	4025492178
+89	2yxh_A	A	mpnn_soluble	soluble		True	data	-16	-18	-26	10	2767787180
+90	2yxh_A	A	mpnn_soluble	soluble		True	data	-8	-9	-17	10	863558749
+91	2yxh_A	A	mpnn_soluble	soluble		True	data	-4	-4	-12	10	1845244918
+92	2yxh_A	A	mpnn_soluble	soluble		True	data	4	4	-4	10	1339364376
+93	2yxh_A	A	mpnn_soluble	soluble		True	data	8	9	1	10	2455520803
+94	2yxh_A	A	mpnn_soluble	soluble		True	data	16	18	10	10	2648926932
+95	2yxh_A	A	mpnn_soluble	soluble		True	data	24	27	19	10	3541020715
+96	3dm8_A	A	mpnn_soluble	soluble		True	data	-24	-32	-31	10	4204651288
+97	3dm8_A	A	mpnn_soluble	soluble		True	data	-16	-22	-21	10	2437958474
+98	3dm8_A	A	mpnn_soluble	soluble		True	data	-8	-11	-10	10	3486364497
+99	3dm8_A	A	mpnn_soluble	soluble		True	data	-4	-5	-4	10	1965363312
+100	3dm8_A	A	mpnn_soluble	soluble		True	data	4	5	6	10	3338344911
+101	3dm8_A	A	mpnn_soluble	soluble		True	data	8	11	12	10	263654975
+102	3dm8_A	A	mpnn_soluble	soluble		True	data	16	22	23	10	1781816923
+103	3dm8_A	A	mpnn_soluble	soluble		True	data	24	32	33	10	3419232554
+104	3gv1_A	A	mpnn_soluble	soluble		True	data	-24	-32	-31	10	2807331060
+105	3gv1_A	A	mpnn_soluble	soluble		True	data	-16	-21	-20	10	962748949
+106	3gv1_A	A	mpnn_soluble	soluble		True	data	-8	-11	-10	10	3813849044
+107	3gv1_A	A	mpnn_soluble	soluble		True	data	-4	-5	-4	10	1143765479
+108	3gv1_A	A	mpnn_soluble	soluble		True	data	4	5	6	10	2133420034
+109	3gv1_A	A	mpnn_soluble	soluble		True	data	8	11	12	10	4140719946
+110	3gv1_A	A	mpnn_soluble	soluble		True	data	16	21	22	10	2874589393
+111	3gv1_A	A	mpnn_soluble	soluble		True	data	24	32	33	10	876920956
+112	3iu6_A	A	mpnn_soluble	soluble		True	data	-24	-34	-40	10	1406144147
+113	3iu6_A	A	mpnn_soluble	soluble		True	data	-16	-23	-29	10	2317005629
+114	3iu6_A	A	mpnn_soluble	soluble		True	data	-8	-11	-17	10	603497008
+115	3iu6_A	A	mpnn_soluble	soluble		True	data	-4	-6	-12	10	3047233741
+116	3iu6_A	A	mpnn_soluble	soluble		True	data	4	6	0	10	857436824
+117	3iu6_A	A	mpnn_soluble	soluble		True	data	8	11	5	10	77012465
+118	3iu6_A	A	mpnn_soluble	soluble		True	data	16	23	17	10	1800473501
+119	3iu6_A	A	mpnn_soluble	soluble		True	data	24	34	28	10	716818252
+120	3sjq_C	C	mpnn_soluble	soluble		True	data	-24	-19	-5	10	2383334224
+121	3sjq_C	C	mpnn_soluble	soluble		True	data	-16	-13	1	10	4275880436
+122	3sjq_C	C	mpnn_soluble	soluble		True	data	-8	-6	8	10	592289883
+123	3sjq_C	C	mpnn_soluble	soluble		True	data	-4	-3	11	10	4098815854
+124	3sjq_C	C	mpnn_soluble	soluble		True	data	4	3	17	10	2566455625
+125	3sjq_C	C	mpnn_soluble	soluble		True	data	8	6	20	10	676256535
+126	3sjq_C	C	mpnn_soluble	soluble		True	data	16	13	27	10	3944919786
+127	3sjq_C	C	mpnn_soluble	soluble		True	data	24	19	33	10	1323243634
+128	3vjf_A	A	mpnn_soluble	soluble		True	data	-24	-22	-27	10	1191474129
+129	3vjf_A	A	mpnn_soluble	soluble		True	data	-16	-15	-20	10	2045679581
+130	3vjf_A	A	mpnn_soluble	soluble		True	data	-8	-7	-12	10	1067324865
+131	3vjf_A	A	mpnn_soluble	soluble		True	data	-4	-4	-9	10	2897218225
+132	3vjf_A	A	mpnn_soluble	soluble		True	data	4	4	-1	10	696519579
+133	3vjf_A	A	mpnn_soluble	soluble		True	data	8	7	2	10	2656121683
+134	3vjf_A	A	mpnn_soluble	soluble		True	data	16	15	10	10	2048179696
+135	3vjf_A	A	mpnn_soluble	soluble		True	data	24	22	17	10	1755587363
+136	3vto_Q	Q	mpnn_soluble	soluble		True	data	-24	-26	-25	10	4009912100
+137	3vto_Q	Q	mpnn_soluble	soluble		True	data	-16	-17	-16	10	3118337631
+138	3vto_Q	Q	mpnn_soluble	soluble		True	data	-8	-9	-8	10	363725464
+139	3vto_Q	Q	mpnn_soluble	soluble		True	data	-4	-4	-3	10	1194037218
+140	3vto_Q	Q	mpnn_soluble	soluble		True	data	4	4	5	10	861447794
+141	3vto_Q	Q	mpnn_soluble	soluble		True	data	8	9	10	10	2171294891
+142	3vto_Q	Q	mpnn_soluble	soluble		True	data	16	17	18	10	3661155176
+143	3vto_Q	Q	mpnn_soluble	soluble		True	data	24	26	27	10	3935776887
+144	4agh_A	A	mpnn_soluble	soluble		True	data	-24	-19	-19	10	3829547533
+145	4agh_A	A	mpnn_soluble	soluble		True	data	-16	-13	-13	10	2076093416
+146	4agh_A	A	mpnn_soluble	soluble		True	data	-8	-6	-6	10	977767822
+147	4agh_A	A	mpnn_soluble	soluble		True	data	-4	-3	-3	10	2876024751
+148	4agh_A	A	mpnn_soluble	soluble		True	data	4	3	3	10	252922872
+149	4agh_A	A	mpnn_soluble	soluble		True	data	8	6	6	10	2379578892
+150	4agh_A	A	mpnn_soluble	soluble		True	data	16	13	13	10	80322763
+151	4agh_A	A	mpnn_soluble	soluble		True	data	24	19	19	10	3589507257
+152	4cq4_B	B	mpnn_soluble	soluble		True	data	-24	-24	-29	10	1768614453
+153	4cq4_B	B	mpnn_soluble	soluble		True	data	-16	-16	-21	10	1636028584
+154	4cq4_B	B	mpnn_soluble	soluble		True	data	-8	-8	-13	10	474464273
+155	4cq4_B	B	mpnn_soluble	soluble		True	data	-4	-4	-9	10	3127694812
+156	4cq4_B	B	mpnn_soluble	soluble		True	data	4	4	-1	10	1536132065
+157	4cq4_B	B	mpnn_soluble	soluble		True	data	8	8	3	10	2966950566
+158	4cq4_B	B	mpnn_soluble	soluble		True	data	16	16	11	10	586003904
+159	4cq4_B	B	mpnn_soluble	soluble		True	data	24	24	19	10	3024410836
+160	4lws_B	B	mpnn_soluble	soluble		True	data	-24	-21	-27	10	4270093864
+161	4lws_B	B	mpnn_soluble	soluble		True	data	-16	-14	-20	10	3041908915
+162	4lws_B	B	mpnn_soluble	soluble		True	data	-8	-7	-13	10	963004668
+163	4lws_B	B	mpnn_soluble	soluble		True	data	-4	-3	-9	10	966309789
+164	4lws_B	B	mpnn_soluble	soluble		True	data	4	3	-3	10	830274121
+165	4lws_B	B	mpnn_soluble	soluble		True	data	8	7	1	10	3749868669
+166	4lws_B	B	mpnn_soluble	soluble		True	data	16	14	8	10	426935955
+167	4lws_B	B	mpnn_soluble	soluble		True	data	24	21	15	10	1772999705
+168	4o32_C	C	mpnn_soluble	soluble		True	data	-24	-22	-12	10	2763931850
+169	4o32_C	C	mpnn_soluble	soluble		True	data	-16	-15	-5	10	1643444748
+170	4o32_C	C	mpnn_soluble	soluble		True	data	-8	-7	3	10	2406646286
+171	4o32_C	C	mpnn_soluble	soluble		True	data	-4	-4	6	10	1272828267
+172	4o32_C	C	mpnn_soluble	soluble		True	data	4	4	14	10	3828299259
+173	4o32_C	C	mpnn_soluble	soluble		True	data	8	7	17	10	829973642
+174	4o32_C	C	mpnn_soluble	soluble		True	data	16	15	25	10	2914377535
+175	4o32_C	C	mpnn_soluble	soluble		True	data	24	22	32	10	3318818090
+176	4oeb_A	A	mpnn_soluble	soluble		True	data	-24	-32	-34	10	1532723049
+177	4oeb_A	A	mpnn_soluble	soluble		True	data	-16	-21	-23	10	2676197652
+178	4oeb_A	A	mpnn_soluble	soluble		True	data	-8	-11	-13	10	371042324
+179	4oeb_A	A	mpnn_soluble	soluble		True	data	-4	-5	-7	10	1975122000
+180	4oeb_A	A	mpnn_soluble	soluble		True	data	4	5	3	10	1938262902
+181	4oeb_A	A	mpnn_soluble	soluble		True	data	8	11	9	10	2446693105
+182	4oeb_A	A	mpnn_soluble	soluble		True	data	16	21	19	10	3834066591
+183	4oeb_A	A	mpnn_soluble	soluble		True	data	24	32	30	10	1606019625
+184	4pif_A	A	mpnn_soluble	soluble		True	data	-24	-33	-33	10	2752133002
+185	4pif_A	A	mpnn_soluble	soluble		True	data	-16	-22	-22	10	1522920448
+186	4pif_A	A	mpnn_soluble	soluble		True	data	-8	-11	-11	10	3022107658
+187	4pif_A	A	mpnn_soluble	soluble		True	data	-4	-6	-6	10	3533989503
+188	4pif_A	A	mpnn_soluble	soluble		True	data	4	6	6	10	3306983823
+189	4pif_A	A	mpnn_soluble	soluble		True	data	8	11	11	10	2720109263
+190	4pif_A	A	mpnn_soluble	soluble		True	data	16	22	22	10	3166259885
+191	4pif_A	A	mpnn_soluble	soluble		True	data	24	33	33	10	3384443808
+192	eGFP	A	mpnn_soluble	soluble		True	data	-24	-55	-62	10	1737850728
+193	eGFP	A	mpnn_soluble	soluble		True	data	-16	-37	-44	10	647021318
+194	eGFP	A	mpnn_soluble	soluble		True	data	-8	-18	-25	10	229611885
+195	eGFP	A	mpnn_soluble	soluble		True	data	-4	-9	-16	10	3325471845
+196	eGFP	A	mpnn_soluble	soluble		True	data	4	9	2	10	591021532
+197	eGFP	A	mpnn_soluble	soluble		True	data	8	18	11	10	2359352712
+198	eGFP	A	mpnn_soluble	soluble		True	data	16	37	30	10	1109816939
+199	eGFP	A	mpnn_soluble	soluble		True	data	24	55	48	10	2216035591
+200	1a1x_A	A	mpnn_vanilla_weights	original		True	data	-24	-25	-32	10	1635509930
+201	1a1x_A	A	mpnn_vanilla_weights	original		True	data	-16	-17	-24	10	2208604237
+202	1a1x_A	A	mpnn_vanilla_weights	original		True	data	-8	-8	-15	10	202428314
+203	1a1x_A	A	mpnn_vanilla_weights	original		True	data	-4	-4	-11	10	3069363880
+204	1a1x_A	A	mpnn_vanilla_weights	original		True	data	4	4	-3	10	1615564432
+205	1a1x_A	A	mpnn_vanilla_weights	original		True	data	8	8	1	10	1915094918
+206	1a1x_A	A	mpnn_vanilla_weights	original		True	data	16	17	10	10	627716465
+207	1a1x_A	A	mpnn_vanilla_weights	original		True	data	24	25	18	10	2431679306
+208	1at0_A	A	mpnn_vanilla_weights	original		True	data	-24	-34	-36	10	3662169613
+209	1at0_A	A	mpnn_vanilla_weights	original		True	data	-16	-23	-25	10	2124771182
+210	1at0_A	A	mpnn_vanilla_weights	original		True	data	-8	-11	-13	10	3252637972
+211	1at0_A	A	mpnn_vanilla_weights	original		True	data	-4	-6	-8	10	3301220957
+212	1at0_A	A	mpnn_vanilla_weights	original		True	data	4	6	4	10	2304960614
+213	1at0_A	A	mpnn_vanilla_weights	original		True	data	8	11	9	10	2137919780
+214	1at0_A	A	mpnn_vanilla_weights	original		True	data	16	23	21	10	1456809350
+215	1at0_A	A	mpnn_vanilla_weights	original		True	data	24	34	32	10	1189460890
+216	1kll_A	A	mpnn_vanilla_weights	original		True	data	-24	-30	-39	10	1826445634
+217	1kll_A	A	mpnn_vanilla_weights	original		True	data	-16	-20	-29	10	715076778
+218	1kll_A	A	mpnn_vanilla_weights	original		True	data	-8	-10	-19	10	1294163160
+219	1kll_A	A	mpnn_vanilla_weights	original		True	data	-4	-5	-14	10	1878014125
+220	1kll_A	A	mpnn_vanilla_weights	original		True	data	4	5	-4	10	3970721625
+221	1kll_A	A	mpnn_vanilla_weights	original		True	data	8	10	1	10	3392214261
+222	1kll_A	A	mpnn_vanilla_weights	original		True	data	16	20	11	10	3401452763
+223	1kll_A	A	mpnn_vanilla_weights	original		True	data	24	30	21	10	2780693210
+224	1l8d_A	A	mpnn_vanilla_weights	original		True	data	-24	-25	-23	10	174344795
+225	1l8d_A	A	mpnn_vanilla_weights	original		True	data	-16	-16	-14	10	3002345216
+226	1l8d_A	A	mpnn_vanilla_weights	original		True	data	-8	-8	-6	10	3085866107
+227	1l8d_A	A	mpnn_vanilla_weights	original		True	data	-4	-4	-2	10	3988199589
+228	1l8d_A	A	mpnn_vanilla_weights	original		True	data	4	4	6	10	1410237662
+229	1l8d_A	A	mpnn_vanilla_weights	original		True	data	8	8	10	10	436894027
+230	1l8d_A	A	mpnn_vanilla_weights	original		True	data	16	16	18	10	3865370299
+231	1l8d_A	A	mpnn_vanilla_weights	original		True	data	24	25	27	10	1264125300
+232	1li1_B	B	mpnn_vanilla_weights	original		True	data	-24	-54	-52	10	1540595855
+233	1li1_B	B	mpnn_vanilla_weights	original		True	data	-16	-36	-34	10	2501602865
+234	1li1_B	B	mpnn_vanilla_weights	original		True	data	-8	-18	-16	10	3214017225
+235	1li1_B	B	mpnn_vanilla_weights	original		True	data	-4	-9	-7	10	1358378229
+236	1li1_B	B	mpnn_vanilla_weights	original		True	data	4	9	11	10	943521295
+237	1li1_B	B	mpnn_vanilla_weights	original		True	data	8	18	20	10	523634803
+238	1li1_B	B	mpnn_vanilla_weights	original		True	data	16	36	38	10	2615411685
+239	1li1_B	B	mpnn_vanilla_weights	original		True	data	24	54	56	10	3546705346
+240	1lom_A	A	mpnn_vanilla_weights	original		True	data	-24	-24	-27	10	1837511349
+241	1lom_A	A	mpnn_vanilla_weights	original		True	data	-16	-16	-19	10	513153324
+242	1lom_A	A	mpnn_vanilla_weights	original		True	data	-8	-8	-11	10	3307947955
+243	1lom_A	A	mpnn_vanilla_weights	original		True	data	-4	-4	-7	10	748201536
+244	1lom_A	A	mpnn_vanilla_weights	original		True	data	4	4	1	10	544395706
+245	1lom_A	A	mpnn_vanilla_weights	original		True	data	8	8	5	10	1491801914
+246	1lom_A	A	mpnn_vanilla_weights	original		True	data	16	16	13	10	1260581479
+247	1lom_A	A	mpnn_vanilla_weights	original		True	data	24	24	21	10	2778326689
+248	1vmg_A	A	mpnn_vanilla_weights	original		True	data	-24	-19	-28	10	2274549681
+249	1vmg_A	A	mpnn_vanilla_weights	original		True	data	-16	-13	-22	10	3751197158
+250	1vmg_A	A	mpnn_vanilla_weights	original		True	data	-8	-6	-15	10	2154133348
+251	1vmg_A	A	mpnn_vanilla_weights	original		True	data	-4	-3	-12	10	2991104744
+252	1vmg_A	A	mpnn_vanilla_weights	original		True	data	4	3	-6	10	408440574
+253	1vmg_A	A	mpnn_vanilla_weights	original		True	data	8	6	-3	10	2192268617
+254	1vmg_A	A	mpnn_vanilla_weights	original		True	data	16	13	4	10	2892037352
+255	1vmg_A	A	mpnn_vanilla_weights	original		True	data	24	19	10	10	1414769252
+256	2gux_A	A	mpnn_vanilla_weights	original		True	data	-24	-30	-32	10	3340670070
+257	2gux_A	A	mpnn_vanilla_weights	original		True	data	-16	-20	-22	10	2846270930
+258	2gux_A	A	mpnn_vanilla_weights	original		True	data	-8	-10	-12	10	4188865926
+259	2gux_A	A	mpnn_vanilla_weights	original		True	data	-4	-5	-7	10	3359235983
+260	2gux_A	A	mpnn_vanilla_weights	original		True	data	4	5	3	10	3959468152
+261	2gux_A	A	mpnn_vanilla_weights	original		True	data	8	10	8	10	1797355352
+262	2gux_A	A	mpnn_vanilla_weights	original		True	data	16	20	18	10	3950631159
+263	2gux_A	A	mpnn_vanilla_weights	original		True	data	24	30	28	10	1911424632
+264	2i7r_A	A	mpnn_vanilla_weights	original		True	data	-24	-27	-35	10	3694966052
+265	2i7r_A	A	mpnn_vanilla_weights	original		True	data	-16	-18	-26	10	3526771274
+266	2i7r_A	A	mpnn_vanilla_weights	original		True	data	-8	-9	-17	10	1084188279
+267	2i7r_A	A	mpnn_vanilla_weights	original		True	data	-4	-4	-12	10	426318491
+268	2i7r_A	A	mpnn_vanilla_weights	original		True	data	4	4	-4	10	1474812639
+269	2i7r_A	A	mpnn_vanilla_weights	original		True	data	8	9	1	10	3459235929
+270	2i7r_A	A	mpnn_vanilla_weights	original		True	data	16	18	10	10	4167604516
+271	2i7r_A	A	mpnn_vanilla_weights	original		True	data	24	27	19	10	2797981825
+272	2rfr_A	A	mpnn_vanilla_weights	original		True	data	-24	-36	-38	10	497551381
+273	2rfr_A	A	mpnn_vanilla_weights	original		True	data	-16	-24	-26	10	128582653
+274	2rfr_A	A	mpnn_vanilla_weights	original		True	data	-8	-12	-14	10	2947856161
+275	2rfr_A	A	mpnn_vanilla_weights	original		True	data	-4	-6	-8	10	2787719468
+276	2rfr_A	A	mpnn_vanilla_weights	original		True	data	4	6	4	10	635065615
+277	2rfr_A	A	mpnn_vanilla_weights	original		True	data	8	12	10	10	3575076238
+278	2rfr_A	A	mpnn_vanilla_weights	original		True	data	16	24	22	10	1868849092
+279	2rfr_A	A	mpnn_vanilla_weights	original		True	data	24	36	34	10	3187156348
+280	2waw_A	A	mpnn_vanilla_weights	original		True	data	-24	-47	-54	10	1578337208
+281	2waw_A	A	mpnn_vanilla_weights	original		True	data	-16	-32	-39	10	2130090855
+282	2waw_A	A	mpnn_vanilla_weights	original		True	data	-8	-16	-23	10	1816926554
+283	2waw_A	A	mpnn_vanilla_weights	original		True	data	-4	-8	-15	10	2239639211
+284	2waw_A	A	mpnn_vanilla_weights	original		True	data	4	8	1	10	3962505623
+285	2waw_A	A	mpnn_vanilla_weights	original		True	data	8	16	9	10	2537987437
+286	2waw_A	A	mpnn_vanilla_weights	original		True	data	16	32	25	10	3957437342
+287	2waw_A	A	mpnn_vanilla_weights	original		True	data	24	47	40	10	1037997254
+288	2yxh_A	A	mpnn_vanilla_weights	original		True	data	-24	-27	-35	10	1172855035
+289	2yxh_A	A	mpnn_vanilla_weights	original		True	data	-16	-18	-26	10	3812114641
+290	2yxh_A	A	mpnn_vanilla_weights	original		True	data	-8	-9	-17	10	1899967270
+291	2yxh_A	A	mpnn_vanilla_weights	original		True	data	-4	-4	-12	10	2372396186
+292	2yxh_A	A	mpnn_vanilla_weights	original		True	data	4	4	-4	10	1650583418
+293	2yxh_A	A	mpnn_vanilla_weights	original		True	data	8	9	1	10	2479296530
+294	2yxh_A	A	mpnn_vanilla_weights	original		True	data	16	18	10	10	3508737423
+295	2yxh_A	A	mpnn_vanilla_weights	original		True	data	24	27	19	10	2676527677
+296	3dm8_A	A	mpnn_vanilla_weights	original		True	data	-24	-32	-31	10	2328343117
+297	3dm8_A	A	mpnn_vanilla_weights	original		True	data	-16	-22	-21	10	1829468613
+298	3dm8_A	A	mpnn_vanilla_weights	original		True	data	-8	-11	-10	10	2010097583
+299	3dm8_A	A	mpnn_vanilla_weights	original		True	data	-4	-5	-4	10	2566750219
+300	3dm8_A	A	mpnn_vanilla_weights	original		True	data	4	5	6	10	2452287834
+301	3dm8_A	A	mpnn_vanilla_weights	original		True	data	8	11	12	10	2117500061
+302	3dm8_A	A	mpnn_vanilla_weights	original		True	data	16	22	23	10	3069370055
+303	3dm8_A	A	mpnn_vanilla_weights	original		True	data	24	32	33	10	2755397771
+304	3gv1_A	A	mpnn_vanilla_weights	original		True	data	-24	-32	-31	10	1888259265
+305	3gv1_A	A	mpnn_vanilla_weights	original		True	data	-16	-21	-20	10	245004463
+306	3gv1_A	A	mpnn_vanilla_weights	original		True	data	-8	-11	-10	10	312382388
+307	3gv1_A	A	mpnn_vanilla_weights	original		True	data	-4	-5	-4	10	2084700015
+308	3gv1_A	A	mpnn_vanilla_weights	original		True	data	4	5	6	10	2294498365
+309	3gv1_A	A	mpnn_vanilla_weights	original		True	data	8	11	12	10	618973979
+310	3gv1_A	A	mpnn_vanilla_weights	original		True	data	16	21	22	10	543486547
+311	3gv1_A	A	mpnn_vanilla_weights	original		True	data	24	32	33	10	906219055
+312	3iu6_A	A	mpnn_vanilla_weights	original		True	data	-24	-34	-40	10	1534043342
+313	3iu6_A	A	mpnn_vanilla_weights	original		True	data	-16	-23	-29	10	3871631279
+314	3iu6_A	A	mpnn_vanilla_weights	original		True	data	-8	-11	-17	10	1616035153
+315	3iu6_A	A	mpnn_vanilla_weights	original		True	data	-4	-6	-12	10	3654899597
+316	3iu6_A	A	mpnn_vanilla_weights	original		True	data	4	6	0	10	772820670
+317	3iu6_A	A	mpnn_vanilla_weights	original		True	data	8	11	5	10	4166204983
+318	3iu6_A	A	mpnn_vanilla_weights	original		True	data	16	23	17	10	1670959882
+319	3iu6_A	A	mpnn_vanilla_weights	original		True	data	24	34	28	10	538763851
+320	3sjq_C	C	mpnn_vanilla_weights	original		True	data	-24	-19	-5	10	3891274060
+321	3sjq_C	C	mpnn_vanilla_weights	original		True	data	-16	-13	1	10	2501205413
+322	3sjq_C	C	mpnn_vanilla_weights	original		True	data	-8	-6	8	10	1758358809
+323	3sjq_C	C	mpnn_vanilla_weights	original		True	data	-4	-3	11	10	537049047
+324	3sjq_C	C	mpnn_vanilla_weights	original		True	data	4	3	17	10	661688369
+325	3sjq_C	C	mpnn_vanilla_weights	original		True	data	8	6	20	10	1829076191
+326	3sjq_C	C	mpnn_vanilla_weights	original		True	data	16	13	27	10	3958176360
+327	3sjq_C	C	mpnn_vanilla_weights	original		True	data	24	19	33	10	746644766
+328	3vjf_A	A	mpnn_vanilla_weights	original		True	data	-24	-22	-27	10	628774787
+329	3vjf_A	A	mpnn_vanilla_weights	original		True	data	-16	-15	-20	10	1787671992
+330	3vjf_A	A	mpnn_vanilla_weights	original		True	data	-8	-7	-12	10	1251739248
+331	3vjf_A	A	mpnn_vanilla_weights	original		True	data	-4	-4	-9	10	2172439015
+332	3vjf_A	A	mpnn_vanilla_weights	original		True	data	4	4	-1	10	942120087
+333	3vjf_A	A	mpnn_vanilla_weights	original		True	data	8	7	2	10	2822013059
+334	3vjf_A	A	mpnn_vanilla_weights	original		True	data	16	15	10	10	3707972612
+335	3vjf_A	A	mpnn_vanilla_weights	original		True	data	24	22	17	10	804382348
+336	3vto_Q	Q	mpnn_vanilla_weights	original		True	data	-24	-26	-25	10	1372610727
+337	3vto_Q	Q	mpnn_vanilla_weights	original		True	data	-16	-17	-16	10	875334227
+338	3vto_Q	Q	mpnn_vanilla_weights	original		True	data	-8	-9	-8	10	219450764
+339	3vto_Q	Q	mpnn_vanilla_weights	original		True	data	-4	-4	-3	10	1786159643
+340	3vto_Q	Q	mpnn_vanilla_weights	original		True	data	4	4	5	10	2292373248
+341	3vto_Q	Q	mpnn_vanilla_weights	original		True	data	8	9	10	10	2193520712
+342	3vto_Q	Q	mpnn_vanilla_weights	original		True	data	16	17	18	10	2335757107
+343	3vto_Q	Q	mpnn_vanilla_weights	original		True	data	24	26	27	10	2960872148
+344	4agh_A	A	mpnn_vanilla_weights	original		True	data	-24	-19	-19	10	1479707088
+345	4agh_A	A	mpnn_vanilla_weights	original		True	data	-16	-13	-13	10	1496964011
+346	4agh_A	A	mpnn_vanilla_weights	original		True	data	-8	-6	-6	10	4280696321
+347	4agh_A	A	mpnn_vanilla_weights	original		True	data	-4	-3	-3	10	4061337456
+348	4agh_A	A	mpnn_vanilla_weights	original		True	data	4	3	3	10	1529732492
+349	4agh_A	A	mpnn_vanilla_weights	original		True	data	8	6	6	10	3413197366
+350	4agh_A	A	mpnn_vanilla_weights	original		True	data	16	13	13	10	1481513892
+351	4agh_A	A	mpnn_vanilla_weights	original		True	data	24	19	19	10	103395158
+352	4cq4_B	B	mpnn_vanilla_weights	original		True	data	-24	-24	-29	10	3063004882
+353	4cq4_B	B	mpnn_vanilla_weights	original		True	data	-16	-16	-21	10	1361273677
+354	4cq4_B	B	mpnn_vanilla_weights	original		True	data	-8	-8	-13	10	3147853866
+355	4cq4_B	B	mpnn_vanilla_weights	original		True	data	-4	-4	-9	10	3355032676
+356	4cq4_B	B	mpnn_vanilla_weights	original		True	data	4	4	-1	10	620330738
+357	4cq4_B	B	mpnn_vanilla_weights	original		True	data	8	8	3	10	823415996
+358	4cq4_B	B	mpnn_vanilla_weights	original		True	data	16	16	11	10	3284939711
+359	4cq4_B	B	mpnn_vanilla_weights	original		True	data	24	24	19	10	1607735079
+360	4lws_B	B	mpnn_vanilla_weights	original		True	data	-24	-21	-27	10	1040234624
+361	4lws_B	B	mpnn_vanilla_weights	original		True	data	-16	-14	-20	10	252202787
+362	4lws_B	B	mpnn_vanilla_weights	original		True	data	-8	-7	-13	10	2908840289
+363	4lws_B	B	mpnn_vanilla_weights	original		True	data	-4	-3	-9	10	3755224612
+364	4lws_B	B	mpnn_vanilla_weights	original		True	data	4	3	-3	10	396314746
+365	4lws_B	B	mpnn_vanilla_weights	original		True	data	8	7	1	10	4227842677
+366	4lws_B	B	mpnn_vanilla_weights	original		True	data	16	14	8	10	2677192569
+367	4lws_B	B	mpnn_vanilla_weights	original		True	data	24	21	15	10	2614148946
+368	4o32_C	C	mpnn_vanilla_weights	original		True	data	-24	-22	-12	10	3528889428
+369	4o32_C	C	mpnn_vanilla_weights	original		True	data	-16	-15	-5	10	3156032682
+370	4o32_C	C	mpnn_vanilla_weights	original		True	data	-8	-7	3	10	3929605432
+371	4o32_C	C	mpnn_vanilla_weights	original		True	data	-4	-4	6	10	1337898620
+372	4o32_C	C	mpnn_vanilla_weights	original		True	data	4	4	14	10	3081772623
+373	4o32_C	C	mpnn_vanilla_weights	original		True	data	8	7	17	10	826197394
+374	4o32_C	C	mpnn_vanilla_weights	original		True	data	16	15	25	10	1776272154
+375	4o32_C	C	mpnn_vanilla_weights	original		True	data	24	22	32	10	4228863450
+376	4oeb_A	A	mpnn_vanilla_weights	original		True	data	-24	-32	-34	10	3950596745
+377	4oeb_A	A	mpnn_vanilla_weights	original		True	data	-16	-21	-23	10	2456436799
+378	4oeb_A	A	mpnn_vanilla_weights	original		True	data	-8	-11	-13	10	2811850352
+379	4oeb_A	A	mpnn_vanilla_weights	original		True	data	-4	-5	-7	10	2491291972
+380	4oeb_A	A	mpnn_vanilla_weights	original		True	data	4	5	3	10	300840599
+381	4oeb_A	A	mpnn_vanilla_weights	original		True	data	8	11	9	10	2688078252
+382	4oeb_A	A	mpnn_vanilla_weights	original		True	data	16	21	19	10	1137968426
+383	4oeb_A	A	mpnn_vanilla_weights	original		True	data	24	32	30	10	1815312623
+384	4pif_A	A	mpnn_vanilla_weights	original		True	data	-24	-33	-33	10	712761719
+385	4pif_A	A	mpnn_vanilla_weights	original		True	data	-16	-22	-22	10	3985532194
+386	4pif_A	A	mpnn_vanilla_weights	original		True	data	-8	-11	-11	10	2646329887
+387	4pif_A	A	mpnn_vanilla_weights	original		True	data	-4	-6	-6	10	2062405273
+388	4pif_A	A	mpnn_vanilla_weights	original		True	data	4	6	6	10	1302921145
+389	4pif_A	A	mpnn_vanilla_weights	original		True	data	8	11	11	10	3738596186
+390	4pif_A	A	mpnn_vanilla_weights	original		True	data	16	22	22	10	2904951336
+391	4pif_A	A	mpnn_vanilla_weights	original		True	data	24	33	33	10	2906686901
+392	eGFP	A	mpnn_vanilla_weights	original		True	data	-24	-55	-62	10	464844516
+393	eGFP	A	mpnn_vanilla_weights	original		True	data	-16	-37	-44	10	2802885023
+394	eGFP	A	mpnn_vanilla_weights	original		True	data	-8	-18	-25	10	1390329875
+395	eGFP	A	mpnn_vanilla_weights	original		True	data	-4	-9	-16	10	2579917928
+396	eGFP	A	mpnn_vanilla_weights	original		True	data	4	9	2	10	1068587710
+397	eGFP	A	mpnn_vanilla_weights	original		True	data	8	18	11	10	2924715524
+398	eGFP	A	mpnn_vanilla_weights	original		True	data	16	37	30	10	1039949056
+399	eGFP	A	mpnn_vanilla_weights	original		True	data	24	55	48	10	2649212665
+400	1a1x_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-24	-25	-32	10	201984579
+401	1a1x_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-16	-17	-24	10	2510075654
+402	1a1x_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-8	-8	-15	10	3246903998
+403	1a1x_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-4	-4	-11	10	3335865245
+404	1a1x_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	4	4	-3	10	2019454774
+405	1a1x_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	8	8	1	10	3100535058
+406	1a1x_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	16	17	10	10	1559632637
+407	1a1x_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	24	25	18	10	1740722194
+408	1at0_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-24	-34	-36	10	2256048987
+409	1at0_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-16	-23	-25	10	3626474055
+410	1at0_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-8	-11	-13	10	1779057287
+411	1at0_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-4	-6	-8	10	4031255803
+412	1at0_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	4	6	4	10	1808726203
+413	1at0_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	8	11	9	10	1223442790
+414	1at0_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	16	23	21	10	1699666270
+415	1at0_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	24	34	32	10	56373088
+416	1kll_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-24	-30	-39	10	2701009768
+417	1kll_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-16	-20	-29	10	2450139881
+418	1kll_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-8	-10	-19	10	2429175015
+419	1kll_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-4	-5	-14	10	3018815171
+420	1kll_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	4	5	-4	10	1784523024
+421	1kll_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	8	10	1	10	1874646306
+422	1kll_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	16	20	11	10	3146615054
+423	1kll_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	24	30	21	10	2796410677
+424	1l8d_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-24	-25	-23	10	910061889
+425	1l8d_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-16	-16	-14	10	873637176
+426	1l8d_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-8	-8	-6	10	3402355719
+427	1l8d_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-4	-4	-2	10	361367547
+428	1l8d_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	4	4	6	10	1189369021
+429	1l8d_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	8	8	10	10	762787218
+430	1l8d_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	16	16	18	10	2130225761
+431	1l8d_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	24	25	27	10	3073634703
+432	1vmg_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-24	-19	-28	10	1767334444
+433	1vmg_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-16	-13	-22	10	2430418514
+434	1vmg_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-8	-6	-15	10	1593721041
+435	1vmg_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-4	-3	-12	10	2586916808
+436	1vmg_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	4	3	-6	10	3504876204
+437	1vmg_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	8	6	-3	10	3473051735
+438	1vmg_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	16	13	4	10	1571562718
+439	1vmg_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	24	19	10	10	2685627209
+440	2i7r_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-24	-27	-35	10	2330786306
+441	2i7r_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-16	-18	-26	10	2549625346
+442	2i7r_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-8	-9	-17	10	2199266457
+443	2i7r_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-4	-4	-12	10	817480600
+444	2i7r_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	4	4	-4	10	2189709500
+445	2i7r_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	8	9	1	10	2960183750
+446	2i7r_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	16	18	10	10	3775926082
+447	2i7r_A	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	24	27	19	10	1813415742
+448	eGFP	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-24	-55	-62	10	3970203190
+449	eGFP	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-16	-37	-44	10	1230429173
+450	eGFP	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-8	-18	-25	10	3187071839
+451	eGFP	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	-4	-9	-16	10	1917192809
+452	eGFP	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	4	9	2	10	2516291549
+453	eGFP	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	8	18	11	10	2240743864
+454	eGFP	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	16	37	30	10	3528043152
+455	eGFP	A	mpnn_soluble_hbond_protected	soluble		False	data/hbond_protected	24	55	48	10	2232920438
+456	1a1x_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-25	-32	10	1830764676
+457	1a1x_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-17	-24	10	1387576361
+458	1a1x_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-8	-15	10	3138412631
+459	1a1x_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-4	-11	10	2189290918
+460	1a1x_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	4	-3	10	3169574776
+461	1a1x_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	8	1	10	2390741952
+462	1a1x_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	17	10	10	406879939
+463	1a1x_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	25	18	10	4292807757
+464	1at0_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-34	-36	10	645765330
+465	1at0_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-23	-25	10	823704152
+466	1at0_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-11	-13	10	1321637803
+467	1at0_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-6	-8	10	1400214693
+468	1at0_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	6	4	10	53560358
+469	1at0_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	11	9	10	1643320222
+470	1at0_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	23	21	10	3915911757
+471	1at0_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	34	32	10	2984621649
+472	1kll_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-30	-39	10	1871915664
+473	1kll_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-20	-29	10	1962782806
+474	1kll_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-10	-19	10	1083589045
+475	1kll_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-5	-14	10	2140025652
+476	1kll_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	5	-4	10	3210583882
+477	1kll_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	10	1	10	808661741
+478	1kll_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	20	11	10	734069745
+479	1kll_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	30	21	10	3157613936
+480	1l8d_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-25	-23	10	976492309
+481	1l8d_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-16	-14	10	207764417
+482	1l8d_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-8	-6	10	4261655985
+483	1l8d_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-4	-2	10	1870635685
+484	1l8d_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	4	6	10	253522866
+485	1l8d_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	8	10	10	3163986772
+486	1l8d_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	16	18	10	2425120106
+487	1l8d_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	25	27	10	1892023152
+488	1li1_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-54	-52	10	2688915486
+489	1li1_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-36	-34	10	846155526
+490	1li1_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-18	-16	10	846221002
+491	1li1_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-9	-7	10	347130209
+492	1li1_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	4	9	11	10	1159648756
+493	1li1_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	8	18	20	10	1217940860
+494	1li1_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	16	36	38	10	4103680783
+495	1li1_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	24	54	56	10	3422956795
+496	1lom_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-24	-27	10	2803720545
+497	1lom_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-16	-19	10	3587811347
+498	1lom_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-8	-11	10	949932306
+499	1lom_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-4	-7	10	2238725328
+500	1lom_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	4	1	10	3363844712
+501	1lom_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	8	5	10	93125761
+502	1lom_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	16	13	10	3776618618
+503	1lom_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	24	21	10	1105843546
+504	1vmg_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-19	-28	10	1498945624
+505	1vmg_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-13	-22	10	1451991651
+506	1vmg_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-6	-15	10	1140395527
+507	1vmg_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-3	-12	10	2388140194
+508	1vmg_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	3	-6	10	204806668
+509	1vmg_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	6	-3	10	1972835539
+510	1vmg_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	13	4	10	1384353741
+511	1vmg_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	19	10	10	755182015
+512	2gux_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-30	-32	10	4126541306
+513	2gux_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-20	-22	10	1012304131
+514	2gux_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-10	-12	10	3072891053
+515	2gux_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-5	-7	10	4225280123
+516	2gux_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	5	3	10	1248786883
+517	2gux_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	10	8	10	40001759
+518	2gux_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	20	18	10	1601119495
+519	2gux_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	30	28	10	3659714406
+520	2i7r_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-27	-35	10	3736911738
+521	2i7r_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-18	-26	10	2011903658
+522	2i7r_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-9	-17	10	2112270292
+523	2i7r_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-4	-12	10	802878956
+524	2i7r_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	4	-4	10	784008218
+525	2i7r_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	9	1	10	3371809166
+526	2i7r_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	18	10	10	1939262852
+527	2i7r_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	27	19	10	259567970
+528	2rfr_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-36	-38	10	1952963106
+529	2rfr_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-24	-26	10	3673540742
+530	2rfr_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-12	-14	10	1320464377
+531	2rfr_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-6	-8	10	84602287
+532	2rfr_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	6	4	10	1193443956
+533	2rfr_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	12	10	10	445974793
+534	2rfr_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	24	22	10	3461171430
+535	2rfr_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	36	34	10	2119503454
+536	2waw_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-47	-54	10	370259944
+537	2waw_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-32	-39	10	3610900428
+538	2waw_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-16	-23	10	1553946261
+539	2waw_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-8	-15	10	613653453
+540	2waw_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	8	1	10	3671040167
+541	2waw_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	16	9	10	432906852
+542	2waw_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	32	25	10	2107740868
+543	2waw_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	47	40	10	465552812
+544	2yxh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-27	-35	10	1581694102
+545	2yxh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-18	-26	10	2309996474
+546	2yxh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-9	-17	10	3899051012
+547	2yxh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-4	-12	10	3841626720
+548	2yxh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	4	-4	10	1047591955
+549	2yxh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	9	1	10	1981982435
+550	2yxh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	18	10	10	3585639875
+551	2yxh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	27	19	10	1491358606
+552	3dm8_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-32	-31	10	4198633404
+553	3dm8_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-22	-21	10	1695229201
+554	3dm8_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-11	-10	10	3037810311
+555	3dm8_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-5	-4	10	4242051962
+556	3dm8_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	5	6	10	3938092350
+557	3dm8_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	11	12	10	2576298904
+558	3dm8_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	22	23	10	2232659753
+559	3dm8_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	32	33	10	3813554850
+560	3gv1_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-32	-31	10	2075947176
+561	3gv1_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-21	-20	10	3797473847
+562	3gv1_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-11	-10	10	1052385990
+563	3gv1_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-5	-4	10	1743402212
+564	3gv1_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	5	6	10	1094869568
+565	3gv1_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	11	12	10	3133390621
+566	3gv1_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	21	22	10	3545977017
+567	3gv1_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	32	33	10	1868494210
+568	3iu6_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-34	-40	10	2853977607
+569	3iu6_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-23	-29	10	407245122
+570	3iu6_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-11	-17	10	907864496
+571	3iu6_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-6	-12	10	3302566350
+572	3iu6_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	6	0	10	563528168
+573	3iu6_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	11	5	10	861542044
+574	3iu6_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	23	17	10	3737853594
+575	3iu6_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	34	28	10	1635724962
+576	3sjq_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-19	-5	10	4068553485
+577	3sjq_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-13	1	10	2612021701
+578	3sjq_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-6	8	10	2764055457
+579	3sjq_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-3	11	10	3033895195
+580	3sjq_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	4	3	17	10	3528773113
+581	3sjq_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	8	6	20	10	1537715849
+582	3sjq_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	16	13	27	10	72901540
+583	3sjq_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	24	19	33	10	1478113830
+584	3vjf_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-22	-27	10	52974693
+585	3vjf_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-15	-20	10	529732644
+586	3vjf_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-7	-12	10	243202737
+587	3vjf_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-4	-9	10	3305617583
+588	3vjf_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	4	-1	10	2144704151
+589	3vjf_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	7	2	10	4186596407
+590	3vjf_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	15	10	10	448364683
+591	3vjf_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	22	17	10	525859122
+592	3vto_Q	Q	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-26	-25	10	2832157211
+593	3vto_Q	Q	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-17	-16	10	2865188909
+594	3vto_Q	Q	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-9	-8	10	4003460862
+595	3vto_Q	Q	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-4	-3	10	3040600157
+596	3vto_Q	Q	mpnn_hyper	original	data/altweights/hyper	True	data	4	4	5	10	2140663662
+597	3vto_Q	Q	mpnn_hyper	original	data/altweights/hyper	True	data	8	9	10	10	3840890272
+598	3vto_Q	Q	mpnn_hyper	original	data/altweights/hyper	True	data	16	17	18	10	3857708410
+599	3vto_Q	Q	mpnn_hyper	original	data/altweights/hyper	True	data	24	26	27	10	2270130061
+600	4agh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-19	-19	10	2619463479
+601	4agh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-13	-13	10	3109927753
+602	4agh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-6	-6	10	1742235462
+603	4agh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-3	-3	10	1020496659
+604	4agh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	3	3	10	2606553608
+605	4agh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	6	6	10	1269657872
+606	4agh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	13	13	10	74421741
+607	4agh_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	19	19	10	415257782
+608	4cq4_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-24	-29	10	679270053
+609	4cq4_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-16	-21	10	1100483151
+610	4cq4_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-8	-13	10	3374738389
+611	4cq4_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-4	-9	10	1057671354
+612	4cq4_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	4	4	-1	10	3270535574
+613	4cq4_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	8	8	3	10	4178755614
+614	4cq4_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	16	16	11	10	3357130567
+615	4cq4_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	24	24	19	10	3049497534
+616	4lws_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-21	-27	10	196653285
+617	4lws_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-14	-20	10	3155509733
+618	4lws_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-7	-13	10	1167114343
+619	4lws_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-3	-9	10	3158996437
+620	4lws_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	4	3	-3	10	2655592079
+621	4lws_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	8	7	1	10	2517561082
+622	4lws_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	16	14	8	10	2590245139
+623	4lws_B	B	mpnn_hyper	original	data/altweights/hyper	True	data	24	21	15	10	3385111439
+624	4o32_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-22	-12	10	201202243
+625	4o32_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-15	-5	10	2041117978
+626	4o32_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-7	3	10	55049548
+627	4o32_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-4	6	10	2480736606
+628	4o32_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	4	4	14	10	703462046
+629	4o32_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	8	7	17	10	104741108
+630	4o32_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	16	15	25	10	2228345515
+631	4o32_C	C	mpnn_hyper	original	data/altweights/hyper	True	data	24	22	32	10	3739774752
+632	4oeb_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-32	-34	10	1344750849
+633	4oeb_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-21	-23	10	449115798
+634	4oeb_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-11	-13	10	7254229
+635	4oeb_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-5	-7	10	3018000597
+636	4oeb_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	5	3	10	3819530926
+637	4oeb_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	11	9	10	3127766912
+638	4oeb_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	21	19	10	3786219003
+639	4oeb_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	32	30	10	3920384449
+640	4pif_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-33	-33	10	3066276430
+641	4pif_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-22	-22	10	2275845401
+642	4pif_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-11	-11	10	1293285714
+643	4pif_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-6	-6	10	1453940856
+644	4pif_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	6	6	10	551962084
+645	4pif_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	11	11	10	3850654747
+646	4pif_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	22	22	10	2685511150
+647	4pif_A	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	33	33	10	1375647140
+648	eGFP	A	mpnn_hyper	original	data/altweights/hyper	True	data	-24	-55	-62	10	3231180873
+649	eGFP	A	mpnn_hyper	original	data/altweights/hyper	True	data	-16	-37	-44	10	507682464
+650	eGFP	A	mpnn_hyper	original	data/altweights/hyper	True	data	-8	-18	-25	10	3096061475
+651	eGFP	A	mpnn_hyper	original	data/altweights/hyper	True	data	-4	-9	-16	10	2445648369
+652	eGFP	A	mpnn_hyper	original	data/altweights/hyper	True	data	4	9	2	10	1467386200
+653	eGFP	A	mpnn_hyper	original	data/altweights/hyper	True	data	8	18	11	10	848648563
+654	eGFP	A	mpnn_hyper	original	data/altweights/hyper	True	data	16	37	30	10	3858039817
+655	eGFP	A	mpnn_hyper	original	data/altweights/hyper	True	data	24	55	48	10	2592503064
+656	1a1x_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-25	-32	10	908337566
+657	1a1x_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-17	-24	10	1184616021
+658	1a1x_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-8	-15	10	2543997272
+659	1a1x_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-4	-11	10	3296837787
+660	1a1x_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	4	-3	10	3922694607
+661	1a1x_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	8	1	10	1230607685
+662	1a1x_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	17	10	10	3632965313
+663	1a1x_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	25	18	10	504340385
+664	1at0_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-34	-36	10	2699824482
+665	1at0_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-23	-25	10	1609250997
+666	1at0_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-11	-13	10	354221802
+667	1at0_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-6	-8	10	3973235311
+668	1at0_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	6	4	10	2227051985
+669	1at0_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	11	9	10	2133645756
+670	1at0_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	23	21	10	2211960465
+671	1at0_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	34	32	10	1172131000
+672	1kll_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-30	-39	10	3438065162
+673	1kll_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-20	-29	10	1195817657
+674	1kll_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-10	-19	10	3306205777
+675	1kll_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-5	-14	10	3223161831
+676	1kll_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	5	-4	10	2905690140
+677	1kll_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	10	1	10	1883793757
+678	1kll_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	20	11	10	1467887743
+679	1kll_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	30	21	10	238322316
+680	1l8d_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-25	-23	10	3133196163
+681	1l8d_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-16	-14	10	2303928359
+682	1l8d_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-8	-6	10	4070750745
+683	1l8d_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-4	-2	10	1901230348
+684	1l8d_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	4	6	10	1601825410
+685	1l8d_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	8	10	10	1359308639
+686	1l8d_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	16	18	10	104566317
+687	1l8d_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	25	27	10	2258381922
+688	1li1_B	B	mpnn_halo	original	data/altweights/halo	True	data	-24	-54	-52	10	993354659
+689	1li1_B	B	mpnn_halo	original	data/altweights/halo	True	data	-16	-36	-34	10	1213132102
+690	1li1_B	B	mpnn_halo	original	data/altweights/halo	True	data	-8	-18	-16	10	3613887188
+691	1li1_B	B	mpnn_halo	original	data/altweights/halo	True	data	-4	-9	-7	10	837635166
+692	1li1_B	B	mpnn_halo	original	data/altweights/halo	True	data	4	9	11	10	3519984351
+693	1li1_B	B	mpnn_halo	original	data/altweights/halo	True	data	8	18	20	10	3820422489
+694	1li1_B	B	mpnn_halo	original	data/altweights/halo	True	data	16	36	38	10	4029966942
+695	1li1_B	B	mpnn_halo	original	data/altweights/halo	True	data	24	54	56	10	588689921
+696	1lom_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-24	-27	10	432672489
+697	1lom_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-16	-19	10	2335099290
+698	1lom_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-8	-11	10	3409931455
+699	1lom_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-4	-7	10	2300899744
+700	1lom_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	4	1	10	807384728
+701	1lom_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	8	5	10	459173503
+702	1lom_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	16	13	10	2010646432
+703	1lom_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	24	21	10	432563392
+704	1vmg_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-19	-28	10	3781549324
+705	1vmg_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-13	-22	10	2639507099
+706	1vmg_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-6	-15	10	2225851417
+707	1vmg_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-3	-12	10	3789864982
+708	1vmg_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	3	-6	10	1336869632
+709	1vmg_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	6	-3	10	1136993473
+710	1vmg_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	13	4	10	100311538
+711	1vmg_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	19	10	10	2009138843
+712	2gux_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-30	-32	10	1297962428
+713	2gux_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-20	-22	10	1882484592
+714	2gux_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-10	-12	10	4018263525
+715	2gux_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-5	-7	10	2526773863
+716	2gux_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	5	3	10	494272537
+717	2gux_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	10	8	10	353765999
+718	2gux_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	20	18	10	1138883645
+719	2gux_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	30	28	10	1298374573
+720	2i7r_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-27	-35	10	3176571593
+721	2i7r_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-18	-26	10	3369342929
+722	2i7r_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-9	-17	10	3573067382
+723	2i7r_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-4	-12	10	2721886391
+724	2i7r_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	4	-4	10	3584415598
+725	2i7r_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	9	1	10	2792443027
+726	2i7r_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	18	10	10	3976779205
+727	2i7r_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	27	19	10	2605923681
+728	2rfr_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-36	-38	10	1124329493
+729	2rfr_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-24	-26	10	2050613809
+730	2rfr_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-12	-14	10	2010299770
+731	2rfr_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-6	-8	10	2574250830
+732	2rfr_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	6	4	10	2197269792
+733	2rfr_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	12	10	10	4062820937
+734	2rfr_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	24	22	10	2401385475
+735	2rfr_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	36	34	10	693146817
+736	2waw_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-47	-54	10	2396818271
+737	2waw_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-32	-39	10	2803450694
+738	2waw_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-16	-23	10	108679448
+739	2waw_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-8	-15	10	3772771324
+740	2waw_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	8	1	10	3200196914
+741	2waw_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	16	9	10	2292548195
+742	2waw_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	32	25	10	3505907250
+743	2waw_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	47	40	10	2315751470
+744	2yxh_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-27	-35	10	1961513432
+745	2yxh_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-18	-26	10	4070022807
+746	2yxh_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-9	-17	10	1525368918
+747	2yxh_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-4	-12	10	4279969890
+748	2yxh_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	4	-4	10	4215152615
+749	2yxh_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	9	1	10	1095302724
+750	2yxh_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	18	10	10	2065954180
+751	2yxh_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	27	19	10	3012026254
+752	3dm8_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-32	-31	10	1053541627
+753	3dm8_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-22	-21	10	1538085151
+754	3dm8_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-11	-10	10	1412008313
+755	3dm8_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-5	-4	10	808481881
+756	3dm8_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	5	6	10	1369609048
+757	3dm8_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	11	12	10	3214091539
+758	3dm8_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	22	23	10	4267864000
+759	3dm8_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	32	33	10	1674729804
+760	3gv1_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-32	-31	10	3557673009
+761	3gv1_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-21	-20	10	2934253703
+762	3gv1_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-11	-10	10	2131858756
+763	3gv1_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-5	-4	10	4057063242
+764	3gv1_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	5	6	10	1845341541
+765	3gv1_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	11	12	10	1092000854
+766	3gv1_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	21	22	10	2256659792
+767	3gv1_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	32	33	10	3173198276
+768	3iu6_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-34	-40	10	154169985
+769	3iu6_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-23	-29	10	398715419
+770	3iu6_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-11	-17	10	2632716581
+771	3iu6_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-6	-12	10	452783721
+772	3iu6_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	6	0	10	3755907003
+773	3iu6_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	11	5	10	2520634453
+774	3iu6_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	23	17	10	4074213050
+775	3iu6_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	34	28	10	3748308744
+776	3sjq_C	C	mpnn_halo	original	data/altweights/halo	True	data	-24	-19	-5	10	100882555
+777	3sjq_C	C	mpnn_halo	original	data/altweights/halo	True	data	-16	-13	1	10	1746471139
+778	3sjq_C	C	mpnn_halo	original	data/altweights/halo	True	data	-8	-6	8	10	3528220059
+779	3sjq_C	C	mpnn_halo	original	data/altweights/halo	True	data	-4	-3	11	10	965041001
+780	3sjq_C	C	mpnn_halo	original	data/altweights/halo	True	data	4	3	17	10	4155736242
+781	3sjq_C	C	mpnn_halo	original	data/altweights/halo	True	data	8	6	20	10	1171390032
+782	3sjq_C	C	mpnn_halo	original	data/altweights/halo	True	data	16	13	27	10	291387922
+783	3sjq_C	C	mpnn_halo	original	data/altweights/halo	True	data	24	19	33	10	3547678114
+784	3vjf_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-22	-27	10	3545094474
+785	3vjf_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-15	-20	10	3976386945
+786	3vjf_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-7	-12	10	3544239342
+787	3vjf_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-4	-9	10	1223493278
+788	3vjf_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	4	-1	10	74211634
+789	3vjf_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	7	2	10	563153599
+790	3vjf_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	15	10	10	2626263940
+791	3vjf_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	22	17	10	1252370141
+792	3vto_Q	Q	mpnn_halo	original	data/altweights/halo	True	data	-24	-26	-25	10	2032565603
+793	3vto_Q	Q	mpnn_halo	original	data/altweights/halo	True	data	-16	-17	-16	10	494838308
+794	3vto_Q	Q	mpnn_halo	original	data/altweights/halo	True	data	-8	-9	-8	10	3836238500
+795	3vto_Q	Q	mpnn_halo	original	data/altweights/halo	True	data	-4	-4	-3	10	785327941
+796	3vto_Q	Q	mpnn_halo	original	data/altweights/halo	True	data	4	4	5	10	400059996
+797	3vto_Q	Q	mpnn_halo	original	data/altweights/halo	True	data	8	9	10	10	3838690402
+798	3vto_Q	Q	mpnn_halo	original	data/altweights/halo	True	data	16	17	18	10	3302712709
+799	3vto_Q	Q	mpnn_halo	original	data/altweights/halo	True	data	24	26	27	10	1387455117
+800	4agh_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-19	-19	10	1240579494
+801	4agh_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-13	-13	10	4069031722
+802	4agh_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-6	-6	10	2178942325
+803	4agh_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-3	-3	10	2022183082
+804	4agh_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	3	3	10	3344874254
+805	4agh_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	6	6	10	575160612
+806	4agh_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	13	13	10	3847612223
+807	4agh_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	19	19	10	3044262346
+808	4cq4_B	B	mpnn_halo	original	data/altweights/halo	True	data	-24	-24	-29	10	1092075589
+809	4cq4_B	B	mpnn_halo	original	data/altweights/halo	True	data	-16	-16	-21	10	596577410
+810	4cq4_B	B	mpnn_halo	original	data/altweights/halo	True	data	-8	-8	-13	10	29560404
+811	4cq4_B	B	mpnn_halo	original	data/altweights/halo	True	data	-4	-4	-9	10	3514211210
+812	4cq4_B	B	mpnn_halo	original	data/altweights/halo	True	data	4	4	-1	10	3341617856
+813	4cq4_B	B	mpnn_halo	original	data/altweights/halo	True	data	8	8	3	10	3723376327
+814	4cq4_B	B	mpnn_halo	original	data/altweights/halo	True	data	16	16	11	10	4110311389
+815	4cq4_B	B	mpnn_halo	original	data/altweights/halo	True	data	24	24	19	10	432154657
+816	4lws_B	B	mpnn_halo	original	data/altweights/halo	True	data	-24	-21	-27	10	3080710551
+817	4lws_B	B	mpnn_halo	original	data/altweights/halo	True	data	-16	-14	-20	10	2104286429
+818	4lws_B	B	mpnn_halo	original	data/altweights/halo	True	data	-8	-7	-13	10	400166309
+819	4lws_B	B	mpnn_halo	original	data/altweights/halo	True	data	-4	-3	-9	10	4185394622
+820	4lws_B	B	mpnn_halo	original	data/altweights/halo	True	data	4	3	-3	10	4198923301
+821	4lws_B	B	mpnn_halo	original	data/altweights/halo	True	data	8	7	1	10	1273642491
+822	4lws_B	B	mpnn_halo	original	data/altweights/halo	True	data	16	14	8	10	3872320590
+823	4lws_B	B	mpnn_halo	original	data/altweights/halo	True	data	24	21	15	10	619811094
+824	4o32_C	C	mpnn_halo	original	data/altweights/halo	True	data	-24	-22	-12	10	3892167332
+825	4o32_C	C	mpnn_halo	original	data/altweights/halo	True	data	-16	-15	-5	10	2127941516
+826	4o32_C	C	mpnn_halo	original	data/altweights/halo	True	data	-8	-7	3	10	3237216356
+827	4o32_C	C	mpnn_halo	original	data/altweights/halo	True	data	-4	-4	6	10	1351611758
+828	4o32_C	C	mpnn_halo	original	data/altweights/halo	True	data	4	4	14	10	3999863628
+829	4o32_C	C	mpnn_halo	original	data/altweights/halo	True	data	8	7	17	10	3401458195
+830	4o32_C	C	mpnn_halo	original	data/altweights/halo	True	data	16	15	25	10	270717896
+831	4o32_C	C	mpnn_halo	original	data/altweights/halo	True	data	24	22	32	10	2689501594
+832	4oeb_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-32	-34	10	3190475001
+833	4oeb_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-21	-23	10	64355534
+834	4oeb_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-11	-13	10	1983710456
+835	4oeb_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-5	-7	10	1003813675
+836	4oeb_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	5	3	10	3109179915
+837	4oeb_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	11	9	10	8785728
+838	4oeb_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	21	19	10	2346972703
+839	4oeb_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	32	30	10	4231616591
+840	4pif_A	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-33	-33	10	967131814
+841	4pif_A	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-22	-22	10	705890581
+842	4pif_A	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-11	-11	10	3296635959
+843	4pif_A	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-6	-6	10	1339148228
+844	4pif_A	A	mpnn_halo	original	data/altweights/halo	True	data	4	6	6	10	3207200139
+845	4pif_A	A	mpnn_halo	original	data/altweights/halo	True	data	8	11	11	10	2810487425
+846	4pif_A	A	mpnn_halo	original	data/altweights/halo	True	data	16	22	22	10	2205988875
+847	4pif_A	A	mpnn_halo	original	data/altweights/halo	True	data	24	33	33	10	1519483114
+848	eGFP	A	mpnn_halo	original	data/altweights/halo	True	data	-24	-55	-62	10	2128957069
+849	eGFP	A	mpnn_halo	original	data/altweights/halo	True	data	-16	-37	-44	10	718607536
+850	eGFP	A	mpnn_halo	original	data/altweights/halo	True	data	-8	-18	-25	10	2104752369
+851	eGFP	A	mpnn_halo	original	data/altweights/halo	True	data	-4	-9	-16	10	97354123
+852	eGFP	A	mpnn_halo	original	data/altweights/halo	True	data	4	9	2	10	2700477125
+853	eGFP	A	mpnn_halo	original	data/altweights/halo	True	data	8	18	11	10	3065275079
+854	eGFP	A	mpnn_halo	original	data/altweights/halo	True	data	16	37	30	10	2815871373
+855	eGFP	A	mpnn_halo	original	data/altweights/halo	True	data	24	55	48	10	2058823357

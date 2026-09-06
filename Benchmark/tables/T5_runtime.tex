@@ -1,0 +1,20 @@
+\begin{table}
+\caption{Runtime and computational overhead. All values are CPU seconds under Decision D. The rejection row's cost per on-target design covers only the cells where rejection produced a hit; the cells_with_no_hit column counts the cells where it produced none and no ratio exists.}
+\label{tab:T5_runtime}
+\begin{tabular}{lrrrrr}
+\toprule
+method & n\_cells & cell\_seconds\_median & cell\_seconds\_total\_h & cells\_with\_no\_hit & seconds\_per\_on\_target\_median \\
+\midrule
+MPNN supercharge (soluble) & 200 & 9.410 & 0.659 & 0 & 0.941 \\
+MPNN supercharge (original weights) & 200 & 9.665 & 0.717 & 0 & 0.967 \\
+MPNN supercharge (h-bond protected) & 56 & 7.055 & 0.160 & 0 & 0.706 \\
+MPNN supercharge (HyperMPNN) & 200 & 11.300 & 0.904 & 0 & 1.130 \\
+MPNN supercharge (HaloMPNN) & 200 & 17.840 & 1.308 & 0 & 1.784 \\
+AvNAPSA & 200 & 73.945 & 4.453 & 72 & 7.794 \\
+Rosetta supercharge & 200 & 237.500 & 16.427 & 59 & 108.315 \\
+Rosetta supercharge (h-bond off) & 56 & 370.560 & 5.353 & 16 & 92.454 \\
+Random charge control & 200 & 0.000 & 0.000 & 0 & 0.000 \\
+Vanilla ProteinMPNN + rejection & 200 & 399.560 & 2.942 & 119 & 8.618 \\
+\bottomrule
+\end{tabular}
+\end{table}
