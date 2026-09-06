@@ -45,6 +45,25 @@ TASK_COLUMNS = ["task_id", "kind", "scaffold_id", "chain", "method",
 
 KINDS = ("rejection", "random_control")
 
+# ---------------------------------------------------------------------------
+# temperature sweep (PLAN.md Section 0.1 item 23, author's instruction 2026-09-06)
+#
+# F1 reported the reach of unguided sampling at one temperature, T = 0.3, where
+# only 81 of the 200 scaffold x rung cells are reachable and neither +-16 nor
+# +-24 is reachable on any scaffold. The sweep redraws the same pools at T = 0.6
+# and T = 0.9 so the figure can say which rungs the base model reaches when the
+# temperature is raised instead of leaving it to be assumed.
+#
+# The sweep is a second task file rather than more rows in tasks_phase4.tsv, so
+# the T = 0.3 array indices stay valid for reruns. Seeds are copied out of the
+# rejection rows of tasks_phase4.tsv unchanged, which is what "same seed" means:
+# temperature is the only variable between the three pools. Do not fold
+# temperature into bio.cell_seed.
+# ---------------------------------------------------------------------------
+
+TSWEEP_TASK_FILE = "slurm/tasks_phase4_tsweep.tsv"
+TSWEEP_TASK_COLUMNS = TASK_COLUMNS + ["temperature"]
+
 # PLAN.md Section 7 freezes these column names. See the module docstring.
 REJECTION_CURVE_COLUMNS = [
     "scaffold_id", "delta_q_density", "target_charge", "n_samples_drawn",
@@ -75,12 +94,22 @@ def read_csv(path: Path) -> list[dict]:
         return list(csv.DictReader(fh))
 
 
-def read_tasks() -> list[dict]:
-    path = config_lib.bench_path(TASK_FILE)
+def read_tasks(task_file: str = TASK_FILE) -> list[dict]:
+    path = config_lib.bench_path(task_file)
     if not path.exists():
         raise SystemExit(f"missing {path}. Run --emit-tasks first.")
     with open(path) as fh:
         return list(csv.DictReader(fh, delimiter="\t"))
+
+
+def t_suffix(temperature: float, default: float) -> str:
+    """"" at the config default, "_T0.6" otherwise.
+
+    Every artifact already on disk was written at the default temperature, so it
+    keeps its existing path and nothing is moved or overwritten by the sweep.
+    """
+    return "" if abs(float(temperature) - float(default)) < 1e-9 \
+        else f"_T{float(temperature):g}"
 
 
 def primary_cache(scaffold_id: str) -> Path:
@@ -176,13 +205,67 @@ def emit_tasks(cfg: dict, dry_run: bool) -> None:
         log(f"  {kind}: {len(ids)} tasks, indices {ids[0]} to {ids[-1]}")
 
 
-def _task_for(task_index: int, kind: str) -> dict:
-    tasks = read_tasks()
+def emit_tsweep_tasks(cfg: dict, temperatures: list[float], dry_run: bool) -> None:
+    """One rejection task per scaffold per extra temperature.
+
+    Seeds are not recomputed. Each row copies the seed of the corresponding
+    rejection row in tasks_phase4.tsv, so the T = 0.6 and T = 0.9 pools start
+    from the same RNG state as the T = 0.3 pool already on disk and temperature
+    is the only difference between them.
+    """
+    src = config_lib.bench_path(TASK_FILE)
+    out = config_lib.bench_path(TSWEEP_TASK_FILE)
+    rej = cfg["phase4"]["rejection"]
+    default_t = float(rej["temperature"])
+
+    for t in temperatures:
+        if t_suffix(t, default_t) == "":
+            raise SystemExit(
+                f"--temperatures includes {t}, the config default. The sweep would "
+                f"write to the T = {default_t} paths and overwrite the pools already "
+                "on disk. Drop it from the list.")
+
+    if dry_run:
+        say_would(f"read the rejection rows of {src} "
+                  f"({'present' if src.exists() else 'NOT PRESENT, --emit-tasks first'})")
+        say_would(f"reuse each scaffold's existing seed unchanged, at temperatures "
+                  f"{', '.join(f'{t:g}' for t in temperatures)}")
+        say_would(f"write {out} with columns {TSWEEP_TASK_COLUMNS}")
+        return
+
+    base = [t for t in read_tasks() if t["kind"] == "rejection"]
+    if not base:
+        raise SystemExit(f"no rejection rows in {src}. Run --emit-tasks first.")
+
+    rows, task_id = [], 0
+    for temperature in temperatures:
+        for task in sorted(base, key=lambda r: r["scaffold_id"]):
+            row = {c: task[c] for c in TASK_COLUMNS}
+            row["task_id"] = task_id
+            row["temperature"] = f"{float(temperature):g}"
+            rows.append(row)
+            task_id += 1
+
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with open(out, "w", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=TSWEEP_TASK_COLUMNS, delimiter="\t")
+        writer.writeheader()
+        writer.writerows(rows)
+
+    log(f"wrote {out} with {len(rows)} tasks (array indices 0 to {len(rows) - 1})")
+    for temperature in temperatures:
+        ids = [r["task_id"] for r in rows
+               if r["temperature"] == f"{float(temperature):g}"]
+        log(f"  T={float(temperature):g}: {len(ids)} tasks, indices {ids[0]} to {ids[-1]}")
+
+
+def _task_for(task_index: int, kind: str, task_file: str = TASK_FILE) -> dict:
+    tasks = read_tasks(task_file)
     task = next((t for t in tasks
                  if int(t["task_id"]) == task_index and t["kind"] == kind), None)
     if task is None:
         raise SystemExit(
-            f"no task with task_id={task_index} and kind={kind!r} in {TASK_FILE}")
+            f"no task with task_id={task_index} and kind={kind!r} in {task_file}")
     return task
 
 
@@ -260,7 +343,8 @@ def _off_target_positions(wt_seq: str, seq: str, designable: set[int]) -> list[i
 
 
 def build_mpnn_argv(cfg: dict, cluster: dict, task: dict, pdb: Path,
-                    fixed_jsonl: Path, out_folder: Path) -> list[str]:
+                    fixed_jsonl: Path, out_folder: Path,
+                    temperature: float | None = None) -> list[str]:
     """The command line for one scaffold's vanilla sampling pool.
 
     `--use_soluble_model` rather than `--path_to_model_weights`: passing an
@@ -270,6 +354,8 @@ def build_mpnn_argv(cfg: dict, cluster: dict, task: dict, pdb: Path,
     from the clone. Same file, chosen the way the runner expects.
     """
     rej = cfg["phase4"]["rejection"]
+    if temperature is None:
+        temperature = rej["temperature"]
     runner = Path(cluster["paths"]["proteinmpnn"]) / "protein_mpnn_run.py"
     argv = [
         sys.executable, str(runner),
@@ -279,7 +365,7 @@ def build_mpnn_argv(cfg: dict, cluster: dict, task: dict, pdb: Path,
         "--out_folder", str(out_folder),
         "--num_seq_per_target", str(rej["n_samples"]),
         "--batch_size", str(rej["batch_size"]),
-        "--sampling_temp", str(rej["temperature"]),
+        "--sampling_temp", str(temperature),
         "--model_name", str(rej["model"]),
         "--seed", str(int(task["seed"])),
     ]
@@ -291,19 +377,35 @@ def build_mpnn_argv(cfg: dict, cluster: dict, task: dict, pdb: Path,
     return argv
 
 
-def run_rejection(cfg: dict, cluster: dict, task_index: int, dry_run: bool) -> None:
-    task = _task_for(task_index, "rejection")
+def run_rejection(cfg: dict, cluster: dict, task_index: int, dry_run: bool,
+                  sweep: bool = False) -> None:
+    """One scaffold's sampling pool.
+
+    With `sweep`, the task comes from tasks_phase4_tsweep.tsv and its own
+    `temperature` column drives both the sampler and the output paths, so a
+    sweep task can never land on the T = 0.3 artifacts.
+    """
+    task_file = TSWEEP_TASK_FILE if sweep else TASK_FILE
+    task = _task_for(task_index, "rejection", task_file)
     scaffold_id = task["scaffold_id"]
     rej = cfg["phase4"]["rejection"]
     seed = int(task["seed"])
+
+    temperature = float(task["temperature"]) if sweep else float(rej["temperature"])
+    suffix = t_suffix(temperature, rej["temperature"])
+    if sweep and not suffix:
+        raise SystemExit(
+            f"sweep task {task_index} carries the config default temperature "
+            f"{temperature}. It would overwrite the pools already on disk.")
 
     pdb = config_lib.bench_path("data", "scaffolds", scaffold_id, f"{scaffold_id}.pdb")
     cache = primary_cache(scaffold_id)
     fixed_jsonl = config_lib.bench_path("data", "parsed",
                                         f"{scaffold_id}_fixed_positions.jsonl")
-    out_folder = config_lib.bench_path(rej["out_dir"], scaffold_id)
+    out_folder = config_lib.bench_path(f"{rej['out_dir']}{suffix}", scaffold_id)
     fasta = out_folder / "seqs" / f"{scaffold_id}.fa"
-    result = config_lib.bench_path("results", "rejection", f"{scaffold_id}.json")
+    result = config_lib.bench_path("results", f"rejection{suffix}",
+                                   f"{scaffold_id}.json")
 
     if dry_run:
         say_would(f"read {cache} "
@@ -311,8 +413,10 @@ def run_rejection(cfg: dict, cluster: dict, task_index: int, dry_run: bool) -> N
         say_would(f"write {fixed_jsonl}, the complement of that cache's designable "
                   "set, in protein_mpnn_run.py's fixed-positions format")
         say_would(f"read {pdb} ({'present' if pdb.exists() else 'NOT PRESENT'})")
-        argv = build_mpnn_argv(cfg, cluster, task, pdb, fixed_jsonl, out_folder)
-        say_would(f"run, with {rej['n_samples'] // rej['batch_size']} batches of "
+        argv = build_mpnn_argv(cfg, cluster, task, pdb, fixed_jsonl, out_folder,
+                               temperature)
+        say_would(f"run at T={temperature:g}, with "
+                  f"{rej['n_samples'] // rej['batch_size']} batches of "
                   f"{rej['batch_size']}:")
         print("      " + " \\\n        ".join(
             " ".join(argv[i:i + 2]) for i in range(0, len(argv), 2)), flush=True)
@@ -337,7 +441,7 @@ def run_rejection(cfg: dict, cluster: dict, task_index: int, dry_run: bool) -> N
         "method": task["method"],
         "weights": rej["weights"],
         "model": rej["model"],
-        "temperature": rej["temperature"],
+        "temperature": temperature,
         "n_samples_requested": int(rej["n_samples"]),
         "batch_size": int(rej["batch_size"]),
         "seed": seed,
@@ -354,7 +458,8 @@ def run_rejection(cfg: dict, cluster: dict, task_index: int, dry_run: bool) -> N
 
     out_folder.mkdir(parents=True, exist_ok=True)
     result.parent.mkdir(parents=True, exist_ok=True)
-    argv = build_mpnn_argv(cfg, cluster, task, pdb, fixed_jsonl, out_folder)
+    argv = build_mpnn_argv(cfg, cluster, task, pdb, fixed_jsonl, out_folder,
+                           temperature)
     record["argv"] = argv
 
     started = time.time()
@@ -412,7 +517,7 @@ def run_rejection(cfg: dict, cluster: dict, task_index: int, dry_run: bool) -> N
     with open(result, "w") as fh:
         json.dump(record, fh, indent=2)
 
-    log(f"{scaffold_id} rejection: status={record['status']} "
+    log(f"{scaffold_id} rejection T={temperature:g}: status={record['status']} "
         f"samples={record['n_samples_drawn']} "
         f"q_mean={record.get('q_mean')} q_sd={record.get('q_sd')} "
         f"{record['wall_seconds']}s -> {result}")
@@ -637,31 +742,66 @@ def _mpnn_seconds_per_hit(scaffold_id: str, target: int) -> str:
     return f"{wall / n_hit:.4f}"
 
 
-def build_curve(cfg: dict, dry_run: bool) -> None:
+def _append_runtime(rows: list[dict]) -> None:
+    """Merge sampling-pool timings into results/runtime.csv, keyed on cell_id.
+
+    CLAUDE.md requires partition, node and CPU count in runtime.csv for every
+    job, and Phase 4a was never in there: it writes no results/cells/ sidecar,
+    and 10_aggregate.py builds runtime.csv from that directory alone. So these
+    rows are merged in here instead of invented anywhere else.
+
+    Two consequences, both recorded in logs/ISSUES.md rather than worked around:
+    re-running 10_aggregate.py rewrites runtime.csv from the cell sidecars and
+    drops these rows again, so --curve has to follow it; and the T = 0.3 pools
+    only gain rows the next time --curve runs for them.
+    """
+    if not rows:
+        return
+    path = config_lib.bench_path("results", "runtime.csv")
+    existing = read_csv(path) if path.exists() else []
+    replaced = {r["cell_id"] for r in rows}
+    merged = [r for r in existing if r.get("cell_id") not in replaced] + rows
+    bio.write_csv(path, merged, bio.RUNTIME_COLUMNS)
+    log(f"merged {len(rows)} rows into {path} ({len(merged)} total)")
+
+
+def build_curve(cfg: dict, dry_run: bool, temperature: float | None = None) -> None:
     """Write results/rejection_curve.csv and the per-scaffold distribution.
 
     Reads only files on disk: the per-scaffold sample pools written by
     run_rejection, and the Phase 2 primary-arm cells for the comparison column.
     A scaffold whose pool is missing or failed is skipped and reported, never
     filled in.
+
+    With a non-default `temperature` this reads that temperature's pools and
+    writes the suffixed CSVs, which carry one extra column,
+    `sampling_temperature`, appended after PLAN.md Section 7's frozen list.
     """
     resolved = cfg["resolved_targets"]
-    curve_path = config_lib.bench_path("results", "rejection_curve.csv")
-    dist_path = config_lib.bench_path("results", "rejection_distribution.csv")
-    pool_dir = config_lib.bench_path("results", "rejection")
+    rej = cfg["phase4"]["rejection"]
+    if temperature is None:
+        temperature = rej["temperature"]
+    temperature = float(temperature)
+    suffix = t_suffix(temperature, rej["temperature"])
+
+    curve_cols = REJECTION_CURVE_COLUMNS + (["sampling_temperature"] if suffix else [])
+    dist_cols = (REJECTION_DISTRIBUTION_COLUMNS
+                 + (["sampling_temperature"] if suffix else []))
+    curve_path = config_lib.bench_path("results", f"rejection_curve{suffix}.csv")
+    dist_path = config_lib.bench_path("results", f"rejection_distribution{suffix}.csv")
+    pool_dir = config_lib.bench_path("results", f"rejection{suffix}")
 
     if dry_run:
         say_would(f"read every {pool_dir}/<scaffold>.json")
         say_would(f"count, per target, how many of the pool's samples equal the target "
-                  f"charge, and write {curve_path} with columns "
-                  f"{REJECTION_CURVE_COLUMNS}")
+                  f"charge, and write {curve_path} with columns {curve_cols}")
         say_would("report expected_samples_per_hit as censored '>N' where no sample "
                   "landed on target, rather than extrapolating a rate")
         say_would(f"write {dist_path} with the per-scaffold empirical charge "
                   "distribution (PLAN.md Section 7)")
         return
 
-    curve_rows, dist_rows, missing = [], [], []
+    curve_rows, dist_rows, missing, runtime_rows = [], [], [], []
     for scaffold_id in sorted(resolved):
         pool_file = pool_dir / f"{scaffold_id}.json"
         if not pool_file.exists():
@@ -669,6 +809,26 @@ def build_curve(cfg: dict, dry_run: bool) -> None:
             continue
         with open(pool_file) as fh:
             pool = json.load(fh)
+        # The pool states the temperature it was drawn at. Trust the file, not
+        # the flag: a mismatch means the wrong directory is being read and the
+        # curve would attribute one temperature's counts to another.
+        pool_t = float(pool.get("temperature", rej["temperature"]))
+        if abs(pool_t - temperature) > 1e-9:
+            raise SystemExit(
+                f"{pool_file} was drawn at T={pool_t:g}, not the requested "
+                f"T={temperature:g}.")
+        runtime_rows.append({
+            "phase": "rejection" if not suffix else "rejection_tsweep",
+            "cell_id": f"{scaffold_id}_vanilla_rejection_T{temperature:g}",
+            "slurm_job_id": pool.get("slurm_job_id", ""),
+            "slurm_array_task_id": pool.get("slurm_array_task_id", ""),
+            "partition": pool.get("partition", ""),
+            "node": pool.get("node", ""),
+            "cpus": pool.get("cpus", ""),
+            "gpus": pool.get("gpus", ""),
+            "wall_seconds": pool.get("wall_seconds", ""),
+            "status": pool.get("status", ""),
+        })
         if pool.get("status") != "ok":
             missing.append((scaffold_id, f"pool status={pool.get('status')}"))
             dist_rows.append({"scaffold_id": scaffold_id,
@@ -688,6 +848,7 @@ def build_curve(cfg: dict, dry_run: bool) -> None:
             "n_samples_drawn": n_drawn, "q_mean": pool["q_mean"],
             "q_sd": pool["q_sd"], "q_min": pool["q_min"], "q_max": pool["q_max"],
             "seconds_per_sample": sec_per_sample, "status": "ok",
+            **({"sampling_temperature": f"{temperature:g}"} if suffix else {}),
         })
 
         for cell in resolved[scaffold_id]:
@@ -713,13 +874,15 @@ def build_curve(cfg: dict, dry_run: bool) -> None:
                 "gpu_seconds_per_sample": sec_per_sample,
                 "expected_gpu_seconds_per_hit": sec_per_hit,
                 "mpnn_sc_gpu_seconds_per_hit": _mpnn_seconds_per_hit(scaffold_id, target),
+                **({"sampling_temperature": f"{temperature:g}"} if suffix else {}),
             })
 
-    bio.write_csv(curve_path, curve_rows, REJECTION_CURVE_COLUMNS)
-    bio.write_csv(dist_path, dist_rows, REJECTION_DISTRIBUTION_COLUMNS)
+    bio.write_csv(curve_path, curve_rows, curve_cols)
+    bio.write_csv(dist_path, dist_rows, dist_cols)
     log(f"wrote {curve_path} with {len(curve_rows)} rows "
         f"({len({r['scaffold_id'] for r in curve_rows})} scaffolds)")
     log(f"wrote {dist_path} with {len(dist_rows)} rows")
+    _append_runtime(runtime_rows)
     if missing:
         log(f"  {len(missing)} scaffolds contributed no curve rows:")
         for scaffold_id, why in missing:
@@ -731,11 +894,14 @@ def build_curve(cfg: dict, dry_run: bool) -> None:
 # ---------------------------------------------------------------------------
 
 def submit(cluster: dict, dry_run: bool, array: str | None, kind: str,
-           resource_key: str) -> None:
-    task_path = config_lib.bench_path(TASK_FILE)
-    tasks = read_tasks() if task_path.exists() else []
-    sbatch = config_lib.bench_path("slurm", "array_phase4.sbatch")
-    logdir = config_lib.bench_path("logs", "slurm", "phase4")
+           resource_key: str, sweep: bool = False) -> None:
+    task_file = TSWEEP_TASK_FILE if sweep else TASK_FILE
+    task_path = config_lib.bench_path(task_file)
+    tasks = read_tasks(task_file) if task_path.exists() else []
+    sbatch = config_lib.bench_path(
+        "slurm", "array_phase4_tsweep.sbatch" if sweep else "array_phase4.sbatch")
+    logdir = config_lib.bench_path("logs", "slurm",
+                                   "phase4_tsweep" if sweep else "phase4")
     res = cluster["slurm"][resource_key]
     throttle = cluster["slurm"]["max_cpu_jobs"]
 
@@ -783,6 +949,6 @@ def submit(cluster: dict, dry_run: bool, array: str | None, kind: str,
 
 
 def time_one(cluster: dict, dry_run: bool, task_index: int,
-             resource_key: str) -> None:
+             resource_key: str, sweep: bool = False) -> None:
     """Submit a single task so its walltime can size the array."""
-    submit(cluster, dry_run, str(task_index), "rejection", resource_key)
+    submit(cluster, dry_run, str(task_index), "rejection", resource_key, sweep)

@@ -13,12 +13,29 @@ from __future__ import annotations
 import pandas as pd
 
 import analysis_lib as A
-from analysis_lib import METHOD_LABEL, METHOD_ORDER, ROOT, write_table
+from analysis_lib import ROOT, write_table
+# Arm identity comes from figures_lib, which is where the nine-arm order,
+# labels and palette are defined. Importing the six-arm pair that used to
+# live in analysis_lib is what silently dropped the method label from every
+# mpnn_hyper, mpnn_halo and rosetta_hbond_off row. See _order_methods.
+from figures_lib import METHOD_LABEL, METHOD_ORDER
 
 
 def _order_methods(df: pd.DataFrame, col: str = "method") -> pd.DataFrame:
+    """Sort by the frozen arm order, keeping any arm the order does not name.
+
+    A plain `Categorical(categories=METHOD_ORDER)` maps anything outside the
+    list to NaN, so an arm added to `designs.csv` but not to METHOD_ORDER keeps
+    its row and loses its name. That is how 42 rows of T7 came to have a blank
+    method column. Unknown arms now sort to the end under their own name, and
+    the caller is told, so a new arm is visible rather than anonymous.
+    """
     df = df.copy()
-    df[col] = pd.Categorical(df[col], categories=METHOD_ORDER, ordered=True)
+    unknown = sorted(set(df[col].dropna().unique()) - set(METHOD_ORDER))
+    if unknown:
+        print(f"note: {col} values not in METHOD_ORDER, sorted last: {unknown}")
+    df[col] = pd.Categorical(df[col], categories=list(METHOD_ORDER) + unknown,
+                             ordered=True)
     return df.sort_values(col)
 
 

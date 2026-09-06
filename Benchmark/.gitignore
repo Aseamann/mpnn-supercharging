@@ -38,6 +38,9 @@ logs/mpnn/
 results/cells/
 results/threaded/
 results/rejection/
+# Same for the temperature sweep pools (PLAN.md Section 0.1 item 23). The
+# published form is results/rejection_curve_T*.csv, which is tracked.
+results/rejection_T*/
 # Per-cell sidecars from the superseded AvNAPSA nstruct 1 run, kept on disk
 # as the evidence that s00 reproduces it (logs/ISSUES.md, 2026-08-26).
 # Same class as results/cells/: an input to aggregation, not a result.
@@ -53,3 +56,8 @@ __pycache__/
 # The designed sequences. One FASTA per cell, ~1.9 MB total, and the only place
 # a reader can check a reported mutation set. Root ignores *.fa.
 !designs/*.fa
+
+# Author-supplied licensed fonts (Myriad Pro). analysis_lib._register_fonts()
+# reads them from here if present, but they may not be redistributed and this
+# repo is published, so they are never committed.
+assets/fonts/
